@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Write Article</title>
+	<!-- Fav Icons -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/dashboard-header.css" rel="stylesheet" />
+    <link href="css/dashboard-style.css" rel="stylesheet" />
+    <link href="css/helpCenterStyle.css" rel="stylesheet" />
+    <link href="css/help-center.css" rel="stylesheet" />
+    <link href="css/helpcenter-Admin.css" rel="stylesheet" />
+    <link href="css/admin-help-center.css" rel="stylesheet" />
+    <link href="css/admin-profile.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/OnBoardingJourney.css" />
+    <link rel="stylesheet" href="css/dApp-S-home.css" />
+    <link rel="stylesheet" href="css/home-post.css" />
+    <link rel="stylesheet" href="css/comunitySettings.css" />
+    <link rel="stylesheet" href="css/ref.css" />
+    <link rel="stylesheet" href="css/write-article.css" />
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<header class="custom-header">			
+				<div class="ezl-dashboard-header">
+					<div class="menu-left">
+						<div class="menu-wrap"><!--trade menu-->
+							<a href="#menu" class="menu-link" onclick="tradeFunction()"><img src="images/Menu.png" alt="Menu" class="img-fluid"></a>
+							<div class="tradecontainer" id="trademenu-drpdown">
+							  <div class="trade-menu-panel-panel-group" id="accordionMenu" role="tablist" aria-multiselectable="true">
+								<div class="trade-menu-panel">
+								  <div class="trade-menu-heading" role="tab">
+									<h4 class="trade-menu-title">
+									<a role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+									  <span><img src="images/Over.png" class="img-fluid" alt="Overview"></span>Overview
+									</a>
+								  </h4>
+								  </div>
+								 
+								</div>
+								<div class="trade-menu-panel">
+								  <div class="trade-menu-heading" role="tab" id="headingTwo">
+									<h4 class="trade-menu-title">
+									<a class="trade-dropmenu collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									 <span><img src="images/Borrow.png" class="img-fluid trade-menu-icon" alt="Trade"><img src="images/Borrow2.png" class="img-fluid trade-menu-icon-active" alt="Trade"></span>Trade
+									</a>
+								  </h4>
+								  </div>
+								  <div id="collapseTwo" class="trade-menu-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
+									<ul class="nav">
+										<li><a href="#!">Swap</a></li>
+										<li><a href="#!" class="trade-menuItem-active">Liquidity</a></li>
+									  </ul>
+								  </div>
+								</div>
+								<div class="trade-menu-panel">
+								  <div class="trade-menu-heading" role="tab" id="headingThree">
+									<h4 class="trade-menu-title">
+									<a class="collapsed trade-dropmenu" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									 <span><img src="images/pools.png" class="img-fluid trade-menu-icon" alt="pools"><img src="images/pools2.png" class="img-fluid trade-menu-icon-active" alt="pools"></span>Pools
+									</a>
+								  </h4>
+								  </div>
+								  <div id="collapseThree" class="trade-menu-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
+									<ul class="nav">
+										<li><a href="#!" class="trade-menuItem-active">Entertainment Pools</a></li>
+										<li><a href="#!">NFT Farming Pools</a></li>
+									  </ul>
+								  </div>
+								</div>
+								
+								
+								<div class="trade-menu-panel">
+								  <div class="trade-menu-heading" role="tab" id="headingFour">
+									<h4 class="trade-menu-title">
+									<a class="collapsed trade-dropmenu" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+									  <span><img src="images/menuStacking.png" class="img-fluid trade-menu-icon" alt="Staking"><img src="images/menuStacking2.png" class="img-fluid trade-menu-icon-active" alt="Staking"></span>Staking
+									</a>
+								  </h4>
+								  </div>
+								  <div id="collapseFour" class="trade-menu-collapse collapse" role="tabpanel" aria-labelledby="headingFour" aria-expanded="false">
+									
+									  <ul class="">
+										<li><a href="#!">Enoch Staking</a></li>
+										<li><a href="#!" class="trade-menuItem-active">NFT staking</a></li>
+									  </ul>
+								
+								  </div>
+								</div>
+								
+							  </div>
+							</div>
+						</div>
+						<div class="header-logo"><a href="javascript:void(0)"><img src="images/logo.png" alt="logo" class="img-fluid"></a></div>
+					</div>
+					<div class="menuright-side">
+						<div class="right-search">
+							<form class="search-form">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Fund, ISIN, Keyword ">
+										<button class="search-form-btn" type="Submit"><img class="search-img" src="images/search.png" alt="search"></button>
+								</div>
+							</form>
+						</div>
+						<div class="menu-mid-sect">
+							<ul id="submenubar">
+								<li class="submenubar-item">
+									<div class="menu-times-notifi"><img src="images/home.png" alt="home" class="img-fluid"></div>
+									<a href="home-page.html">Home</a>
+								</li>
+								
+								<li class="submenubar-item">
+									<div class="menu-times-notifi"><img src="images/Chat.png" alt="Chat" class="img-fluid"><span>0</span></div>
+									<a href="massaging.html">Messaging</a>
+								</li>
+								<li class="ether-block">
+									<div class="menu-times-notifi mr-2"><img src="images/Ethereum.png" alt="Ethereum" class="img-fluid"></div>
+									<a href="javascript:void(0)">ETH Mainnet <i class="fa fa-angle-right"></i></a>
+								</li>
+								<li class="connect-wallet-block">
+									
+									<a href="javascript:void(0)">Connect Wallet</a>
+								</li>
+								<li class="connect-wallet-block">
+									
+									<a href="javascript:void(0)"><span><img src="images/cart.png" class="img-fluid mr-2"></span>Cart</a>
+								</li>
+								
+							</ul>
+							<div class="toggle-menu">
+									<div onclick="subtogglediv('submenubar','submenu-toggle');" class="d-inline-block">
+										<i class="fa fa-bars" aria-hidden="true" id="submenu-toggle"></i>
+									</div>
+								</div>
+						</div>
+						
+						<div class="ezl-notificaion">
+						<div class="position-relative notificaion-dropdown ezl-notificaion-marg">
+							<a href="javascript:void(0)" class="popup"><img src="images/help.png" alt="help"></a>							
+												
+						</div>
+						<div class=" position-relative notificaion-dropdown">
+							<a href="javascript:void(0)" class="popup"><img src="images/alertBell.png" alt="Bell"><span class="notificaion-spn">10</span></a>							
+							
+						</div>
+						</div>
+						<div class="ezl-user-ac">
+						
+						<div class="account-d dropdown">
+							<div class="dropdown-buttn"><span class="popup" onclick="popupFunction()"><div class="user-img"><img src="images/user-ReginaCooper.png" alt="user image" class="img-fluid"></div></span>
+								<div class="popupbox dropdown-menu" id="myPopup">
+									
+									<ul class="">
+										<li>
+											<div class="enoch-usr-prof"><span><img src="images/user-pro-pic.png" class="img-fluid mr-1" alt="profile- pic"> @Hulk66</span><span><a href="#!">Change</a></span></div>
+										</li>
+										<li>
+											<div class="enoch-usr-status-block">
+												<div class="usr-status-left">Online Status</div>
+												<div class="usr-status-right">
+													<div class="post-switch">
+														<label class="postswitch">
+														  <input type="checkbox" checked="">
+														  <span class="post-slider round"></span>
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="enoch-usr-status-block"><a href="#!">Become Creator </a></div>
+											<div class="enoch-usr-status-block mb-0"><a href="#!" class="enoch-blue-clr">Your Public Profile</a></div>
+										</li>
+										<li>
+											<div class="enoch-usr-status-block"><a href="#!">Setting </a></div>
+											<div class="enoch-usr-status-block"><a href="#!">Help Center</a></div>										
+											<div class="enoch-usr-status-block mb-0"><a href="#!" class="orange-clr">Upgrade to Premium</a></div>
+										</li>
+										<li class="mt-4">
+											<div class="enoch-usr-status-block mb-0">Wallet  <span><a href="#!" class="btn freebonus-btn">$400 </a></span></div>
+										</li>
+										<li class="mt-4 pb-0">
+											<div class="enoch-usr-status-block mb-0 manage-ac">
+												<h3>Manage</h3>
+												<ul>
+													<li>
+														<div class="manage-ac-block">
+															<span>Comapny:	</span>
+															<span class="ml-1"><img src="images/man-icon1.png" class="img-fluid mr-1" alt="user">88mph  </span>
+														</div>
+													</li>
+													<li>
+														<div class="manage-ac-block">
+															<span>Comapny:	</span>
+															<span class="ml-1"><img src="images/man-icon2.png" class="img-fluid mr-1" alt="user">CryptoBlue    </span>
+														</div>
+													</li>
+												</ul>
+											</div>
+											
+										</li>
+										<li class="mb-0 pb-0">
+											<div class="enoch-usr-status-block mb-0"><a href="#!" class="post-red-clr">Logout</a></div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>				
+				</div>
+				
+				<div class="dApp-menu-btn">
+					<a href="#!"><img src="images/LeftSide-Menu.png" alt="menu" class="img-fluid"  data-toggle="modal" data-target="right-top-modal" /></a>
+					<div class="right-top-modal-block">
+						<div id="right-top-modal" class="modal fade">
+							<!-- Modal content -->
+							<div class="modal-content right-top-modal-content">
+								<span class="close"><img src="images/postCross2.png" alt="close" class="img-fluid" data-dismiss="modal"></span>
+								<div class="right-top-body-block">
+									<div class="right-top-body-block-lft">
+										<form class="right-search-form">
+											<div class="right-form-group">
+												<img src="images/help-Search.png" class="img-fluid" alt="search"/><input type="text" class="form-control" placeholder="Search menu...">
+													
+											</div>
+										</form>
+										<div class="enoch-community-scrollable">
+										<div class="enoch-menu-block-panel">
+											<div class="enoch-menu-block-lft">
+												<div class="enoch-menu-block-items">
+													<h2>Personal</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon1.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">NFT Vault </a>
+																	<p>Organise or find events and other things
+																		to do online and nearby</p>
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon2.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Earning </a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon28.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Wallet</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon3.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Billing</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon29.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Membership</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon35.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Ranking</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															</div>
+														</li>
+														
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon4.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Affiliate</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="enoch-menu-block-items">
+													<h2>Entertainment</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon11.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Popular</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon30.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Casino</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon31.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Sports</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon32.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Games</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon16.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Promotions</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="enoch-menu-block-items">
+													<h2>Advertising</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon19.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Ad Manager </a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon20.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Enoch Ad</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+															
+															</div>
+														</li>
+														
+													</ul>
+												</div>
+												<div class="enoch-menu-block-items mb-0">
+													<h2>User Setting </h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon26.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Your Profile </a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon27.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Your Account</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														
+													</ul>
+												</div>
+											</div>
+											<div class="enoch-menu-block-right">
+												<div class="enoch-menu-block-items">
+													<h2>Social</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon5.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">My Networks</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon6.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Communities</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon33.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Creator Portals </a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon36.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Livezone</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon8.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Company pages </a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon9.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Events</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon37.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">News Feed </a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="enoch-menu-block-items">
+													<h2>Shopping</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon34.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Digital  Marketplace</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon38.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Enoch Shops</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="enoch-menu-block-items">
+													<h2>Jobs</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon18.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Remote workhub</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														
+													</ul>
+												</div>
+												<div class="enoch-menu-block-items">
+													<h2>Developer</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon21.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Develop</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon22.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Grow</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon23.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Monetisation </a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														 <li>
+															<div class="right-modal-lft"><img src="images/menu-icon24.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Github</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon25.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Docs</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li> 
+														
+													</ul>
+												</div>
+											</div>
+										</div>
+										</div>
+									</div>
+									<div class="right-top-body-block-right">
+										<h3>Create</h3>
+										<ul>
+											<li><a href="#!"><span><img src="images/creat-icon1.png" class="img-fluid" alt="icon"/></span> Post</a></li>
+											<li><a href="#!"><span><img src="images/creat-icon2.png" class="img-fluid" alt="icon"/></span> Community</a></li>
+											<li><a href="#!"><span><img src="images/creat-icon5.png" class="img-fluid" alt="icon"/></span> Event</a></li>
+											<li><a href="#!"><span><img src="images/creat-icon10.png" class="img-fluid" alt="icon"/></span> NFT</a></li>
+											<li><a href="#!"><span><img src="images/creat-icon11.png" class="img-fluid" alt="icon"/></span> Reel</a></li>
+											<li><a href="#!"><span><img src="images/creat-icon14.png" class="img-fluid" alt="icon"/></span> Company page </a></li>
+											<li><a href="#!"><span><img src="images/creat-icon12.png" class="img-fluid" alt="icon"/></span> Group</a></li>
+											<li><a href="#!"><span><img src="images/creat-icon7.png" class="img-fluid" alt="icon"/></span> Job</a></li>								
+											<li><a href="#!"><span><img src="images/creat-icon13.png" class="img-fluid" alt="icon"/></span> AD </a></li>									 
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>								
+					</div>
+					</div>
+			</header>
+		</div>	
+	<div class="row">
+	<div class="Write_Article-top-ber-sect">
+	    <div class="Write_Article-top-ber-content ezl-dashboard-container">
+	        <div class="Publishing-menu-dropdown-sect">
+	            <div class="dropdown Publishing-menu-dropdown-box">
+	                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                    Publishing menu<span><img src="images/crop-Arrow-Down.svg" alt="icon" class="img-fluid" /></span>
+	                </button>
+	                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+	                    <a class="dropdown-item" href="#">Action</a>
+	                    <a class="dropdown-item" href="#">Another action</a>
+	                    <a class="dropdown-item" href="#">Something else here</a>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="Write_Article-top-ber-icon-and-btn-list">
+	            <div class="Write_Article-top-ber-icon-list">
+	                <ul>
+	                    <li><img src="images/bold.svg" alt="icon" class="img-fluid" /></li>
+	                    <li><img src="images/italic.svg" alt="icon" class="img-fluid" /></li>
+	                    <li><img src="images/underline.svg" alt="icon" class="img-fluid" /></li>
+	                    <li><img src="images/strikeThrough.svg" alt="icon" class="img-fluid" /></li>
+	                    <li><img src="images/smile.svg" alt="icon" class="img-fluid" /></li>
+	                </ul>
+	                <ul>
+	                    <li><img src="images/list-Dropdown.svg" alt="icon" class="img-fluid" /></li>
+	                    <li><img src="images/ol-Dropdown.svg" alt="icon" class="img-fluid" /></li>
+	                    <li><img src="images/ul-Dropdown.svg" alt="icon" class="img-fluid" /></li>
+	                    <li><img src="images/indent.svg" alt="icon" class="img-fluid" /></li>
+	                    <li><img src="images/outdent.svg" alt="icon" class="img-fluid" /></li>
+	                </ul>
+	                <ul>
+	                    <li><img src="images/insertImage.svg" alt="icon" class="img-fluid" /></li>
+	                    <li><img src="images/insertLink.svg" alt="icon" class="img-fluid" /></li>
+	                    <li><img src="images/insertVideo.svg" alt="icon" class="img-fluid" /></li>
+	                    <li><img src="images/undo.svg" alt="icon" class="img-fluid" /></li>
+	                    <li><img src="images/redo.svg" alt="icon" class="img-fluid" /></li>
+	                </ul>
+	            </div>
+	            <div class="Write_Article-top-ber-btn-sect">
+	                <button>Publish</button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="Write_Article-body-sect">
+	    <h2>Headline</h2>
+	    <div class="No-cover-image-sect">
+	        <div class="No-cover-image-icon">
+	            <img src="images/Camera.svg" alt="icon" class="img-fluid" />
+	        </div>
+	        <h3>No cover image uploaded</h3>
+	        <p>Consider adding a cover image that complements your article to attract more readers. We recommend uploading an image with a pixel size of 1320 x 742</p>
+	    </div>
+	    <div class="add-attachment-btn-sect">
+	        <button><img src="images/add-attachment-btn.svg" alt="icon" class="img-fluid" /></button>
+	        <h4>Write here. Add images or video for visual impact.</h4>
+	    </div>
+	    <div class="add-attachment-tab-sect">
+            <div class="add-attachment-tab-content">
+                <span class="add-attachment-tab-content-close"><img src="images/Cross.svg" alt="icon" class="img-fluid" /></span>
+                <div class="add_attachment_tab_btns">
+                    <button class="add_attachment_tablinks add-img-tablinks" onclick="openAttachment(event, 'Image')"><span><img src="images/insertimg.svg" alt="icon" class="img-fluid" /></span>Image</button>
+                    <button class="add_attachment_tablinks add-video-tablinks" onclick="openAttachment(event, 'Video')"><span><img src="images/insertVideo-2.svg" alt="icon" class="img-fluid" /></span>Video</button>
+                    <button class="add_attachment_tablinks" onclick="openAttachment(event, 'Slides')"><span><img src="images/slide-icon.svg" alt="icon" class="img-fluid" /></span>Slides</button>
+                    <button class="add_attachment_tablinks" onclick="openAttachment(event, 'Links')"><span><img src="images/insertLink-2.svg" alt="icon" class="img-fluid" /></span>Links</button>
+                    <button class="add_attachment_tablinks" onclick="openAttachment(event, 'Snippet')"><span><img src="images/script-icon.svg" alt="icon" class="img-fluid" /></span>Snippet</button>
+                </div>
+            </div>
+
+	        <div id="Image" class="add_attachment_tab_tabcontent">
+	            <div class="Image-tab-sect">
+	                <span class="Image-tab-sect-close"><img src="images/Cross.svg" alt="icon" class="img-fluid" /></span>
+	                <div class="Image-tab-content">
+	                    <div class="img-upload-icon">
+	                        <img src="images/upload-photo-icon.svg" alt="img" class="img-fluid" />
+	                    </div>
+	                    <div class="image-upload-text-sect">
+	                        <h5>Drop an image here or</h5>
+	                        <div class="image-upload-btn">
+	                            <input type="file" id="upload_img_file" hidden="hidden" />
+	                            <button type="button" id="custom_image_upload_button">Upload from computer</button>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+
+	        <div id="Video" class="add_attachment_tab_tabcontent">
+	            <div class="video-tab-sect">
+	                <span class="video-tab-sect-close"><img src="images/Cross.svg" alt="icon" class="img-fluid" /></span>
+	                <div class="video-tab-content">
+	                    <div class="video-upload-icon">
+	                        <img src="images/upload-video-icon.svg" alt="img" class="img-fluid" />
+	                    </div>
+	                    <div class="Video-Link-box">
+	                        <a href="#">Video Link</a>
+	                    </div>
+	                    <p>Youtube, Vimeo and more</p>
+	                </div>
+	            </div>
+	        </div>
+
+	        <div id="Slides" class="add_attachment_tab_tabcontent">
+	            <h3>Slides</h3>
+	        </div>
+	        
+	        <div id="Links" class="add_attachment_tab_tabcontent">
+	            <h3>Links</h3>
+	        </div>
+	        
+	        <div id="Snippet" class="add_attachment_tab_tabcontent">
+	            <h3>Snippet</h3>
+	        </div>
+	    </div>
+	</div>
+	</div>
+	
+	</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+
+// When the user clicks, open the popup
+function popupFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+
+}
+
+// When the user clicks, open trade mennu
+function tradeFunction() {
+  var trade = document.getElementById("trademenu-drpdown");
+  trade.classList.toggle("show");
+}
+</script>
+<script>
+	/*for toggle sub menu*/
+		function subtogglediv(id, icon) {
+			var id = document.getElementById(id);
+			id.classList.toggle('submenu-active');
+			var cross = document.getElementById(icon);
+			cross.classList.toggle('fa-times');
+			cross.classList.toggle('fa-bars');
+		}
+		</script>
+		<script>
+	/*for Tab*/
+        function helpfunction(evt, faqName) {
+            var i, supporttabcontent, posingtablinks;
+            supporttabcontent = document.getElementsByClassName("posttabcontent");
+            for (i = 0; i < supporttabcontent.length; i++) {
+                supporttabcontent[i].style.display = "none";
+            }
+            posingtablinks = document.getElementsByClassName("posingtablinks");
+            for (i = 0; i < posingtablinks.length; i++) {
+                posingtablinks[i].className = posingtablinks[i].className.replace(" posting-active", "");
+            }
+            document.getElementById(faqName).style.display = "block";
+            evt.currentTarget.className += " posting-active";
+        }
+		</script>
+		<script type="text/javascript">
+		/* for modal dropdown menu*/
+	    var dropdownpopup = document.querySelectorAll('[data-toggle=dropdownpopup]');
+	    for (var k = 0; k < dropdownpopup.length; k++) {
+	        dropdownpopup[k].addEventListener('click', function (e) {
+	            if (this.hasAttribute('data-link')) {
+	                var m_ID1 = this.getAttribute('data-link');
+	                //for closing other popup
+	                var activedropdown = document.querySelector('.dropdown-menu.drop-active');
+	                if(activedropdown && activedropdown.getAttribute('id') != m_ID1)
+	                {
+	                    activedropdown.classList.remove('drop-active');
+	                }
+	                //activting popup
+	                document.getElementById(m_ID1).classList.toggle('drop-active');
+	            }
+	        });
+	    }
+	 
+		
+
+	    //For modal
+		document.addEventListener('click', function (e) {
+	        e = e || window.event;
+	        var target = e.target || e.srcElement;
+
+	        if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') 
+	        {
+	            if (target.hasAttribute('data-target')) 
+	            {
+	                var m_ID = target.getAttribute('data-target');
+	                document.getElementById(m_ID).classList.add('open');
+	            }
+	        }
+
+	        // Close modal window with 'data-dismiss' attribute or when the backdrop is clicked
+	        if ((target.hasAttribute('data-dismiss') && target.getAttribute('data-dismiss') == 'modal') ||target.classList.contains('modal')) {
+	            var modal = document.querySelector('.modal.open');
+	            modal.classList.remove('open');
+	        }
+        }, false);
+
+       //close first popup window
+	var modal = document.getElementById("post-user-modal2");
+	var btnmodal = document.getElementById("post-save-btn");
+	btnmodal.onclick = function() {
+	  modal.classList.remove('open');
+	  }
+	
+ 	</script>
+
+<script>
+    var postVal = document.getElementById("post-user-modal").querySelectorAll(".post-user-modal-list ul li span");
+    postVal.forEach(function(item) {
+        item.onclick = function(e) {
+            document.getElementById('posting-steps-drop').innerHTML = this.innerHTML;
+
+
+
+        }
+
+    });
+    //tribe option dropdown
+    var tribeVal = document.getElementById("tribe-dropbox-list").querySelectorAll(".posting-steps-tribe-dropbox-list ul li");
+    tribeVal.forEach(function(item) {
+        item.onclick = function(e) {
+            document.getElementById('tribe-dropbox-list-input').innerHTML = this.innerHTML;
+
+
+
+        }
+
+    });
+</script>
+<script>
+$('.photo-title').on('click', function(){
+    $("h2.posting-step-hd-title").text("Create Post")
+
+});
+$('.video-title').on('click', function(){
+    $("h2.posting-step-hd-title").text("Create Post")
+
+});
+$('.doc-title').on('click', function(){
+    $("h2.posting-step-hd-title").text("Share a document")
+
+});
+$('.poll-title').on('click', function(){
+    $("h2.posting-step-hd-title").text("Create a poll")
+
+});
+$('.celeb-title').on('click', function(){
+    $("h2.posting-step-hd-title").text("Select an option")
+
+});
+
+</script>
+<script>
+    $(function() {
+        $('.menu-mid-sect ul li.submenubar-item a').click(function() {
+            $('.menu-mid-sect ul li.submenubar-item a').each(function(a) {
+                $(this).removeClass('selectedclass')
+            });
+            $(this).addClass('selectedclass');
+        });
+
+    });
+</script>
+	    
+    <script>
+        $(document).ready(function() {
+			$('.posingtablinks').click(function(){
+				$('.posting-steps-createPost').hide();
+				$('.posting-steps-tab-sect').show();
+			});
+		});
+    </script>
+    <script>
+        function openAttachment(evt, cityName) {
+            var i, add_attachment_tab_tabcontent, add_attachment_tablinks;
+            add_attachment_tab_tabcontent = document.getElementsByClassName("add_attachment_tab_tabcontent");
+            for (i = 0; i < add_attachment_tab_tabcontent.length; i++) {
+                add_attachment_tab_tabcontent[i].style.display = "none";
+            }
+            add_attachment_tablinks = document.getElementsByClassName("add_attachment_tablinks");
+            for (i = 0; i < add_attachment_tablinks.length; i++) {
+                add_attachment_tablinks[i].className = add_attachment_tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+    <script>
+        $(document).ready(function() {	
+			$('.add-attachment-btn-sect').click(function(){
+				$('.add-attachment-tab-sect').show();
+				$('.add-attachment-btn-sect').hide();
+			});
+		});
+        $(document).ready(function() {	
+			$('.add-attachment-tab-content-close').click(function(){
+				$('.add-attachment-tab-sect').hide();
+				$('.add-attachment-btn-sect').show();
+			});
+		});
+    </script>
+    <script>
+        $(document).ready(function() {	
+			$('.add-img-tablinks').click(function(){
+				$('.add-attachment-tab-content').hide();
+				$('#Image').show();
+			});
+		});
+        $(document).ready(function() {	
+			$('.Image-tab-sect-close').click(function(){
+				$('.add-attachment-tab-content').show();
+				$('#Image').hide();
+			});
+		});
+    </script>
+    <script>
+        const realFileBtn = document.getElementById("upload_img_file");
+        const customBtn = document.getElementById("custom_image_upload_button");
+        const customText = document.getElementById("custom-txt");
+
+        customBtn.addEventListener("click", function() {
+            realFileBtn.click();
+        });
+
+        realFileBtn.addEventListener("change", function() {
+            if (realFileBtn.value) {
+                customTxt.innerHTML = realFileBtn.value.match(
+                    /[\/\\]([\w\d\s\.\-\(\)]+)$/
+                )[1];
+            } else {
+                customTxt.innerHTML = "No file chosen, yet.";
+            }
+        });
+    </script>
+    <script>
+        $(document).ready(function() {	
+			$('.add-video-tablinks').click(function(){
+				$('.add-attachment-tab-content').hide();
+				$('#Video').show();
+			});
+		});
+        $(document).ready(function() {	
+			$('.video-tab-sect-close').click(function(){
+				$('.add-attachment-tab-content').show();
+				$('#Video').hide();
+			});
+		});
+    </script>
+    
+</body>
+
+</html>

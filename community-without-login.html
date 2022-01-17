@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>community</title>
+	<!-- Fav Icons -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/dashboard-header.css" rel="stylesheet" />
+    <link href="css/dashboard-style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/dApp-S-home.css" />
+    <link rel="stylesheet" href="css/home-post.css" />
+    <link rel="stylesheet" href="css/community.css" />
+    <link rel="stylesheet" href="css/comunitySettings.css" />
+
+</head>
+
+<body>
+	<div class="container-fluid dashboard-body-bg second-body-bg">
+		<div class="row">
+			<header class="custom-header">			
+				<div class="ezl-dashboard-header">
+					<div class="menu-left">
+						<div class="menu-wrap"><!--trade menu-->
+							<a href="#menu" class="menu-link" onclick="tradeFunction()"><img src="images/Menu.png" alt="Menu" class="img-fluid"></a>
+							<div class="tradecontainer" id="trademenu-drpdown">
+							  <div class="trade-menu-panel-panel-group" id="accordionMenu" role="tablist" aria-multiselectable="true">
+								<div class="trade-menu-panel">
+								  <div class="trade-menu-heading" role="tab">
+									<h4 class="trade-menu-title">
+									<a role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+									  <span><img src="images/Over.png" class="img-fluid" alt="Overview"></span>Overview
+									</a>
+								  </h4>
+								  </div>
+								 
+								</div>
+								<div class="trade-menu-panel">
+								  <div class="trade-menu-heading" role="tab" id="headingTwo">
+									<h4 class="trade-menu-title">
+									<a class="trade-dropmenu collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									 <span><img src="images/Borrow.png" class="img-fluid trade-menu-icon" alt="Trade"><img src="images/Borrow2.png" class="img-fluid trade-menu-icon-active" alt="Trade"></span>Trade
+									</a>
+								  </h4>
+								  </div>
+								  <div id="collapseTwo" class="trade-menu-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
+									<ul class="nav">
+										<li><a href="#!">Swap</a></li>
+										<li><a href="#!" class="trade-menuItem-active">Liquidity</a></li>
+									  </ul>
+								  </div>
+								</div>
+								<div class="trade-menu-panel">
+								  <div class="trade-menu-heading" role="tab" id="headingThree">
+									<h4 class="trade-menu-title">
+									<a class="collapsed trade-dropmenu" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									 <span><img src="images/pools.png" class="img-fluid trade-menu-icon" alt="pools"><img src="images/pools2.png" class="img-fluid trade-menu-icon-active" alt="pools"></span>Pools
+									</a>
+								  </h4>
+								  </div>
+								  <div id="collapseThree" class="trade-menu-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
+									<ul class="nav">
+										<li><a href="#!" class="trade-menuItem-active">Entertainment Pools</a></li>
+										<li><a href="#!">NFT Farming Pools</a></li>
+									  </ul>
+								  </div>
+								</div>
+								
+								
+								<div class="trade-menu-panel">
+								  <div class="trade-menu-heading" role="tab" id="headingFour">
+									<h4 class="trade-menu-title">
+									<a class="collapsed trade-dropmenu" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+									  <span><img src="images/menuStacking.png" class="img-fluid trade-menu-icon" alt="Staking"><img src="images/menuStacking2.png" class="img-fluid trade-menu-icon-active" alt="Staking"></span>Staking
+									</a>
+								  </h4>
+								  </div>
+								  <div id="collapseFour" class="trade-menu-collapse collapse" role="tabpanel" aria-labelledby="headingFour" aria-expanded="false">
+									
+									  <ul class="">
+										<li><a href="#!">Enoch Staking</a></li>
+										<li><a href="#!" class="trade-menuItem-active">NFT staking</a></li>
+									  </ul>
+								
+								  </div>
+								</div>
+								
+							  </div>
+							</div>
+						</div>
+						<div class="header-logo"><a href="javascript:void(0)"><img src="images/logo.png" alt="logo" class="img-fluid"></a></div>
+					</div>
+					<div class="menuright-side">
+						<div class="right-search">
+							<form class="search-form">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Fund, ISIN, Keyword ">
+										<button class="search-form-btn" type="Submit"><img class="search-img" src="images/search.png" alt="search"></button>
+								</div>
+							</form>
+						</div>
+						<div class="menu-mid-sect">
+							<ul id="submenubar">
+								<li class="submenubar-item">
+									<div class="menu-times-notifi"><img src="images/home.png" alt="home" class="img-fluid"></div>
+									<a href="home-page.html">Home</a>
+								</li>
+								
+								<li class="submenubar-item">
+									<div class="menu-times-notifi"><img src="images/Chat.png" alt="Chat" class="img-fluid"><span>0</span></div>
+									<a href="massaging.html">Messaging</a>
+								</li>
+								<li class="ether-block">
+									<div class="menu-times-notifi mr-2"><img src="images/Ethereum.png" alt="Ethereum" class="img-fluid"></div>
+									<a href="javascript:void(0)">ETH Mainnet <i class="fa fa-angle-right"></i></a>
+								</li>
+								<li class="connect-wallet-block">
+									
+									<a href="javascript:void(0)">Connect Wallet</a>
+								</li>
+								<li class="connect-wallet-block">
+									
+									<a href="javascript:void(0)"><span><img src="images/cart.png" class="img-fluid mr-2"></span>Cart</a>
+								</li>
+								
+							</ul>
+							<div class="toggle-menu">
+									<div onclick="subtogglediv('submenubar','submenu-toggle');" class="d-inline-block">
+										<i class="fa fa-bars" aria-hidden="true" id="submenu-toggle"></i>
+									</div>
+								</div>
+						</div>
+						
+						<div class="ezl-notificaion">
+						<div class="position-relative notificaion-dropdown ezl-notificaion-marg">
+							<a href="javascript:void(0)" class="popup"><img src="images/help.png" alt="help"></a>							
+												
+						</div>
+						<div class=" position-relative notificaion-dropdown">
+							<a href="javascript:void(0)" class="popup"><img src="images/alertBell.png" alt="Bell"><span class="notificaion-spn">10</span></a>							
+							
+						</div>
+						</div>
+						<div class="ezl-user-ac">
+						
+						<div class="account-d dropdown">
+							<div class="dropdown-buttn"><span class="popup" onclick="popupFunction()"><div class="user-img"><img src="images/user-ReginaCooper.png" alt="user image" class="img-fluid"></div></span>
+								<div class="popupbox dropdown-menu" id="myPopup">
+									
+									<ul class="">
+										<li>
+											<div class="enoch-usr-prof"><span><img src="images/user-pro-pic.png" class="img-fluid mr-1" alt="profile- pic"> @Hulk66</span><span><a href="#!">Change</a></span></div>
+										</li>
+										<li>
+											<div class="enoch-usr-status-block">
+												<div class="usr-status-left">Online Status</div>
+												<div class="usr-status-right">
+													<div class="post-switch">
+														<label class="postswitch">
+														  <input type="checkbox" checked="">
+														  <span class="post-slider round"></span>
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="enoch-usr-status-block"><a href="#!">Become Creator </a></div>
+											<div class="enoch-usr-status-block mb-0"><a href="#!" class="enoch-blue-clr">Your Public Profile</a></div>
+										</li>
+										<li>
+											<div class="enoch-usr-status-block"><a href="#!">Setting </a></div>
+											<div class="enoch-usr-status-block"><a href="#!">Help Center</a></div>										
+											<div class="enoch-usr-status-block mb-0"><a href="#!" class="orange-clr">Upgrade to Premium</a></div>
+										</li>
+										<li class="mt-4">
+											<div class="enoch-usr-status-block mb-0">Wallet  <span><a href="#!" class="btn freebonus-btn">$400 </a></span></div>
+										</li>
+										<li class="mt-4 pb-0">
+											<div class="enoch-usr-status-block mb-0 manage-ac">
+												<h3>Manage</h3>
+												<ul>
+													<li>
+														<div class="manage-ac-block">
+															<span>Comapny:	</span>
+															<span class="ml-1"><img src="images/man-icon1.png" class="img-fluid mr-1" alt="user">88mph  </span>
+														</div>
+													</li>
+													<li>
+														<div class="manage-ac-block">
+															<span>Comapny:	</span>
+															<span class="ml-1"><img src="images/man-icon2.png" class="img-fluid mr-1" alt="user">CryptoBlue    </span>
+														</div>
+													</li>
+												</ul>
+											</div>
+											
+										</li>
+										<li class="mb-0 pb-0">
+											<div class="enoch-usr-status-block mb-0"><a href="#!" class="post-red-clr">Logout</a></div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>				
+				</div>
+				
+				<div class="dApp-menu-btn">
+					<a href="#!"><img src="images/LeftSide-Menu.png" alt="menu" class="img-fluid"  data-toggle="modal" data-target="right-top-modal" /></a>
+					<div class="right-top-modal-block">
+						<div id="right-top-modal" class="modal fade">
+							<!-- Modal content -->
+							<div class="modal-content right-top-modal-content">
+								<span class="close"><img src="images/postCross2.png" alt="close" class="img-fluid" data-dismiss="modal"></span>
+								<div class="right-top-body-block">
+									<div class="right-top-body-block-lft">
+										<form class="right-search-form">
+											<div class="right-form-group">
+												<img src="images/help-Search.png" class="img-fluid" alt="search"/><input type="text" class="form-control" placeholder="Search menu...">
+													
+											</div>
+										</form>
+										<div class="enoch-community-scrollable">
+										<div class="enoch-menu-block-panel">
+											<div class="enoch-menu-block-lft">
+												<div class="enoch-menu-block-items">
+													<h2>Personal</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon1.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">NFT Vault </a>
+																	<p>Organise or find events and other things
+																		to do online and nearby</p>
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon2.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Earning </a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon28.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Wallet</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon3.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Billing</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon29.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Membership</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon35.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Ranking</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															</div>
+														</li>
+														
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon4.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Affiliate</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="enoch-menu-block-items">
+													<h2>Entertainment</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon11.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Popular</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon30.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Casino</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon31.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Sports</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon32.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Games</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon16.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Promotions</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="enoch-menu-block-items">
+													<h2>Advertising</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon19.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Ad Manager </a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon20.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Enoch Ad</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+															
+															</div>
+														</li>
+														
+													</ul>
+												</div>
+												<div class="enoch-menu-block-items mb-0">
+													<h2>User Setting </h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon26.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Your Profile </a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon27.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Your Account</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														
+													</ul>
+												</div>
+											</div>
+											<div class="enoch-menu-block-right">
+												<div class="enoch-menu-block-items">
+													<h2>Social</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon5.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">My Networks</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon6.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Communities</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon33.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Creator Portals </a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon36.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Livezone</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon8.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Company pages </a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon9.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Events</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon37.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">News Feed </a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="enoch-menu-block-items">
+													<h2>Shopping</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon34.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Digital  Marketplace</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon38.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Enoch Shops</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="enoch-menu-block-items">
+													<h2>Jobs</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon18.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Remote workhub</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														
+													</ul>
+												</div>
+												<div class="enoch-menu-block-items">
+													<h2>Developer</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon21.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Develop</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon22.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Grow</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon23.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Monetisation </a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														 <li>
+															<div class="right-modal-lft"><img src="images/menu-icon24.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Github</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon25.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Docs</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li> 
+														
+													</ul>
+												</div>
+											</div>
+										</div>
+										</div>
+									</div>
+									<div class="right-top-body-block-right">
+										<h3>Create</h3>
+										<ul>
+											<li><a href="#!"><span><img src="images/creat-icon1.png" class="img-fluid" alt="icon"/></span> Post</a></li>
+											<li><a href="#!"><span><img src="images/creat-icon2.png" class="img-fluid" alt="icon"/></span> Community</a></li>
+											<li><a href="#!"><span><img src="images/creat-icon5.png" class="img-fluid" alt="icon"/></span> Event</a></li>
+											<li><a href="#!"><span><img src="images/creat-icon10.png" class="img-fluid" alt="icon"/></span> NFT</a></li>
+											<li><a href="#!"><span><img src="images/creat-icon11.png" class="img-fluid" alt="icon"/></span> Reel</a></li>
+											<li><a href="#!"><span><img src="images/creat-icon14.png" class="img-fluid" alt="icon"/></span> Company page </a></li>
+											<li><a href="#!"><span><img src="images/creat-icon12.png" class="img-fluid" alt="icon"/></span> Group</a></li>
+											<li><a href="#!"><span><img src="images/creat-icon7.png" class="img-fluid" alt="icon"/></span> Job</a></li>								
+											<li><a href="#!"><span><img src="images/creat-icon13.png" class="img-fluid" alt="icon"/></span> AD </a></li>									 
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>								
+					</div>
+					</div>
+			</header>
+		</div>		
+	<div class="row">	
+		<div class="ezl-dashboard-container">			
+			<div class="enoch-community-header-banner mb-4">			
+				<img src="images/community-img-2.png" class="img-fluid your-event-cover-img" alt="banner"/>
+			
+				<div class="enoch-community-header-content">
+					<h2>DeFi Signal</h2>
+					
+				</div>
+				
+			</div>
+			<div class="enoch-community-deefi-block">
+				<div class="enoch-community-deefi-block-lft">
+					<div class="communityView-defi-panel">
+						<div class="enoch-community-deefi-signal">
+							<div class="enoch-community-deefi-signal-lft">
+								<div class="community-deefi-logo mr-4"><img src="images/community-img2.png" class="img-fluid" alt="defi"></div>
+								<div>
+									<h3>DeFi Signal </h3>
+									<p>@defisignal</p>
+								</div>
+								<span class="enoch-community-deefi-editbtn"><img src="images/communityEdit.png" class="img-fluid" alt="edit"></span>
+								
+							</div>
+							<div class="enoch-community-deefi-signal-right">
+								<ul class="community-deefi-signal-list">
+									
+									<li>
+										<div class="comuni-defi-share" data-toggle="modal" data-target="#managenoti-Modal"><img src="images/community-alert.png" class="img-fluid community-alert" alt="share"/><img src="images/community-alert2.png" class="img-fluid community-alert-hovr" alt="share"/></div>
+									</li>
+									<li><button class="comuni-defiJoin-btn joined-clr">Joined</button></li>
+									
+								</ul>
+								
+							</div>
+						</div>
+						<div class="communityView-tab">
+							<ul class="communityViewCatTab">
+								<li><button class="communityViewlinks active" onclick="communityViewFunc(event, 'posts')">Posts</button></li>
+								<li><button class="communityViewlinks" onclick="communityViewFunc(event, 'predictions')">Predictions</button></li>
+								<li><button class="communityViewlinks" onclick="communityViewFunc(event, 'wiki')">Wiki </button></li>
+								<li><button class="communityViewlinks" onclick="communityViewFunc(event, 'faq')">FAQ </button></li>
+								<li><button class="communityViewlinks" onclick="communityViewFunc(event, 'rules')">Rules </button></li>
+								<li><button class="communityViewlinks" onclick="communityViewFunc(event, 'amas')">AMAs </button></li>
+								<li>
+									<div class="communityView-dropbox">
+											
+										<a href="#" id="communityView-dropbox-list" class="communityView-box" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Discussions</a>
+										<div id="communityView-dropbox-list1" class="dropdown-menu communityView-dropbox-listItems">
+											<ul>
+												<li>
+													-
+												</li>
+												<li>
+													-
+												</li>
+												<li>
+													-
+												</li>
+												
+												
+											</ul>										
+										</div>
+									</div>
+								</li>
+								
+							</ul>
+							<span class="communityView-span">@defisignal</span>
+						 </div>
+					</div>
+					<div class="communityView-content-block">
+						<div id="posts" class="communityView-tabcontent communityView-d-block">
+							<div class="enoch-community-creat-post">
+								<div class="enoch-community-creat-post-lft">
+									<span><img src="images/defi-user.png" class="img-fluid" alt="user"/></span><div class="home-post-input">Create Post </div>
+								</div>
+								<div class="enoch-community-creat-post-right">
+									<ul>
+										<li><img src="images/post-Image.png" class="img-fluid" alt="Photo"/></li>
+										<li><img src="images/post-Video.png" class="img-fluid" alt="Video"/></li>
+										<li><img src="images/post-Event.png" class="img-fluid" alt="Event"/></li>
+										<li><img src="images/post-Article.png" class="img-fluid" alt="Write Article"/></li>
+									</ul>
+								</div>
+							</div>
+							<div class="communityView-hot-sect">
+								<ul>
+									<li><span><img src="images/hot-img.png" class="img-fluid mr-2" alt="hot"/>Hot</span></li>
+									<li><span class="inactiveItems"><img src="images/new.png" class="img-fluid mr-2" alt="new"/>New</span></li>
+									<li><span class="inactiveItems"><img src="images/top.png" class="img-fluid mr-2" alt="top"/>Top</span></li>
+								</ul>
+							</div>
+							<div class="community-enoch">
+								<div class="dApp-status-block pb-4">
+									<div class="dApp-status-heading">
+										<div class="dApp-status-heading-profile-pic">
+											<img src="images/userAvatar1.png" alt="DP" class="img-fluid">
+										</div>
+										<div class="dApp-status-heading-text">
+											<h1>@Hulk66</h1>
+											<h2>3 followers</h2>
+											<h3><span><img src="images/Clock.png" alt="icon" class="img-fluid"></span>July 15 </h3>
+										</div>
+										<div class="dApp-post-3dots dropdown">
+											<a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/dApp-ThreeDots.png" alt="3dots" class="img-fluid post-threedots"><img src="images/dApp-ThreeDots.png" alt="3dots" class="img-fluid post-threedots-active"></a>
+											<div class="dropdown-menu home-drop-postStatus">
+													<ul>
+														<li class="">
+															<a class="" href="#">
+																<div class="drop-postStatus-block">
+																	<div class="drop-postStatus-block-lft"><img src="images/post-save.png" alt="save" class="img-fluid"></div>
+																	<div class="drop-postStatus-block-right">
+																		<h3>Save</h3>
+																		<p>Save for later</p></div>
+																</div>
+															</a>
+														</li>
+														<li class="">
+															<a class="" href="#">
+																<div class="drop-postStatus-block">
+																	<div class="drop-postStatus-block-lft"><img src="images/copy.png" alt="copy" class="img-fluid"></div>
+																	<div class="drop-postStatus-block-right">
+																		<h4>Copy link to post</h4>
+																	</div>
+																</div>
+															</a>
+														</li>
+														<li class="">
+															<a class="" href="#">
+																<div class="drop-postStatus-block">
+																	<div class="drop-postStatus-block-lft"><img src="images/report.png" alt="report" class="img-fluid"></div>
+																	<div class="drop-postStatus-block-right">
+																		<h3>Report this post</h3>
+																		<p>This post is offensive or the account is hacked</p>
+																	</div>
+																</div>
+															</a>
+														</li>
+													</ul>
+												</div>
+										</div>
+									</div>
+									
+									<div class="communiPost-content-sect">
+										<img src="images/community-post-img.png" alt="image" class="img-fluid">
+									</div>
+									<div class="communiPost-content-body">
+										<h3>Decentralized finance (DeFi)</h3>
+										<p>Bitcoin in many ways was the first DeFi application. Bitcoin lets you really own and control value and send it anywhere around the world. It does this by providing a way for a large number of people, who don't trust each other, to agree on a ledger of accounts without the need for a trusted intermediary. Bitcoin is open to anyone and no one has the authority to change its rules. Bitcoin is open to anyone and no one has the authority to change its rules. Bitcoin's rules, like its scarcity and its openness, are written into the technology. It's not like traditional finance where governments can print money which devalues your savings and companies can shut down markets. Bitcoin's rules, like its scarcity and its openness, are written into the technology. It's not like traditional finance where governments can print money which devalues your savings and companies can shut down markets.</p>
+										<p>Bitcoin is open to anyone and no one has the authority to change its rules.</p>
+									</div>
+									
+									<div class="dApp-status-like-comment-share-sect pt-0">
+										<ul>
+											<li>
+												<div class="home-post-usr-reaction-wrap">
+													<div class="home-post-usr-reaction">
+														<span><img src="images/reaction1.png" alt="icon" class="img-fluid"></span>
+														<span><img src="images/reaction2.png" alt="icon" class="img-fluid"></span>
+														<span><img src="images/reaction3.png" alt="icon" class="img-fluid"></span>
+														<span><img src="images/reaction4.png" alt="icon" class="img-fluid"></span>
+														<span><img src="images/reaction5.png" alt="icon" class="img-fluid"></span>
+														<span><img src="images/reaction6.png" alt="icon" class="img-fluid"></span>
+													</div>
+												</div>
+												<span><img src="images/like1.png" alt="icon" class="img-fluid post-like"><img src="images/like-hov1.png" alt="icon" class="img-fluid post-like-hov"></span><a href="#">Like</a>
+											</li>
+
+											<li><span><img src="images/dislike.png" alt="icon" class="img-fluid post-like"><img src="images/dislike-hov.png" alt="icon" class="img-fluid post-like-hov"></span><a href="#">Dislike</a></li>
+
+											<li><span><img src="images/gift.png" alt="icon" class="img-fluid post-like"><img src="images/gift-hov.png" alt="icon" class="img-fluid post-like-hov"></span> <a href="#">Gift</a></li>
+
+											<li><span><img src="images/comment-icon.png" alt="icon" class="img-fluid post-like"><img src="images/comment-icon-hov.png" alt="icon" class="img-fluid post-like-hov"></span><a href="#">Comment</a>
+											</li>
+
+											<li><span><img src="images/dApp-Share.png" alt="icon" class="img-fluid post-like"><img src="images/dApp-Share-hov.png" alt="icon" class="img-fluid post-like-hov"></span><a href="#">Share</a>
+											</li>
+
+											<li><span><img src="images/Paper-Plane.png" alt="icon" class="img-fluid post-like"><img src="images/Paper-Plane-hov.png" alt="icon" class="img-fluid post-like-hov"></span><a href="#">Send</a>
+											</li>
+
+										</ul>
+									</div>
+
+
+								</div>
+								<div class="dApp-status-block pb-4">
+									<div class="dApp-status-heading">
+										<div class="dApp-status-heading-profile-pic">
+											<img src="images/speaker2.png" alt="DP" class="img-fluid">
+										</div>
+										<div class="dApp-status-heading-text">
+											<h1>@Metaquq</h1>
+											<h2>3 followers</h2>
+											<h3><span><img src="images/Clock.png" alt="icon" class="img-fluid"></span>July 15 </h3>
+										</div>
+										<div class="dApp-post-3dots dropdown">
+											<a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/dApp-ThreeDots.png" alt="3dots" class="img-fluid post-threedots"><img src="images/dApp-ThreeDots.png" alt="3dots" class="img-fluid post-threedots-active"></a>
+											<div class="dropdown-menu home-drop-postStatus">
+													<ul>
+														<li class="">
+															<a class="" href="#">
+																<div class="drop-postStatus-block">
+																	<div class="drop-postStatus-block-lft"><img src="images/post-save.png" alt="save" class="img-fluid"></div>
+																	<div class="drop-postStatus-block-right">
+																		<h3>Save</h3>
+																		<p>Save for later</p></div>
+																</div>
+															</a>
+														</li>
+														<li class="">
+															<a class="" href="#">
+																<div class="drop-postStatus-block">
+																	<div class="drop-postStatus-block-lft"><img src="images/copy.png" alt="copy" class="img-fluid"></div>
+																	<div class="drop-postStatus-block-right">
+																		<h4>Copy link to post</h4>
+																	</div>
+																</div>
+															</a>
+														</li>
+														<li class="">
+															<a class="" href="#">
+																<div class="drop-postStatus-block">
+																	<div class="drop-postStatus-block-lft"><img src="images/report.png" alt="report" class="img-fluid"></div>
+																	<div class="drop-postStatus-block-right">
+																		<h3>Report this post</h3>
+																		<p>This post is offensive or the account is hacked</p>
+																	</div>
+																</div>
+															</a>
+														</li>
+													</ul>
+												</div>
+										</div>
+									</div>
+
+									<div class="communiPost-content-sect">
+										<img src="images/community-post-img2.png" alt="image" class="img-fluid">
+									</div>
+									<div class="communiPost-content-body">
+										<h3>How to Relax Your Body and Mind</h3>
+										<p>Once you've discovered how to relax, you should experience less overall stress. The next step is learning how to maintain a state of relaxation and how to relax again quickly after you deal with future stressors. Work to amass more resources for dealing with stressors you face and becoming less reactive to them.</p>
+
+										<p>Make efforts to live a low-stress lifestyle, such as learning breathing exercises, doing regular exercise, meditating, writing in a journal, and cultivating relationships. Learn how to be more emotionally resilient.</p>
+											
+										<p>It's important to learn how to manage your stress in a healthy way. If you're feeling stressed out or you're struggling to make stress management techniques work for you, consider professional help. A licensed mental health professional can assist you in learning relaxation strategies that can work for you.</p>
+										
+									</div>
+									
+									<div class="dApp-status-like-comment-share-sect pt-0">
+										<ul>
+											<li>
+												<div class="home-post-usr-reaction-wrap">
+													<div class="home-post-usr-reaction">
+														<span><img src="images/reaction1.png" alt="icon" class="img-fluid"></span>
+														<span><img src="images/reaction2.png" alt="icon" class="img-fluid"></span>
+														<span><img src="images/reaction3.png" alt="icon" class="img-fluid"></span>
+														<span><img src="images/reaction4.png" alt="icon" class="img-fluid"></span>
+														<span><img src="images/reaction5.png" alt="icon" class="img-fluid"></span>
+														<span><img src="images/reaction6.png" alt="icon" class="img-fluid"></span>
+													</div>
+												</div>
+												<span><img src="images/like1.png" alt="icon" class="img-fluid post-like"><img src="images/like-hov1.png" alt="icon" class="img-fluid post-like-hov"></span><a href="#">Like</a>
+											</li>
+
+											<li><span><img src="images/dislike.png" alt="icon" class="img-fluid post-like"><img src="images/dislike-hov.png" alt="icon" class="img-fluid post-like-hov"></span><a href="#">Dislike</a></li>
+
+											<li><span><img src="images/gift.png" alt="icon" class="img-fluid post-like"><img src="images/gift-hov.png" alt="icon" class="img-fluid post-like-hov"></span> <a href="#">Gift</a></li>
+
+											<li><span><img src="images/comment-icon.png" alt="icon" class="img-fluid post-like"><img src="images/comment-icon-hov.png" alt="icon" class="img-fluid post-like-hov"></span><a href="#">Comment</a>
+											</li>
+
+											<li><span><img src="images/dApp-Share.png" alt="icon" class="img-fluid post-like"><img src="images/dApp-Share-hov.png" alt="icon" class="img-fluid post-like-hov"></span><a href="#">Share</a>
+											</li>
+
+											<li><span><img src="images/Paper-Plane.png" alt="icon" class="img-fluid post-like"><img src="images/Paper-Plane-hov.png" alt="icon" class="img-fluid post-like-hov"></span><a href="#">Send</a>
+											</li>
+
+										</ul>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+						<div id="predictions" class="communityView-tabcontent">prediction</div>
+						<div id="wiki" class="communityView-tabcontent">
+						    <div class="community-wiki-content">
+						        <div class="community-wiki-heading">
+						            <h2>Wiki</h2>
+						            <div class="wiki-3dot">
+						                <img src="images/wiki-menu.png" alt="icon" class="img-fluid" />
+						            </div>
+						        </div>
+						        <div class="community-wiki-collapse-sect">
+						            <div class="accordion" id="accordionrules">
+						                <div class="accordion-item wiki-collaps-btn">
+						                    <div class="wiki_collapsible collapsed" data-bs-toggle="collapse" data-bs-target="#WikicollapseOne" aria-expanded="true" aria-controls="wikicollapse">
+						                        <p>How can Ultron use the Infinty Stones in other universes? I thought the stones can only be used in their respective universe. Even Ultron says that each set of stones is unique.</p>
+						                    </div>
+
+						                    <div id="WikicollapseOne" class="collapse Wiki-collapse-block" aria-labelledby="heading" data-bs-parent="#accordionrules">
+						                        <div class="content">
+						                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						                        </div>
+						                    </div>
+						                </div>
+						                <div class="accordion-item wiki-collaps-btn">
+						                    <div class="wiki_collapsible collapsed" data-bs-toggle="collapse" data-bs-target="#WikicollapseTwo" aria-expanded="true" aria-controls="wikicollapse">
+						                        <p>Is the Ten Rings organization in the film the same one that captured Tony Stark in Iron Man 1 in Afghanistan?</p>
+						                    </div>
+
+						                    <div id="WikicollapseTwo" class="collapse Wiki-collapse-block" aria-labelledby="heading" data-bs-parent="#accordionrules">
+						                        <div class="content">
+						                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						                        </div>
+						                    </div>
+						                </div>
+						                <div class="accordion-item wiki-collaps-btn">
+						                    <div class="wiki_collapsible collapsed" data-bs-toggle="collapse" data-bs-target="#WikicollapseThree" aria-expanded="true" aria-controls="wikicollapse">
+						                        <p>Was Natasha taken to be a member of the Red Room after the events at Ohio?</p>
+						                    </div>
+
+						                    <div id="WikicollapseThree" class="collapse Wiki-collapse-block" aria-labelledby="heading" data-bs-parent="#accordionrules">
+						                        <div class="content">
+						                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						                        </div>
+						                    </div>
+						                </div>
+						                <div class="accordion-item wiki-collaps-btn">
+						                    <div class="wiki_collapsible collapsed" data-bs-toggle="collapse" data-bs-target="#WikicollapseFour" aria-expanded="true" aria-controls="wikicollapse">
+						                        <p>How can Ultron use the Infinty Stones in other universes? I thought the stones can only be used in their respective universe. Even Ultron says that each set of stones is unique.</p>
+						                    </div>
+
+						                    <div id="WikicollapseFour" class="collapse Wiki-collapse-block" aria-labelledby="heading" data-bs-parent="#accordionrules">
+						                        <div class="content">
+						                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						                        </div>
+						                    </div>
+						                </div>
+						                <div class="accordion-item wiki-collaps-btn">
+						                    <div class="wiki_collapsible collapsed" data-bs-toggle="collapse" data-bs-target="#WikicollapseFive" aria-expanded="true" aria-controls="wikicollapse">
+						                        <p>Is the Ten Rings organization in the film the same one that captured Tony Stark in Iron Man 1 in Afghanistan?</p>
+						                    </div>
+
+						                    <div id="WikicollapseFive" class="collapse Wiki-collapse-block" aria-labelledby="heading" data-bs-parent="#accordionrules">
+						                        <div class="content">
+						                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						                        </div>
+						                    </div>
+						                </div>
+						                <div class="accordion-item wiki-collaps-btn">
+						                    <div class="wiki_collapsible collapsed" data-bs-toggle="collapse" data-bs-target="#WikicollapseSix" aria-expanded="true" aria-controls="wikicollapse">
+						                        <p>How can Ultron use the Infinty Stones in other universes? I thought the stones can only be used in their respective universe. Even Ultron says that each set of stones is unique.</p>
+						                    </div>
+
+						                    <div id="WikicollapseSix" class="collapse Wiki-collapse-block" aria-labelledby="heading" data-bs-parent="#accordionrules">
+						                        <div class="content">
+						                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						                        </div>
+						                    </div>
+						                </div>
+						                <div class="accordion-item wiki-collaps-btn">
+						                    <div class="wiki_collapsible collapsed" data-bs-toggle="collapse" data-bs-target="#WikicollapseSeven" aria-expanded="true" aria-controls="wikicollapse">
+						                        <p>Is the Ten Rings organization in the film the same one that captured Tony Stark in Iron Man 1 in Afghanistan?</p>
+						                    </div>
+
+						                    <div id="WikicollapseSeven" class="collapse Wiki-collapse-block" aria-labelledby="heading" data-bs-parent="#accordionrules">
+						                        <div class="content">
+						                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						                        </div>
+						                    </div>
+						                </div>
+						                <div class="accordion-item wiki-collaps-btn">
+						                    <div class="wiki_collapsible collapsed" data-bs-toggle="collapse" data-bs-target="#WikicollapseEight" aria-expanded="true" aria-controls="wikicollapse">
+						                        <p>Is the Ten Rings organization in the film the same one that captured Tony Stark in Iron Man 1 in Afghanistan?</p>
+						                    </div>
+
+						                    <div id="WikicollapseEight" class="collapse Wiki-collapse-block" aria-labelledby="heading" data-bs-parent="#accordionrules">
+						                        <div class="content">
+						                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						                        </div>
+						                    </div>
+						                </div>
+						            </div>
+						        </div>
+						    </div>
+						</div>
+						<div id="faq" class="communityView-tabcontent">
+						    <div class="community-FAQ-content">
+						        <div class="community-FAQ-heading">
+						            <h2>FAQ</h2>
+						            <div class="FAQ-3dot">
+						                <img src="images/wiki-menu.png" alt="icon" class="img-fluid" />
+						            </div>
+						        </div>
+						        <div class="community-FAQ-collapse-sect">
+                                    <div class="accordion" id="accordionrules">
+						                <div class="accordion-item FAQ-collaps-btn">
+						                    <div class="FAQ_collapsible collapsed" data-bs-toggle="collapse" data-bs-target="#FAQcollapseOne" aria-expanded="true" aria-controls="FAQcollapse">
+						                        <p>Are the Marvel TV shows canon to the MCU? Will any of the Netflix or television characters appear in any future movies? What about the shows on Disney+?</p>
+						                    </div>
+
+						                    <div id="FAQcollapseOne" class="collapse FAQ-collapse-block" aria-labelledby="heading" data-bs-parent="#accordionrules">
+						                        <div class="content">
+						                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						                        </div>
+						                    </div>
+						                </div>
+						                <div class="accordion-item FAQ-collaps-btn">
+						                    <div class="FAQ_collapsible collapsed" data-bs-toggle="collapse" data-bs-target="#FAQcollapseTwo" aria-expanded="true" aria-controls="FAQcollapse">
+						                        <p>Did the Strategic Homeland Intervention Enforcement & Logistics Division change its name to S.H.I.E.L.D. in "Iron Man"?</p>
+						                    </div>
+
+						                    <div id="FAQcollapseTwo" class="collapse FAQ-collapse-block" aria-labelledby="heading" data-bs-parent="#accordionrules">
+						                        <div class="content">
+						                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						                        </div>
+						                    </div>
+						                </div>
+						                <div class="accordion-item FAQ-collaps-btn">
+						                    <div class="FAQ_collapsible collapsed" data-bs-toggle="collapse" data-bs-target="#FAQcollapseThree" aria-expanded="true" aria-controls="FAQcollapse">
+						                        <p>Why does Nick Fury say that Thor is the reason that S.H.I.E.L.D. began designing weapons based on the Tesseract in "The Avengers," despite the fact that he knew about aliens since "Captain Marvel"?</p>
+						                    </div>
+
+						                    <div id="FAQcollapseThree" class="collapse FAQ-collapse-block" aria-labelledby="heading" data-bs-parent="#accordionrules">
+						                        <div class="content">
+						                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						                        </div>
+						                    </div>
+						                </div>
+						                <div class="accordion-item FAQ-collaps-btn">
+						                    <div class="FAQ_collapsible collapsed" data-bs-toggle="collapse" data-bs-target="#FAQcollapseFour" aria-expanded="true" aria-controls="FAQcollapse">
+						                        <p>Are the Marvel TV shows canon to the MCU? Will any of the Netflix or television characters appear in any future movies? What about the shows on Disney+?</p>
+						                    </div>
+
+						                    <div id="FAQcollapseFour" class="collapse FAQ-collapse-block" aria-labelledby="heading" data-bs-parent="#accordionrules">
+						                        <div class="content">
+						                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						                        </div>
+						                    </div>
+						                </div>
+						                <div class="accordion-item FAQ-collaps-btn">
+						                    <div class="FAQ_collapsible collapsed" data-bs-toggle="collapse" data-bs-target="#FAQcollapseFive" aria-expanded="true" aria-controls="FAQcollapse">
+						                        <p>Did the Strategic Homeland Intervention Enforcement & Logistics Division change its name to S.H.I.E.L.D. in "Iron Man"?</p>
+						                    </div>
+
+						                    <div id="FAQcollapseFive" class="collapse FAQ-collapse-block" aria-labelledby="heading" data-bs-parent="#accordionrules">
+						                        <div class="content">
+						                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						                        </div>
+						                    </div>
+						                </div>
+						                <div class="accordion-item FAQ-collaps-btn">
+						                    <div class="FAQ_collapsible collapsed" data-bs-toggle="collapse" data-bs-target="#FAQcollapseSix" aria-expanded="true" aria-controls="FAQcollapse">
+						                        <p>Are the Marvel TV shows canon to the MCU? Will any of the Netflix or television characters appear in any future movies? What about the shows on Disney+?</p>
+						                    </div>
+
+						                    <div id="FAQcollapseSix" class="collapse FAQ-collapse-block" aria-labelledby="heading" data-bs-parent="#accordionrules">
+						                        <div class="content">
+						                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						                        </div>
+						                    </div>
+						                </div>
+						                <div class="accordion-item FAQ-collaps-btn">
+						                    <div class="FAQ_collapsible collapsed" data-bs-toggle="collapse" data-bs-target="#FAQcollapseSeven" aria-expanded="true" aria-controls="FAQcollapse">
+						                        <p>Did the Strategic Homeland Intervention Enforcement & Logistics Division change its name to S.H.I.E.L.D. in "Iron Man"?</p>
+						                    </div>
+
+						                    <div id="FAQcollapseSeven" class="collapse FAQ-collapse-block" aria-labelledby="heading" data-bs-parent="#accordionrules">
+						                        <div class="content">
+						                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						                        </div>
+						                    </div>
+						                </div>
+						                <div class="accordion-item FAQ-collaps-btn">
+						                    <div class="FAQ_collapsible collapsed" data-bs-toggle="collapse" data-bs-target="#FAQcollapseEight" aria-expanded="true" aria-controls="FAQcollapse">
+						                        <p>Did the Strategic Homeland Intervention Enforcement & Logistics Division change its name to S.H.I.E.L.D. in "Iron Man"?</p>
+						                    </div>
+
+						                    <div id="FAQcollapseEight" class="collapse FAQ-collapse-block" aria-labelledby="heading" data-bs-parent="#accordionrules">
+						                        <div class="content">
+						                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						                        </div>
+						                    </div>
+						                </div>
+						            </div>
+						        </div>
+						    </div>
+						</div>
+						<div id="rules" class="communityView-tabcontent">
+						    <div class="community-Rules-content">
+						        <div class="community-Rules-heading">
+						            <h2>Rules</h2>
+						            <div class="Rules-3dot">
+						                <img src="images/wiki-menu.png" alt="icon" class="img-fluid" />
+						            </div>
+						        </div>
+						        <div class="community-Rules-collapse-sect">
+						            <div class="accordion" id="accordionrules">
+						                <div class="accordion-item Rules-collaps-btn">
+						                    <div class="Rules_collapsible collapsed" data-bs-toggle="collapse" data-bs-target="#RulescollapseOne" aria-expanded="true" aria-controls="Rulescollapse">
+						                        <p>Are the Marvel TV shows canon to the MCU? Will any of the Netflix or television characters appear in any future movies? What about the shows on Disney+?</p>
+						                    </div>
+
+						                    <div id="RulescollapseOne" class="collapse Rules-collapse-block" aria-labelledby="heading" data-bs-parent="#accordionrules">
+						                        <div class="content">
+						                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						                        </div>
+						                    </div>
+						                </div>
+						                <div class="accordion-item Rules-collaps-btn">
+						                    <div class="Rules_collapsible collapsed" data-bs-toggle="collapse" data-bs-target="#RulescollapseTwo" aria-expanded="true" aria-controls="Rulescollapse">
+						                        <p>Did the Strategic Homeland Intervention Enforcement & Logistics Division change its name to S.H.I.E.L.D. in "Iron Man"?</p>
+						                    </div>
+
+						                    <div id="RulescollapseTwo" class="collapse Rules-collapse-block" aria-labelledby="heading" data-bs-parent="#accordionrules">
+						                        <div class="content">
+						                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						                        </div>
+						                    </div>
+						                </div>
+						                <div class="accordion-item Rules-collaps-btn">
+						                    <div class="Rules_collapsible collapsed" data-bs-toggle="collapse" data-bs-target="#RulescollapseThree" aria-expanded="true" aria-controls="Rulescollapse">
+						                        <p>Why does Nick Fury say that Thor is the reason that S.H.I.E.L.D. began designing weapons based on the Tesseract in "The Avengers," despite the fact that he knew about aliens since "Captain Marvel"?</p>
+						                    </div>
+
+						                    <div id="RulescollapseThree" class="collapse Rules-collapse-block" aria-labelledby="heading" data-bs-parent="#accordionrules">
+						                        <div class="content">
+						                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						                        </div>
+						                    </div>
+						                </div>
+						                <div class="accordion-item Rules-collaps-btn">
+						                    <div class="Rules_collapsible collapsed" data-bs-toggle="collapse" data-bs-target="#RulescollapseFour" aria-expanded="true" aria-controls="Rulescollapse">
+						                        <p>Are the Marvel TV shows canon to the MCU? Will any of the Netflix or television characters appear in any future movies? What about the shows on Disney+?</p>
+						                    </div>
+
+						                    <div id="RulescollapseFour" class="collapse Rules-collapse-block" aria-labelledby="heading" data-bs-parent="#accordionrules">
+						                        <div class="content">
+						                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						                        </div>
+						                    </div>
+						                </div>
+						            </div>
+						        </div>
+						    </div>
+						</div>
+						<div id="amas" class="communityView-tabcontent">
+                            <div class="community-AMAs-content">
+                                <div class="community-AMAs-heading">
+                                    <h2>AMAs</h2>
+                                    <div class="AMAs-3dot">
+                                        <img src="images/wiki-menu.png" alt="icon" class="img-fluid" />
+                                    </div>
+                                </div>
+                                <div class="AMAs-year-list">
+                                    <ul>
+                                        <li class="active">2021</li>
+                                        <li>2020</li>
+                                        <li>2019</li>
+                                        <li>2018</li>
+                                        <li>2017</li>
+                                        <li>2016</li>
+                                    </ul>
+                                </div>
+                                <div class="AMAs-year-content">
+                                    <div class="AMAs-year-content-tittle">
+                                        <p>Here is a list of all the AMAs we have hosted (so far...):</p>
+                                    </div>
+                                    <div class="activities-date-block">
+                                        <div class="date-tittle mt-0">
+                                            <h2>Jan, 2021</h2>
+                                        </div>
+                                        <table class="activities-date-table">
+                                            <tr class="table-heading-row bg-dark-custom">
+                                                <th class="pr-1">Subject</th>
+                                                <th>Date</th>
+                                            </tr>
+                                            <tr class="bg-dark-custom">
+                                                <td class="pr-1">Simu Liu - Shang-Chi Anthony Francisco - Marvel Studios Senior Visual Development Artist|</td>
+                                                <td>01/04/2021|</td>
+                                            </tr>
+                                            <tr class="bg-lite-custom">
+                                                <td class="pr-1">Simu Liu - Shang-Chi Anthony Francisco - Marvel Studios Senior Visual Development Artist|</td>
+                                                <td>01/04/2021|</td>
+                                            </tr>
+                                            <tr class="bg-dark-custom">
+                                                <td class="pr-1">Simu Liu - Shang-Chi Anthony Francisco - Marvel Studios Senior Visual Development Artist|</td>
+                                                <td>01/04/2021|</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    
+                                    <div class="activities-date-block">
+                                        <div class="date-tittle">
+                                            <h2>Feb, 2021</h2>
+                                        </div>
+                                        <table class="activities-date-table">
+                                            <tr class="table-heading-row bg-dark-custom">
+                                                <th class="pr-1">Subject</th>
+                                                <th>Date</th>
+                                            </tr>
+                                            <tr class="bg-dark-custom">
+                                                <td class="pr-1">Simu Liu - Shang-Chi Anthony Francisco - Marvel Studios Senior Visual Development Artist|</td>
+                                                <td>01/04/2021|</td>
+                                            </tr>
+                                            <tr class="bg-lite-custom">
+                                                <td class="pr-1">Simu Liu - Shang-Chi Anthony Francisco - Marvel Studios Senior Visual Development Artist|</td>
+                                                <td>01/04/2021|</td>
+                                            </tr>
+                                            <tr class="bg-dark-custom">
+                                                <td class="pr-1">Simu Liu - Shang-Chi Anthony Francisco - Marvel Studios Senior Visual Development Artist|</td>
+                                                <td>01/04/2021|</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    
+                                    <div class="activities-date-block">
+                                        <div class="date-tittle">
+                                            <h2>Mar, 2021</h2>
+                                        </div>
+                                        <table class="activities-date-table">
+                                            <tr class="table-heading-row bg-dark-custom">
+                                                <th class="pr-1">Subject</th>
+                                                <th>Date</th>
+                                            </tr>
+                                            <tr class="bg-dark-custom">
+                                                <td class="pr-1">Simu Liu - Shang-Chi Anthony Francisco - Marvel Studios Senior Visual Development Artist|</td>
+                                                <td>01/04/2021|</td>
+                                            </tr>
+                                            <tr class="bg-lite-custom">
+                                                <td class="pr-1">Simu Liu - Shang-Chi Anthony Francisco - Marvel Studios Senior Visual Development Artist|</td>
+                                                <td>01/04/2021|</td>
+                                            </tr>
+                                            <tr class="bg-dark-custom">
+                                                <td class="pr-1">Simu Liu - Shang-Chi Anthony Francisco - Marvel Studios Senior Visual Development Artist|</td>
+                                                <td>01/04/2021|</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<div class="enoch-community-deefi-block-right">
+					
+					<div class="enoch-manage-comm">
+						<div class="enoch-manage-comm-hd">
+							<h2>About Community  </h2>
+							<div class="event-3dots dropdown">
+								<span data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/abtdots.png" alt="3dots" class="img-fluid"></span>
+								<div class="dropdown-menu event-info-droplist right-0">
+										<ul>
+											<li>Add To Custom Feed</li>
+											<li>Add To Favorites</li>
+										</ul>
+									</div>
+									
+							</div>
+						</div>
+						<div class="ml-4 mr-4">
+							<div class="enoch-about-description">
+								The user interface (UI) is a critical part of any software product. When it’s done well, users don’t even notice it. When it’s done poorly, users can’t get past it to efficiently use a product. To increase the chances of success when creating user interfaces, most designers follow interface design principles. Interface design principles represent high-level concepts that are used to guide software design.
+							</div>
+							<div class="enoch-community-online">
+								<div class="enoch-community-online-lft">
+									<p>5</p>
+									<h4>Members</h4>
+								</div>
+								<div class="enoch-community-online-right">
+									<p>4</p>
+									<h4>Online</h4>
+								</div>
+								
+							</div>
+							<div class="enoch-community-created">
+								Created Jul 28, 2021
+							</div>
+							<div class="community-manage-topic">
+								<h4>Community topics</h4>
+								<p>Add a Primary Topics <span class="ml-2"><img src="images/manageInfo.png" class="img-fluid" alt="info"/></span></p>
+							</div>
+							<div><button class="community-manage-post-btn"/>Create Post</div>
+							<div class="community-failure">
+								<span>USER FLAIR PREVIEW</span>
+								<span><img src="images/manageedit.png" class="img-fluid" alt="edit"/></span>
+							</div>
+						</div>
+					</div>
+					<div class="enoch-manage-filterFlair">
+						<h3>Filter by flair</h3>
+						<ul>
+							<li class="flair-clr1 custm-mr-16">Trailer</li>
+							<li class="flair-clr2">Discussion Thread</li>
+							<li class="flair-clr3 custm-mr-16">Discussion</li>
+							<li class="flair-clr4">Cosplay</li>
+							<li class="flair-clr2">*On the possibility joining the MC</li>
+						</ul>
+						<p><a href="#">See more</a></p>
+					</div>
+					<!--working-->
+					<div class="Related-Communities-sect">
+					    <div class="Related-Communities-headings">
+					        <h2>Related Communities</h2>
+					    </div>
+					    <div class="Related-Communities-list">
+					        <ul>
+					            <li>
+					                <div class="Related-Communities-name-and-dp">
+					                    <div class="Related-Communities-dp">
+					                        <img src="images/DF-DP-1.png" alt="img" class="img-fluid" />
+					                    </div>
+					                    <div class="Related-Communities-name">
+					                        <h3>MarvelStudiosSpoilers</h3>
+					                        <h4>642,486 members</h4>
+					                    </div>
+					                </div>
+					                <div class="Related-Communities-join-btn">
+					                    <button>Join</button>
+					                </div>
+					            </li>
+                                <li>
+					                <div class="Related-Communities-name-and-dp">
+					                    <div class="Related-Communities-dp">
+					                        <img src="images/DF-DP-2.png" alt="img" class="img-fluid" />
+					                    </div>
+					                    <div class="Related-Communities-name">
+					                        <h3>MarvelStudiosSpoilers</h3>
+					                        <h4>642,486 members</h4>
+					                    </div>
+					                </div>
+					                <div class="Related-Communities-join-btn">
+					                    <button>Join</button>
+					                </div>
+					            </li>
+					            <li>
+					                <div class="Related-Communities-name-and-dp">
+					                    <div class="Related-Communities-dp">
+					                        <img src="images/DF-DP-3.png" alt="img" class="img-fluid" />
+					                    </div>
+					                    <div class="Related-Communities-name">
+					                        <h3>MarvelStudiosSpoilers</h3>
+					                        <h4>642,486 members</h4>
+					                    </div>
+					                </div>
+					                <div class="Related-Communities-join-btn">
+					                    <button>Join</button>
+					                </div>
+					            </li>
+					            <li>
+					                <div class="Related-Communities-name-and-dp">
+					                    <div class="Related-Communities-dp">
+					                        <img src="images/DF-DP-4.png" alt="img" class="img-fluid" />
+					                    </div>
+					                    <div class="Related-Communities-name">
+					                        <h3>MarvelStudiosSpoilers</h3>
+					                        <h4>642,486 members</h4>
+					                    </div>
+					                </div>
+					                <div class="Related-Communities-join-btn">
+					                    <button>Join</button>
+					                </div>
+					            </li>
+					            <li>
+					                <div class="Related-Communities-name-and-dp">
+					                    <div class="Related-Communities-dp">
+					                        <img src="images/DF-DP-5.png" alt="img" class="img-fluid" />
+					                    </div>
+					                    <div class="Related-Communities-name">
+					                        <h3>MarvelStudiosSpoilers</h3>
+					                        <h4>642,486 members</h4>
+					                    </div>
+					                </div>
+					                <div class="Related-Communities-join-btn">
+					                    <button>Join</button>
+					                </div>
+					            </li>
+					            <li>
+					                <div class="Related-Communities-name-and-dp">
+					                    <div class="Related-Communities-dp">
+					                        <img src="images/DF-DP-6.png" alt="img" class="img-fluid" />
+					                    </div>
+					                    <div class="Related-Communities-name">
+					                        <h3>MarvelStudiosSpoilers</h3>
+					                        <h4>642,486 members</h4>
+					                    </div>
+					                </div>
+					                <div class="Related-Communities-join-btn">
+					                    <button>Join</button>
+					                </div>
+					            </li>
+					            <li>
+					                <div class="Related-Communities-name-and-dp">
+					                    <div class="Related-Communities-dp">
+					                        <img src="images/DF-DP-7.png" alt="img" class="img-fluid" />
+					                    </div>
+					                    <div class="Related-Communities-name">
+					                        <h3>MarvelStudiosSpoilers</h3>
+					                        <h4>642,486 members</h4>
+					                    </div>
+					                </div>
+					                <div class="Related-Communities-join-btn">
+					                    <button>Join</button>
+					                </div>
+					            </li>
+					            <li>
+					                <div class="Related-Communities-name-and-dp">
+					                    <div class="Related-Communities-dp">
+					                        <img src="images/DF-DP-8.png" alt="img" class="img-fluid" />
+					                    </div>
+					                    <div class="Related-Communities-name">
+					                        <h3>MarvelStudiosSpoilers</h3>
+					                        <h4>642,486 members</h4>
+					                    </div>
+					                </div>
+					                <div class="Related-Communities-join-btn">
+					                    <button>Join</button>
+					                </div>
+					            </li>
+					            <li>
+					                <div class="Related-Communities-name-and-dp">
+					                    <div class="Related-Communities-dp">
+					                        <img src="images/DF-DP-9.png" alt="img" class="img-fluid" />
+					                    </div>
+					                    <div class="Related-Communities-name">
+					                        <h3>MarvelStudiosSpoilers</h3>
+					                        <h4>642,486 members</h4>
+					                    </div>
+					                </div>
+					                <div class="Related-Communities-join-btn">
+					                    <button>Join</button>
+					                </div>
+					            </li>
+					        </ul>
+					    </div>
+					</div>
+					<div class="enoch-manage-signalRules">
+						<h3>@defisignal Rules</h3>
+						<div class="signalRules-accordion-block"> 
+							<div class="accordion" id="accordionrules">
+								  <div class="accordion-item">
+									  <div class="signalRules-head collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+										1. Do Not Post Spoilers in Titles or Comments
+									  </div>
+									 
+									
+										<div id="collapseOne" class="collapse signalRules-collapse-block" aria-labelledby="heading" data-bs-parent="#accordionrules">
+										  <div class="signalRules-collapse-body">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+											<p class="mb-0">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+										  </div>
+										</div>
+								  </div>
+								  <div class="accordion-item">
+									<div class="signalRules-head collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+										2. Be Civil
+									</div>
+								   
+								  
+									  <div id="collapseTwo" class="collapse signalRules-collapse-block" aria-labelledby="heading" data-bs-parent="#accordionrules">
+											<div class="signalRules-collapse-body">
+										 
+											</div>
+										</div>
+									</div>
+								<div class="accordion-item">
+									<div class="signalRules-head collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+										3. No Reports
+									</div>
+								   
+								  
+									  <div id="collapseThree" class="collapse signalRules-collapse-block" aria-labelledby="heading" data-bs-parent="#accordionrules">
+										<div class="signalRules-collapse-body">
+										 
+									  </div>
+									</div>
+								</div>
+						</div>
+						</div>
+					</div>
+					<div class="communityview-moderators">
+						<h3>Moderators</h3>
+						<div class="without-logIn-Modaretors-view">
+						    <p>Moderator list hidden. Learn More</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	
+	</div>
+	<div id="managenoti-Modal" class="modal managenoti-headbg-modal" role="dialog">
+		<div class="modal-dialog">
+			
+		  <!-- Modal content-->
+		  <div class="modal-content managenoti-hd-content">
+			<button type="button" class="close managenoti-modal-close" data-dismiss="modal"><img src="images/commCross.png" alt="X" class="img-fluid"></button>
+			<div class="managenoti-header">
+			  <h3 class="modal-title">Manage notifications</h3>
+			  <p>Manage notifications from community name</p>
+			</div>
+			<div class="managenoti-hd-modal-body">
+				<ul>
+					<li>
+						<div class="publish-cat cust-mb-40">
+							<input id="publish-select" name="b-plan" type="radio" checked>
+							<label for="publish-select">
+								<p class="managenoti-txt1">All new posts</p>
+								<p class="managenoti-txt2">Get notified about all new posts in this group</p>
+							</label>
+						</div>
+						<div class="publish-cat cust-mb-40">
+							<input id="publish-select2" name="b-plan" type="radio">
+							<label for="publish-select2">
+								<p class="managenoti-txt1">Highlights</p>
+								<p class="managenoti-txt2">Get notified about posts from people you may know</p>
+							</label>
+						</div>
+						<div class="publish-cat cust-mb-4">
+							<input id="publish-select2" name="b-plan" type="radio">
+							<label for="publish-select2">
+								<p class="managenoti-txt1">No new posts</p>
+								<p class="managenoti-txt2">Only get notified about activity involving you</p>
+							</label>
+						</div>
+					</li>
+				</ul>
+				<div class="managenoti-btnBlock"><button class="managenoti-save-btn">Save</button></div>
+			</div>
+			
+		  </div>
+	  
+		</div>
+	  </div>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script>
+	$(function(){
+	   $('.menu-mid-sect ul li.submenubar-item a').click(function(){
+		 $('.menu-mid-sect ul li.submenubar-item a').each(function(a){
+		   $( this ).removeClass('selectedclass')
+		 });
+		 $( this ).addClass('selectedclass');
+	   });
+	  
+	 });
+	</script>
+	<script type="text/javascript">
+
+// When the user clicks, open the popup
+function popupFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+
+}
+// When the user clicks, open trade mennu
+function tradeFunction() {
+  var trade = document.getElementById("trademenu-drpdown");
+  trade.classList.toggle("show");
+}
+
+</script>
+<script>
+	/*for toggle sub menu*/
+		function subtogglediv(id, icon) {
+			var id = document.getElementById(id);
+			id.classList.toggle('submenu-active');
+			var cross = document.getElementById(icon);
+			cross.classList.toggle('fa-times');
+			cross.classList.toggle('fa-bars');
+		}
+		</script>
+		
+		<script type="text/javascript">
+		/* for modal dropdown menu*/
+	    var dropdownpopup = document.querySelectorAll('[data-toggle=dropdownpopup]');
+	    for (var k = 0; k < dropdownpopup.length; k++) {
+	        dropdownpopup[k].addEventListener('click', function (e) {
+	            if (this.hasAttribute('data-link')) {
+	                var m_ID1 = this.getAttribute('data-link');
+	                //for closing other popup
+	                var activedropdown = document.querySelector('.dropdown-menu.drop-active');
+	                if(activedropdown && activedropdown.getAttribute('id') != m_ID1)
+	                {
+	                    activedropdown.classList.remove('drop-active');
+	                }
+	                //activting popup
+	                document.getElementById(m_ID1).classList.toggle('drop-active');
+	            }
+	        });
+	    }
+	 
+		
+	    //For modal
+		document.addEventListener('click', function (e) {
+	        e = e || window.event;
+	        var target = e.target || e.srcElement;
+
+	        if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') 
+	        {
+	            if (target.hasAttribute('data-target')) 
+	            {
+	                var m_ID = target.getAttribute('data-target');
+	                document.getElementById(m_ID).classList.add('open');
+	            }
+	        }
+
+	        // Close modal window with 'data-dismiss' attribute or when the backdrop is clicked
+	        if ((target.hasAttribute('data-dismiss') && target.getAttribute('data-dismiss') == 'modal') ||target.classList.contains('modal')) {
+	            var modal = document.querySelector('.modal.open');
+	            modal.classList.remove('open');
+	        }
+        }, false);
+
+       
+	
+ 	</script>
+	<script>
+		$('.enoch-community-edit-head').click(function(){
+			var $div=$('.enoch-community-header-content h2'),
+			isEditable=$div.is('.editable');
+			$('.enoch-community-header-content h2').prop('contenteditable',!isEditable).toggleClass('editable');
+			$('.enoch-community-header-content').toggleClass('paranteditable');
+			$('.enoch-community-deefi-editbtn').toggleClass('deefi-editbtn-active');
+			$('.enoch-community-BGedit-btn').toggleClass('deefi-BGedit-active');
+		});
+	</script>
+	<script>
+		
+		$(".enoch-community-deefi-editbtn").click(function(e){
+			$(".community-deefi-change-bg").toggleClass('deefi-edit-bgactive');
+			$('.enoch-community-deefi-editbtn').toggleClass('deefi-editbtn-bgactive');
+			
+		});
+		
+	</script>
+	<script>
+		$('.community-imgGal-active').click(function(){
+			$('.community-imgGal-active').removeClass('imageSelected');
+			$(this).addClass('imageSelected');
+		});
+	</script>
+	<script>
+				function communityViewFunc(evt, galName) {
+					var i, communityViewtabcontent, communityViewtablinks;
+					communityViewtabcontent = document.getElementsByClassName("communityView-tabcontent");
+					for (i = 0; i < communityViewtabcontent.length; i++) {
+						communityViewtabcontent[i].style.display = "none";
+					}
+					communityViewtablinks = document.getElementsByClassName("communityViewlinks");
+					for (i = 0; i < communityViewtablinks.length; i++) {
+						communityViewtablinks[i].className = communityViewtablinks[i].className.replace(" active", "");
+					}
+					document.getElementById(galName).style.display = "block";
+					evt.currentTarget.className += " active";
+				}
+		
+				
+			</script>
+			<!-- <script>
+				function auto_grow(element) {
+					element.style.height = "10px";
+					element.style.height = (element.scrollHeight)+"px";
+				}
+			</script> -->
+			<script>
+				$(".manage-edit-txt").click(function(e){
+					var $div=$('.descriptionscroll'),
+					isEditable=$div.is('.editable');
+					$('.descriptionscroll').prop('contenteditable',!isEditable).toggleClass('editable');
+					
+				});
+			</script>
+</body>
+
+</html>

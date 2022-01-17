@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Trade</title>
+	<!-- Fav Icons -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/dashboard-header.css" rel="stylesheet" />
+    <link href="css/dashboard-style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/dApp-S-home.css" />
+    <link href="css/trade.css" rel="stylesheet"/>
+	
+</head>
+
+<body>
+	<div class="container-fluid pb-0">
+		<div class="row">
+			<header class="custom-header">			
+				<div class="ezl-dashboard-header">
+					<div class="menu-left">
+						<div class="menu-wrap"><!--trade menu-->
+							<a href="#menu" class="menu-link" onclick="tradeFunction()"><img src="images/Menu.png" alt="Menu" class="img-fluid"></a>
+							<div class="tradecontainer" id="trademenu-drpdown">
+							  <div class="trade-menu-panel-panel-group" id="accordionMenu" role="tablist" aria-multiselectable="true">
+								<div class="trade-menu-panel">
+								  <div class="trade-menu-heading" role="tab">
+									<h4 class="trade-menu-title">
+									<a role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+									  <span><img src="images/Over.png" class="img-fluid" alt="Overview"></span>Overview
+									</a>
+								  </h4>
+								  </div>
+								 
+								</div>
+								<div class="trade-menu-panel">
+								  <div class="trade-menu-heading" role="tab" id="headingTwo">
+									<h4 class="trade-menu-title">
+									<a class="trade-dropmenu collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									 <span><img src="images/Borrow.png" class="img-fluid trade-menu-icon" alt="Trade"><img src="images/Borrow2.png" class="img-fluid trade-menu-icon-active" alt="Trade"></span>Trade
+									</a>
+								  </h4>
+								  </div>
+								  <div id="collapseTwo" class="trade-menu-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
+									<ul class="nav">
+										<li><a href="#!">Swap</a></li>
+										<li><a href="#!" class="trade-menuItem-active">Liquidity</a></li>
+									  </ul>
+								  </div>
+								</div>
+								<div class="trade-menu-panel">
+								  <div class="trade-menu-heading" role="tab" id="headingThree">
+									<h4 class="trade-menu-title">
+									<a class="collapsed trade-dropmenu" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									 <span><img src="images/pools.png" class="img-fluid trade-menu-icon" alt="pools"><img src="images/pools2.png" class="img-fluid trade-menu-icon-active" alt="pools"></span>Pools
+									</a>
+								  </h4>
+								  </div>
+								  <div id="collapseThree" class="trade-menu-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
+									<ul class="nav">
+										<li><a href="#!" class="trade-menuItem-active">Entertainment Pools</a></li>
+										<li><a href="#!">NFT Farming Pools</a></li>
+									  </ul>
+								  </div>
+								</div>
+								
+								
+								<div class="trade-menu-panel">
+								  <div class="trade-menu-heading" role="tab" id="headingFour">
+									<h4 class="trade-menu-title">
+									<a class="collapsed trade-dropmenu" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+									  <span><img src="images/menuStacking.png" class="img-fluid trade-menu-icon" alt="Staking"><img src="images/menuStacking2.png" class="img-fluid trade-menu-icon-active" alt="Staking"></span>Staking
+									</a>
+								  </h4>
+								  </div>
+								  <div id="collapseFour" class="trade-menu-collapse collapse" role="tabpanel" aria-labelledby="headingFour" aria-expanded="false">
+									
+									  <ul class="">
+										<li><a href="#!">Enoch Staking</a></li>
+										<li><a href="#!" class="trade-menuItem-active">NFT staking</a></li>
+									  </ul>
+								
+								  </div>
+								</div>
+								
+							  </div>
+							</div>
+						</div>
+						<div class="header-logo"><a href="javascript:void(0)"><img src="images/logo.png" alt="logo" class="img-fluid"></a></div>
+					</div>
+					<div class="menuright-side">
+						<div class="right-search">
+							<form class="search-form">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Fund, ISIN, Keyword ">
+										<button class="search-form-btn" type="Submit"><img class="search-img" src="images/search.png" alt="search"></button>
+								</div>
+							</form>
+						</div>
+						<div class="menu-mid-sect">
+							<ul id="submenubar">
+								<li class="submenubar-item">
+									<div class="menu-times-notifi"><img src="images/home.png" alt="home" class="img-fluid"></div>
+									<a href="home-page.html">Home</a>
+								</li>
+								
+								<li class="submenubar-item">
+									<div class="menu-times-notifi"><img src="images/Chat.png" alt="Chat" class="img-fluid"><span>0</span></div>
+									<a href="massaging.html">Messaging</a>
+								</li>
+								<li class="ether-block">
+									<div class="menu-times-notifi mr-2"><img src="images/Ethereum.png" alt="Ethereum" class="img-fluid"></div>
+									<a href="javascript:void(0)">ETH Mainnet <i class="fa fa-angle-right"></i></a>
+								</li>
+								<li class="connect-wallet-block">
+									
+									<a href="javascript:void(0)">Connect Wallet</a>
+								</li>
+								<li class="connect-wallet-block">
+									
+									<a href="javascript:void(0)"><span><img src="images/cart.png" class="img-fluid mr-2"></span>Cart</a>
+								</li>
+								
+							</ul>
+							<div class="toggle-menu">
+									<div onclick="subtogglediv('submenubar','submenu-toggle');" class="d-inline-block">
+										<i class="fa fa-bars" aria-hidden="true" id="submenu-toggle"></i>
+									</div>
+								</div>
+						</div>
+						
+						<div class="ezl-notificaion">
+						<div class="position-relative notificaion-dropdown ezl-notificaion-marg">
+							<a href="javascript:void(0)" class="popup"><img src="images/help.png" alt="help"></a>							
+												
+						</div>
+						<div class=" position-relative notificaion-dropdown">
+							<a href="javascript:void(0)" class="popup"><img src="images/alertBell.png" alt="Bell"><span class="notificaion-spn">10</span></a>							
+							
+						</div>
+						</div>
+						<div class="ezl-user-ac">
+						
+						<div class="account-d dropdown">
+							<div class="dropdown-buttn"><span class="popup" onclick="popupFunction()"><div class="user-img"><img src="images/user-ReginaCooper.png" alt="user image" class="img-fluid"></div></span>
+								<div class="popupbox dropdown-menu" id="myPopup">
+									
+									<ul class="">
+										<li>
+											<div class="enoch-usr-prof"><span><img src="images/user-pro-pic.png" class="img-fluid mr-1" alt="profile- pic"> @Hulk66</span><span><a href="#!">Change</a></span></div>
+										</li>
+										<li>
+											<div class="enoch-usr-status-block">
+												<div class="usr-status-left">Online Status</div>
+												<div class="usr-status-right">
+													<div class="post-switch">
+														<label class="postswitch">
+														  <input type="checkbox" checked="">
+														  <span class="post-slider round"></span>
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="enoch-usr-status-block"><a href="#!">Become Creator </a></div>
+											<div class="enoch-usr-status-block mb-0"><a href="#!" class="enoch-blue-clr">Your Public Profile</a></div>
+										</li>
+										<li>
+											<div class="enoch-usr-status-block"><a href="#!">Setting </a></div>
+											<div class="enoch-usr-status-block"><a href="#!">Help Center</a></div>										
+											<div class="enoch-usr-status-block mb-0"><a href="#!" class="orange-clr">Upgrade to Premium</a></div>
+										</li>
+										<li class="mt-4">
+											<div class="enoch-usr-status-block mb-0">Wallet  <span><a href="#!" class="btn freebonus-btn">$400 </a></span></div>
+										</li>
+										<li class="mt-4 pb-0">
+											<div class="enoch-usr-status-block mb-0 manage-ac">
+												<h3>Manage</h3>
+												<ul>
+													<li>
+														<div class="manage-ac-block">
+															<span>Comapny:	</span>
+															<span class="ml-1"><img src="images/man-icon1.png" class="img-fluid mr-1" alt="user">88mph  </span>
+														</div>
+													</li>
+													<li>
+														<div class="manage-ac-block">
+															<span>Comapny:	</span>
+															<span class="ml-1"><img src="images/man-icon2.png" class="img-fluid mr-1" alt="user">CryptoBlue    </span>
+														</div>
+													</li>
+												</ul>
+											</div>
+											
+										</li>
+										<li class="mb-0 pb-0">
+											<div class="enoch-usr-status-block mb-0"><a href="#!" class="post-red-clr">Logout</a></div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>				
+				</div>
+				
+				<div class="dApp-menu-btn">
+					<a href="#!"><img src="images/LeftSide-Menu.png" alt="menu" class="img-fluid"  data-toggle="modal" data-target="right-top-modal" /></a>
+					<div class="right-top-modal-block">
+						<div id="right-top-modal" class="modal fade">
+							<!-- Modal content -->
+							<div class="modal-content right-top-modal-content">
+								<span class="close"><img src="images/postCross2.png" alt="close" class="img-fluid" data-dismiss="modal"></span>
+								<div class="right-top-body-block">
+									<div class="right-top-body-block-lft">
+										<form class="right-search-form">
+											<div class="right-form-group">
+												<img src="images/help-Search.png" class="img-fluid" alt="search"/><input type="text" class="form-control" placeholder="Search menu...">
+													
+											</div>
+										</form>
+										<div class="enoch-community-scrollable">
+										<div class="enoch-menu-block-panel">
+											<div class="enoch-menu-block-lft">
+												<div class="enoch-menu-block-items">
+													<h2>Personal</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon1.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">NFT Vault </a>
+																	<p>Organise or find events and other things
+																		to do online and nearby</p>
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon2.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Earning </a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon28.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Wallet</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon3.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Billing</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon29.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Membership</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon35.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Ranking</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															</div>
+														</li>
+														
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon4.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Affiliate</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="enoch-menu-block-items">
+													<h2>Entertainment</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon11.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Popular</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon30.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Casino</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon31.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Sports</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon32.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Games</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon16.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Promotions</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="enoch-menu-block-items">
+													<h2>Advertising</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon19.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Ad Manager </a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon20.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Enoch Ad</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+															
+															</div>
+														</li>
+														
+													</ul>
+												</div>
+												<div class="enoch-menu-block-items mb-0">
+													<h2>User Setting </h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon26.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Your Profile </a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon27.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Your Account</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														
+													</ul>
+												</div>
+											</div>
+											<div class="enoch-menu-block-right">
+												<div class="enoch-menu-block-items">
+													<h2>Social</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon5.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">My Networks</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon6.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Communities</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon33.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Creator Portals </a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon36.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Livezone</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon8.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Company pages </a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon9.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Events</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon37.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">News Feed </a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="enoch-menu-block-items">
+													<h2>Shopping</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon34.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Digital  Marketplace</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon38.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Enoch Shops</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="enoch-menu-block-items">
+													<h2>Jobs</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon18.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Remote workhub</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														
+													</ul>
+												</div>
+												<div class="enoch-menu-block-items">
+													<h2>Developer</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon21.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Develop</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon22.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Grow</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon23.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Monetisation </a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														 <li>
+															<div class="right-modal-lft"><img src="images/menu-icon24.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Github</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon25.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Docs</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li> 
+														
+													</ul>
+												</div>
+											</div>
+										</div>
+										</div>
+									</div>
+									<div class="right-top-body-block-right">
+										<h3>Create</h3>
+										<ul>
+											<li><a href="#!"><span><img src="images/creat-icon1.png" class="img-fluid" alt="icon"/></span> Post</a></li>
+											<li><a href="#!"><span><img src="images/creat-icon2.png" class="img-fluid" alt="icon"/></span> Community</a></li>
+											<li><a href="#!"><span><img src="images/creat-icon5.png" class="img-fluid" alt="icon"/></span> Event</a></li>
+											<li><a href="#!"><span><img src="images/creat-icon10.png" class="img-fluid" alt="icon"/></span> NFT</a></li>
+											<li><a href="#!"><span><img src="images/creat-icon11.png" class="img-fluid" alt="icon"/></span> Reel</a></li>
+											<li><a href="#!"><span><img src="images/creat-icon14.png" class="img-fluid" alt="icon"/></span> Company page </a></li>
+											<li><a href="#!"><span><img src="images/creat-icon12.png" class="img-fluid" alt="icon"/></span> Group</a></li>
+											<li><a href="#!"><span><img src="images/creat-icon7.png" class="img-fluid" alt="icon"/></span> Job</a></li>								
+											<li><a href="#!"><span><img src="images/creat-icon13.png" class="img-fluid" alt="icon"/></span> AD </a></li>									 
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>								
+					</div>
+					</div>
+			</header>
+		</div>		
+	<div class="row trade-bg">	
+		<div class="ezl-dashboard-container">			
+			<div class="trade-head-banner">			
+				<img src="images/Trade-Banner3.png" class="img-fluid" alt="liquidity">
+			</div>
+			<div class="trade-section1">
+				<div class="trade-tabblock">
+				<div class="trade-tabsection-lft">
+					<div class="trade-tablink-sect">
+						<ul>
+							<li><button class="trade_tablinks" onclick="tradeFunc(event, 'SWAP')">SWAP <img src="images/info-icon.png" class="img-fluid ml-2" alt="info"/></button></li>
+							<li><button class="trade_tablinks active" onclick="tradeFunc(event, 'LIQUIDITY')">LIQUIDITY <img src="images/info-icon.png" class="img-fluid ml-2" alt="info"/></button></li>
+							<li><button class="trade_tablinks" onclick="tradeFunc(event, 'BRIDGE')">BRIDGE <img src="images/info-icon.png" class="img-fluid ml-2" alt="info"/></button></li>
+							
+						</ul>
+						
+					</div>
+					<div class="trade-tabcontent-block">
+
+						<div id="SWAP" class="trade_tabcontent">
+						   <div class="tarde-swap-block">swap</div>
+						</div>
+						<div id="LIQUIDITY" class="trade_tabcontent trade-d-block">
+							<div class="tarde-liquidity-block">
+								<div class="tarde-liquidity-top">
+									<div class="liquidity-tablink-sect">
+										<ul>
+											<li><button class="liquidity_tablinks" onclick="liquidityFunc(event, 'top_pairs')">TOP PAIRS</button></li>
+											<li><button class="liquidity_tablinks active" onclick="liquidityFunc(event, 'your_positions')">Your Positions</button></li>
+											
+											
+										</ul>
+										
+									</div>
+									<div class="d-flex">
+										<span class="liquidity-top-block1"><div class="gas-tooltip">Today's gas price</div><img src="images/swap-icon1.png" class="img-fluid mr-2" alt="icon">56</span>
+										<span class="liquidity-top-block2"><div class="addEnoch-tooltip">Add ENOCH to your metamask wallet</div>   <img src="images/swap-icon2.png" class="img-fluid" alt="icon"></span>
+									</div>
+								</div>
+								
+							</div>
+							<div class="liquidity-tabl-block">
+								<div id="top_pairs" class="liquidity_tabcontent">
+									
+								</div>
+								<div id="your_positions" class="liquidity_tabcontent liquidity-d-block">
+									<div class="liquidity-deatails-tbl">
+										<div class="liquidity-table">
+											<div class="liquidity-tableHeading2">													
+												<div class="liquidity-tableCell">Composition</div>
+												<div class="liquidity-tableCell">Pooled supply</div>
+												<div class="liquidity-tableCell">Pool tokens</div>
+												<div class="liquidity-tableCell">Pool Share </div>
+												<div class="liquidity-tableCell">Pool  volume </div>
+												
+												
+											</div>
+											<div class="liquidity-tableBody"><!--table body start-->
+												<div class="liquidity-tableRow">
+													<div class="liquidity-tableRowHeader2">
+														<div class="liquidity-tableCell">
+															<span class="mr-2"><img src="images/pair-icon1.png" class="img-fluid" alt="icon"/></span>
+															<span><img src="images/pair-icon2.png" class="img-fluid" alt="icon"/></span>
+														</div>
+														<div class="liquidity-tableCell">45.34 /  8.443</div>
+														<div class="liquidity-tableCell">0.87654</div>
+														<div class="liquidity-tableCell">0.05 %</div>
+														<div class="liquidity-tableCell">
+															<div class="liq-poolvql">$ 2,000,456
+																
+																<div class="liquid-view-bttn">
+																	<a href="#" id="trade-dropbox-list-input" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><img src="images/de-select.png" class="img-fluid" alt="ether"/></a>
+																	<div id="trade-dropbox-list" class="dropdown-menu liquid-view-tooltip view-custm-mrg">
+																			<div class="trade-view-detail"><a href="#">View Details</a></div>									
+																		</div>
+																</div>
+															</div>
+														</div>
+													</div>	
+													<div class="liquidity-like-view">
+														<span><img src="images/klike.png" class="img-fluid mr-1" alt="like">516K</span>
+														<span><img src="images/kview.png" class="img-fluid mr-1" alt="viiew">516K</span>
+													</div>
+												</div>
+												<div class="liquidity-tableRow">
+													<div class="liquidity-tableRowHeader2">
+														<div class="liquidity-tableCell">
+															<span class="mr-2"><img src="images/pair-icon1.png" class="img-fluid" alt="icon"/></span>
+															<span><img src="images/pair-icon2.png" class="img-fluid" alt="icon"/></span>
+														</div>
+														<div class="liquidity-tableCell">45.34 /  8.443</div>
+														<div class="liquidity-tableCell">0.87654</div>
+														<div class="liquidity-tableCell">0.05 %</div>
+														<div class="liquidity-tableCell">
+															<div class="liq-poolvql">$ 2,000,456
+																
+																<div class="liquid-view-bttn">
+																	<a href="#" id="trade-dropbox-list-input" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><img src="images/de-select.png" class="img-fluid" alt="ether"/></a>
+																	<div id="trade-dropbox-list" class="dropdown-menu liquid-view-tooltip view-custm-mrg">
+																			<div class="trade-view-detail"><a href="#">View Details</a></div>									
+																		</div>
+																</div>
+															</div>
+														</div>
+													</div>	
+													<div class="liquidity-like-view">
+														<span><img src="images/klike.png" class="img-fluid mr-1" alt="like">516K</span>
+														<span><img src="images/kview.png" class="img-fluid mr-1" alt="viiew">516K</span>
+													</div>
+												</div>
+												<div class="liquidity-tableRow">
+													<div class="liquidity-tableRowHeader2">
+														<div class="liquidity-tableCell">
+															<span class="mr-2"><img src="images/pair-icon1.png" class="img-fluid" alt="icon"/></span>
+															<span><img src="images/pair-icon2.png" class="img-fluid" alt="icon"/></span>
+														</div>
+														<div class="liquidity-tableCell">45.34 /  8.443</div>
+														<div class="liquidity-tableCell">0.87654</div>
+														<div class="liquidity-tableCell">0.05 %</div>
+														<div class="liquidity-tableCell">
+															<div class="liq-poolvql">$ 2,000,456
+																
+																<div class="liquid-view-bttn">
+																	<a href="#" id="trade-dropbox-list-input" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><img src="images/de-select.png" class="img-fluid" alt="ether"/></a>
+																	<div id="trade-dropbox-list" class="dropdown-menu liquid-view-tooltip view-custm-mrg">
+																			<div class="trade-view-detail"><a href="#">View Details</a></div>									
+																		</div>
+																</div>
+															</div>
+														</div>
+													</div>	
+													<div class="liquidity-like-view">
+														<span><img src="images/klike.png" class="img-fluid mr-1" alt="like">516K</span>
+														<span><img src="images/kview.png" class="img-fluid mr-1" alt="viiew">516K</span>
+													</div>
+												</div>
+												<div class="liquidity-tableRow">
+													<div class="liquidity-tableRowHeader2">
+														<div class="liquidity-tableCell">
+															<span class="mr-2"><img src="images/pair-icon1.png" class="img-fluid" alt="icon"/></span>
+															<span><img src="images/pair-icon2.png" class="img-fluid" alt="icon"/></span>
+														</div>
+														<div class="liquidity-tableCell">45.34 /  8.443</div>
+														<div class="liquidity-tableCell">0.87654</div>
+														<div class="liquidity-tableCell">0.05 %</div>
+														<div class="liquidity-tableCell">
+															<div class="liq-poolvql">$ 2,000,456
+																
+																<div class="liquid-view-bttn">
+																	<a href="#" id="trade-dropbox-list-input" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><img src="images/de-select.png" class="img-fluid" alt="ether"/></a>
+																	<div id="trade-dropbox-list" class="dropdown-menu liquid-view-tooltip view-custm-mrg">
+																			<div class="trade-view-detail"><a href="#">View Details</a></div>									
+																		</div>
+																</div>
+															</div>
+														</div>
+													</div>	
+													<div class="liquidity-like-view">
+														<span><img src="images/klike.png" class="img-fluid mr-1" alt="like">516K</span>
+														<span><img src="images/kview.png" class="img-fluid mr-1" alt="viiew">516K</span>
+													</div>
+												</div>																																																				
+											</div><!--table body end-->
+										</div>
+									</div>
+									<div class="liquidity-table-pagination">
+										<ul class="">
+											
+											<li>					  	
+												<a href="javascript:void(0)" class="liquidity-arow-link-lft"><i class="fa fa-angle-left" aria-hidden="true"></i></a>					    												      	
+											</li>
+											<li class="link-active">
+												<a href="javascript:void(0)" class="">1</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)" class="">2</a>
+											</li>
+											<li><a href="javascript:void(0)" class="">3</a></li>
+											
+											<li>
+												<a href="javascript:void(0)" class="liquidity-arow-link-right"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+											</li>
+											
+																	
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="BRIDGE" class="trade_tabcontent">
+						   BRIDGE
+						</div>
+						
+				   </div>
+				</div>
+				
+			</div>
+			<div class="trade-adsection-right">
+				<div class="trade-adsection-right-block1">
+					<img src="images/swap-banner-ad1.png" class="img-fluid" alt="icon"/>
+					<div class="ad-sponsored">Sponsored <span><img src="images/Sponsored-icon.png" class="img-fluid" alt="icon"/></span></div>
+				</div>
+				<div class="trade-adsection-right-block2">
+					<img src="images/swap-banner-ad2.png" class="img-fluid" alt="icon"/>
+					<div class="ad-sponsored">Sponsored <span><img src="images/Sponsored-icon.png" class="img-fluid" alt="icon"/></span></div>
+				</div>
+			</div>
+			</div>
+			<div class="swap-faq-block">
+				<h3 onclick="faqFunction()">FAQs for Liquidity Providers</h3>
+				
+				<div id="trade-faq" class="trade-faq-drop">
+					<div class="trade-ask-ques"><button class="ask-ques-btn" data-toggle="modal" data-target="ques-modal">Ask a Question</button></div>
+					<div class="ask-ques-modalBlock">
+						<div id="ques-modal" class="modal fade">
+							<!-- Modal content -->
+							<div class="modal-content ques-modal-content ">
+								<span class="close"><img src="images/Tclose.png" alt="close" class="img-fluid" data-dismiss="modal"></span> 
+								<h4>Ask a Question</h4>
+								<textarea class="ques-textarea" placeholder="Ask your questions"></textarea>
+								<div class="mt-4"><button class="submit-ques-bttn">Submit your questions</button></div>
+							</div>
+						</div>
+					</div>
+					<div class="panel-group" id="accordion">
+						<div class="panel panel-default">
+						  <div class="panel-heading">
+							<h4 class="panel-title">
+							  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="collapsed">
+								1. What are liquidity pools?</a>
+							</h4>
+						  </div>
+						  <div id="collapse1" class="panel-collapse collapse">
+								<p>A basic Liquidity Pool creates a market for a particular pair of assets on a decentralized exchange (e.g: DAI/ETH). When the Liquidity Pool is created, a liquidity provider sets the initial price and equal supply of both assets</p>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+							  <h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="collapsed">
+								    2. How do liquidity pools work?</a>
+							  </h4>
+							</div>
+							<div id="collapse2" class="panel-collapse collapse">
+								 <p> When liquidity is supplied to a pool, the liquidity provider (LP) receives special tokens called LP tokens in proportion to the amount of liquidity it has supplied to the pool. When the pool facilitates a trade, a rate of 0.3% is distributed proportionally among all LP token holders.</p>
+							  </div>
+						  </div>
+						  <div class="panel panel-default">
+							<div class="panel-heading">
+							  <h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="collapsed">
+								    3. How do liquidity pools make money?</a>
+							  </h4>
+							</div>
+							<div id="collapse3" class="panel-collapse collapse">
+								  <p>Liquidity providers earn fees from transactions on the Enoch swap. The collected transaction fees are distributed proportionally to all the liquidity providers in the pool, so the more crypto assets you stake the more fees you'll earn.</p>
+							  </div>
+						  </div>
+						  <div class="panel panel-default">
+							<div class="panel-heading">
+							  <h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="collapsed">
+								    4. What are the risks of liquidity pools?</a>
+							  </h4>
+							</div>
+							<div id="collapse4" class="panel-collapse collapse">
+								  <p>Once a liquidity pool is drained of a particular token, liquidity providers can become exposed to impermanent loss. This loss typically occurs when the ratio of the tokens in the liquidity pool becomes uneven. This loss is calculated by comparing the value of your tokens in the liquidity pool versus the value of simply holding them</p>
+							  </div>
+						  </div>
+						  <div class="panel panel-default">
+							<div class="panel-heading">
+							  <h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse5" class="collapsed">
+								    5. How do I add money to a liquidity pool?</a>
+							  </h4>
+							</div>
+							<div id="collapse5" class="panel-collapse collapse">
+								<div class="panel-collapse-content">
+								  To become a Liquidity provider:
+								  <ul>
+										<li><span>1.</span> Go to the liquidity tab on the Enoch open finance page.</li>
+										<li><span>2.</span> Select a liquidity pool from the list of available pools and click in “liquidity” button. Make sure you hold sufficient amount of both assets of the pool. If not, use the Enoch swap.</li>
+										<li><span>3.</span> Add amount of tokens you want to add. Enter amount for either one of the tokens and the second amount will be filled automatically.</li>
+										<li><span>4.</span> Click on “supply amount” and confirm the transaction from the popup.</li>
+										<li><span>5.</span> Chose the payment method and on successful transaction you will receive LP tokens of the pool. These LP tokens suggests that you are a Liquidity provided on the Enoch platform.</li>
+									</ul>
+								</div>
+							  </div>
+						  </div>
+						  <div class="panel panel-default">
+							<div class="panel-heading">
+							  <h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse6" class="collapsed">
+								    6. How do I withdraw from a liquidity pool?</a>
+							  </h4>
+							</div>
+							<div id="collapse6" class="panel-collapse collapse">
+								<div class="panel-collapse-content">
+								 Under the Liquidity tab of the Enoch open finance page:
+								 <ul>
+									<li><span>1.</span> Click on “your positions”. You would be able to see all your current positions in the pools you have supplied liquidity to.</li>
+									<li><span>2.</span> Select the pool you want to remove liquidity from.</li>
+									<li><span>3.</span> Enter amount of Liquidity you want to remove.</li>
+									<li><span>4.</span> Confirm the transaction from your desired wallet. On success, the LP tokens in your possession will be burned and the liquidity you supplied will be deposited back to your wallet along with potential profits.</li>
+									 </ul>
+									 </div>
+							  </div>
+						  </div>
+						  
+					</div>
+				</div>
+				</div>
+			<div class="trade-tutorial">
+				<div class="trade-tutorial-hd"><h2>Tutorials</h2></div>
+				
+				<div class="trade-tutorial-card">
+					<ul>
+						<li>
+							<div class="tutorial-img-block">
+								<img src="images/liquidity-img1.png" class="img-fluid" alt="tutoral"/>
+								<div class="tutorial-like-view">
+									<span class="mr-2"><img src="images/klike.png" class="img-fluid mr-1" alt="like">516K</span>
+									<span><img src="images/kview.png" class="img-fluid mr-1" alt="viiew">516K</span>
+								</div>
+							</div>
+							<div class="tutorial-txt-block">
+								<h3>What is liquidity provider ?</h3>
+								<p>A liquidity provider is a crypto investor which supplies crypto assets (AKA liquidity) for other traders and earns passive income from the transaction fees. </p>
+								<div class="bottom-readmo"><a href="#">Raed More</a></div>
+							</div>
+						</li>
+						<li>
+							<div class="video-midblock3">
+								
+								<div class="tutorial-like-view">
+									<span class="mr-2"><img src="images/klike.png" class="img-fluid mr-1" alt="like">516K</span>
+									<span><img src="images/kview.png" class="img-fluid mr-1" alt="viiew">516K</span>
+								</div>
+								<div class="LIQUIDITY-POOLS-text">
+								    <h2>LIQUIDITY POOLS</h2>
+								    <h3>EXPLAINED</h3>
+								</div>
+								<div class="play-btn"><button><img src="images/PlayCircle.png" class="img-fluid" alt="play"/></button></div>
+								
+							</div>
+						</li>
+						<li>
+							<div class="tutorial-img-block">
+								<img src="images/liquidity-img3.png" class="img-fluid" alt="tutoral"/>
+								<!-- <div class="tutorial-like-view">
+									<span class="mr-2"><img src="images/klike.png" class="img-fluid mr-1" alt="like">516K</span>
+									<span><img src="images/kview.png" class="img-fluid mr-1" alt="viiew">516K</span>
+								</div> -->
+							</div>
+							<div class="tutorial-txt-block">
+								<h3>How Liquidty Providers Earn ? </h3>
+								<p>When trading assets, traders pay certain amount of fees to the liquidity providers for providing liquidity. LPs earn these small fees on a daily basis. </p>
+								<div class="bottom-readmo"><a href="#">Raed More</a></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>			
+	</div>
+</div>
+	
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+	$(function(){
+	   $('.menu-mid-sect ul li.submenubar-item a').click(function(){
+		 $('.menu-mid-sect ul li.submenubar-item a').each(function(a){
+		   $( this ).removeClass('selectedclass')
+		 });
+		 $( this ).addClass('selectedclass');
+	   });
+	  
+	 });
+	</script>
+<script type="text/javascript">
+
+// When the user clicks, open the popup
+function popupFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+
+}
+// Faq
+function faqFunction() {
+  var faq= document.getElementById("trade-faq");
+  faq.classList.toggle("show");
+
+}
+// When the user clicks, open trade mennu
+function tradeFunction() {
+  var trade = document.getElementById("trademenu-drpdown");
+  trade.classList.toggle("show");
+}
+</script>
+<script>
+	/*for toggle sub menu*/
+		function subtogglediv(id, icon) {
+			var id = document.getElementById(id);
+			id.classList.toggle('submenu-active');
+			var cross = document.getElementById(icon);
+			cross.classList.toggle('fa-times');
+			cross.classList.toggle('fa-bars');
+		}
+		</script>
+	<script>
+		//earn dropdown
+		var treasureVal = document.getElementById("withdraw-dropbox-list5").querySelectorAll(".withdraw-dropbox-list ul li .currency-listItem-right p");
+		treasureVal.forEach(function(item) {
+          item.onclick = function(e) {
+            document.getElementById('withdraw-dropbox-list-input5').innerHTML = this.innerHTML;	        
+		 }
+		  
+        });
+		
+	</script>
+	<script type="text/javascript">
+		
+	    //For modal
+		document.addEventListener('click', function (e) {
+	        e = e || window.event;
+	        var target = e.target || e.srcElement;
+
+	        if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') 
+	        {
+	            if (target.hasAttribute('data-target')) 
+	            {
+	                var m_ID = target.getAttribute('data-target');
+	                document.getElementById(m_ID).classList.add('open');
+	            }
+	        }
+
+	        // Close modal window with 'data-dismiss' attribute or when the backdrop is clicked
+	        if ((target.hasAttribute('data-dismiss') && target.getAttribute('data-dismiss') == 'modal') ||target.classList.contains('modal')) {
+	            var modal = document.querySelector('.modal.open');
+	            modal.classList.remove('open');
+	        }
+        }, false);
+      	
+ 	</script>
+	<script>
+	//for tab
+    function tradeFunc(evt, tradeinput) {
+        var i, trade_tabcontent, trade_tablinks;
+        trade_tabcontent = document.getElementsByClassName("trade_tabcontent");
+        for (i = 0; i < trade_tabcontent.length; i++) {
+            trade_tabcontent[i].style.display = "none";
+        }
+        trade_tablinks = document.getElementsByClassName("trade_tablinks");
+        for (i = 0; i < trade_tablinks.length; i++) {
+            trade_tablinks[i].className = trade_tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tradeinput).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+//for liquidity tab
+function liquidityFunc(evt, tradeinput) {
+        var i, trade_tabcontent2, trade_tablinks2;
+        trade_tabcontent2 = document.getElementsByClassName("liquidity_tabcontent");
+        for (i = 0; i < trade_tabcontent2.length; i++) {
+            trade_tabcontent2[i].style.display = "none";
+        }
+        trade_tablinks2 = document.getElementsByClassName("liquidity_tablinks");
+        for (i = 0; i < trade_tablinks2.length; i++) {
+            trade_tablinks2[i].className = trade_tablinks2[i].className.replace(" active", "");
+        }
+        document.getElementById(tradeinput).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+</script>
+</body>
+
+</html>

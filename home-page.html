@@ -1,0 +1,2948 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>HOME</title>
+	<!-- Fav Icons -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/dashboard-header.css" rel="stylesheet" />
+    <link href="css/dashboard-style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/OnBoardingJourney.css" />
+    <link rel="stylesheet" href="css/dApp-S-home.css" />
+    <link rel="stylesheet" href="css/home-post.css" />
+    <link rel="stylesheet" href="css/comunitySettings.css" />
+    <link rel="stylesheet" href="css/messaging.css" />
+</head>
+
+<body>
+	<div class="container-fluid dashboard-body-bg second-body-bg">
+		<div class="row">
+			<header class="custom-header">			
+				<div class="ezl-dashboard-header">
+					<div class="menu-left">
+						<div class="menu-wrap"><!--trade menu-->
+							<a href="#menu" class="menu-link" onclick="tradeFunction()"><img src="images/Menu.png" alt="Menu" class="img-fluid"></a>
+							<div class="tradecontainer" id="trademenu-drpdown">
+							  <div class="trade-menu-panel-panel-group" id="accordionMenu" role="tablist" aria-multiselectable="true">
+								<div class="trade-menu-panel">
+								  <div class="trade-menu-heading" role="tab">
+									<h4 class="trade-menu-title">
+									<a role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+									  <span><img src="images/Over.png" class="img-fluid" alt="Overview"></span>Overview
+									</a>
+								  </h4>
+								  </div>
+								 
+								</div>
+								<div class="trade-menu-panel">
+								  <div class="trade-menu-heading" role="tab" id="headingTwo">
+									<h4 class="trade-menu-title">
+									<a class="trade-dropmenu collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									 <span><img src="images/Borrow.png" class="img-fluid trade-menu-icon" alt="Trade"><img src="images/Borrow2.png" class="img-fluid trade-menu-icon-active" alt="Trade"></span>Trade
+									</a>
+								  </h4>
+								  </div>
+								  <div id="collapseTwo" class="trade-menu-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
+									<ul class="nav">
+										<li><a href="#!">Swap</a></li>
+										<li><a href="#!" class="trade-menuItem-active">Liquidity</a></li>
+									  </ul>
+								  </div>
+								</div>
+								<div class="trade-menu-panel">
+								  <div class="trade-menu-heading" role="tab" id="headingThree">
+									<h4 class="trade-menu-title">
+									<a class="collapsed trade-dropmenu" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									 <span><img src="images/pools.png" class="img-fluid trade-menu-icon" alt="pools"><img src="images/pools2.png" class="img-fluid trade-menu-icon-active" alt="pools"></span>Pools
+									</a>
+								  </h4>
+								  </div>
+								  <div id="collapseThree" class="trade-menu-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
+									<ul class="nav">
+										<li><a href="#!" class="trade-menuItem-active">Entertainment Pools</a></li>
+										<li><a href="#!">NFT Farming Pools</a></li>
+									  </ul>
+								  </div>
+								</div>
+								
+								
+								<div class="trade-menu-panel">
+								  <div class="trade-menu-heading" role="tab" id="headingFour">
+									<h4 class="trade-menu-title">
+									<a class="collapsed trade-dropmenu" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+									  <span><img src="images/menuStacking.png" class="img-fluid trade-menu-icon" alt="Staking"><img src="images/menuStacking2.png" class="img-fluid trade-menu-icon-active" alt="Staking"></span>Staking
+									</a>
+								  </h4>
+								  </div>
+								  <div id="collapseFour" class="trade-menu-collapse collapse" role="tabpanel" aria-labelledby="headingFour" aria-expanded="false">
+									
+									  <ul class="">
+										<li><a href="#!">Enoch Staking</a></li>
+										<li><a href="#!" class="trade-menuItem-active">NFT staking</a></li>
+									  </ul>
+								
+								  </div>
+								</div>
+								
+							  </div>
+							</div>
+						</div>
+						<div class="header-logo"><a href="javascript:void(0)"><img src="images/logo.png" alt="logo" class="img-fluid"></a></div>
+					</div>
+					<div class="menuright-side">
+						<div class="right-search">
+							<form class="search-form">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Fund, ISIN, Keyword ">
+										<button class="search-form-btn" type="Submit"><img class="search-img" src="images/search.png" alt="search"></button>
+								</div>
+							</form>
+						</div>
+						<div class="menu-mid-sect">
+							<ul id="submenubar">
+								<li class="submenubar-item">
+									<div class="menu-times-notifi"><img src="images/home.png" alt="home" class="img-fluid"></div>
+									<a href="home-page.html">Home</a>
+								</li>
+								
+								<li class="submenubar-item">
+									<div class="menu-times-notifi"><img src="images/Chat.png" alt="Chat" class="img-fluid"><span>0</span></div>
+									<a href="massaging.html">Messaging</a>
+								</li>
+								<li class="ether-block">
+									<div class="menu-times-notifi mr-2"><img src="images/Ethereum.png" alt="Ethereum" class="img-fluid"></div>
+									<a href="javascript:void(0)">ETH Mainnet <i class="fa fa-angle-right"></i></a>
+								</li>
+								<li class="connect-wallet-block">
+									
+									<a href="javascript:void(0)">Connect Wallet</a>
+								</li>
+								<li class="connect-wallet-block">
+									
+									<a href="javascript:void(0)"><span><img src="images/cart.png" class="img-fluid mr-2"></span>Cart</a>
+								</li>
+								
+							</ul>
+							<div class="toggle-menu">
+									<div onclick="subtogglediv('submenubar','submenu-toggle');" class="d-inline-block">
+										<i class="fa fa-bars" aria-hidden="true" id="submenu-toggle"></i>
+									</div>
+								</div>
+						</div>
+						
+						<div class="ezl-notificaion">
+						<div class="position-relative notificaion-dropdown ezl-notificaion-marg">
+							<a href="javascript:void(0)" class="popup"><img src="images/help.png" alt="help"></a>							
+												
+						</div>
+						<div class=" position-relative notificaion-dropdown">
+							<a href="javascript:void(0)" class="popup"><img src="images/alertBell.png" alt="Bell"><span class="notificaion-spn">10</span></a>							
+							
+						</div>
+						</div>
+						<div class="ezl-user-ac">
+						
+						<div class="account-d dropdown">
+							<div class="dropdown-buttn"><span class="popup" onclick="popupFunction()"><div class="user-img"><img src="images/user-ReginaCooper.png" alt="user image" class="img-fluid"></div></span>
+								<div class="popupbox dropdown-menu" id="myPopup">
+									
+									<ul class="">
+										<li>
+											<div class="enoch-usr-prof"><span><img src="images/user-pro-pic.png" class="img-fluid mr-1" alt="profile- pic"> @Hulk66</span><span><a href="#!">Change</a></span></div>
+										</li>
+										<li>
+											<div class="enoch-usr-status-block">
+												<div class="usr-status-left">Online Status</div>
+												<div class="usr-status-right">
+													<div class="post-switch">
+														<label class="postswitch">
+														  <input type="checkbox" checked="">
+														  <span class="post-slider round"></span>
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="enoch-usr-status-block"><a href="#!">Become Creator </a></div>
+											<div class="enoch-usr-status-block mb-0"><a href="#!" class="enoch-blue-clr">Your Public Profile</a></div>
+										</li>
+										<li>
+											<div class="enoch-usr-status-block"><a href="#!">Setting </a></div>
+											<div class="enoch-usr-status-block"><a href="#!">Help Center</a></div>										
+											<div class="enoch-usr-status-block mb-0"><a href="#!" class="orange-clr">Upgrade to Premium</a></div>
+										</li>
+										<li class="mt-4">
+											<div class="enoch-usr-status-block mb-0">Wallet  <span><a href="#!" class="btn freebonus-btn">$400 </a></span></div>
+										</li>
+										<li class="mt-4 pb-0">
+											<div class="enoch-usr-status-block mb-0 manage-ac">
+												<h3>Manage</h3>
+												<ul>
+													<li>
+														<div class="manage-ac-block">
+															<span>Comapny:	</span>
+															<span class="ml-1"><img src="images/man-icon1.png" class="img-fluid mr-1" alt="user">88mph  </span>
+														</div>
+													</li>
+													<li>
+														<div class="manage-ac-block">
+															<span>Comapny:	</span>
+															<span class="ml-1"><img src="images/man-icon2.png" class="img-fluid mr-1" alt="user">CryptoBlue    </span>
+														</div>
+													</li>
+												</ul>
+											</div>
+											
+										</li>
+										<li class="mb-0 pb-0">
+											<div class="enoch-usr-status-block mb-0"><a href="#!" class="post-red-clr">Logout</a></div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>				
+				</div>
+				
+				<div class="dApp-menu-btn">
+					<a href="#!"><img src="images/LeftSide-Menu.png" alt="menu" class="img-fluid"  data-toggle="modal" data-target="right-top-modal" /></a>
+					<div class="right-top-modal-block">
+						<div id="right-top-modal" class="modal fade">
+							<!-- Modal content -->
+							<div class="modal-content right-top-modal-content">
+								<span class="close"><img src="images/postCross2.png" alt="close" class="img-fluid" data-dismiss="modal"></span>
+								<div class="right-top-body-block">
+									<div class="right-top-body-block-lft">
+										<form class="right-search-form">
+											<div class="right-form-group">
+												<img src="images/help-Search.png" class="img-fluid" alt="search"/><input type="text" class="form-control" placeholder="Search menu...">
+													
+											</div>
+										</form>
+										<div class="enoch-community-scrollable">
+										<div class="enoch-menu-block-panel">
+											<div class="enoch-menu-block-lft">
+												<div class="enoch-menu-block-items">
+													<h2>Personal</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon1.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">NFT Vault </a>
+																	<p>Organise or find events and other things
+																		to do online and nearby</p>
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon2.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Earning </a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon28.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Wallet</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon3.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Billing</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon29.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Membership</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon35.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Ranking</a>
+																<p>Organise or find events and other things to do online and nearby</p>
+															</div>
+														</li>
+														
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon4.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Affiliate</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="enoch-menu-block-items">
+													<h2>Entertainment</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon11.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Popular</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon30.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Casino</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon31.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Sports</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon32.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Games</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon16.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Promotions</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="enoch-menu-block-items">
+													<h2>Advertising</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon19.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Ad Manager </a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon20.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Enoch Ad</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+															
+															</div>
+														</li>
+														
+													</ul>
+												</div>
+												<div class="enoch-menu-block-items mb-0">
+													<h2>User Setting </h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon26.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Your Profile </a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon27.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Your Account</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														
+													</ul>
+												</div>
+											</div>
+											<div class="enoch-menu-block-right">
+												<div class="enoch-menu-block-items">
+													<h2>Social</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon5.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">My Networks</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon6.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Communities</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon33.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Creator Portals </a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon36.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Livezone</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon8.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Company pages </a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon9.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Events</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon37.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">News Feed </a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="enoch-menu-block-items">
+													<h2>Shopping</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon34.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Digital  Marketplace</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon38.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Enoch Shops</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="enoch-menu-block-items">
+													<h2>Jobs</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon18.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Remote workhub</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														
+													</ul>
+												</div>
+												<div class="enoch-menu-block-items">
+													<h2>Developer</h2>
+													<ul>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon21.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Develop</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon22.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Grow</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon23.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Monetisation </a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														 <li>
+															<div class="right-modal-lft"><img src="images/menu-icon24.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Github</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li>
+														<li>
+															<div class="right-modal-lft"><img src="images/menu-icon25.png" class="img-fluid" alt="planner"/></div>
+															<div class="right-modal-right">
+																<a href="#!">Docs</a>
+																	<p>Organise or find events and other things to do online and nearby</p>
+																
+															</div>
+														</li> 
+														
+													</ul>
+												</div>
+											</div>
+										</div>
+										</div>
+									</div>
+									<div class="right-top-body-block-right">
+										<h3>Create</h3>
+										<ul>
+											<li><a href="#!"><span><img src="images/creat-icon1.png" class="img-fluid" alt="icon"/></span> Post</a></li>
+											<li><a href="#!"><span><img src="images/creat-icon2.png" class="img-fluid" alt="icon"/></span> Community</a></li>
+											<li><a href="#!"><span><img src="images/creat-icon5.png" class="img-fluid" alt="icon"/></span> Event</a></li>
+											<li><a href="#!"><span><img src="images/creat-icon10.png" class="img-fluid" alt="icon"/></span> NFT</a></li>
+											<li><a href="#!"><span><img src="images/creat-icon11.png" class="img-fluid" alt="icon"/></span> Reel</a></li>
+											<li><a href="#!"><span><img src="images/creat-icon14.png" class="img-fluid" alt="icon"/></span> Company page </a></li>
+											<li><a href="#!"><span><img src="images/creat-icon12.png" class="img-fluid" alt="icon"/></span> Group</a></li>
+											<li><a href="#!"><span><img src="images/creat-icon7.png" class="img-fluid" alt="icon"/></span> Job</a></li>								
+											<li><a href="#!"><span><img src="images/creat-icon13.png" class="img-fluid" alt="icon"/></span> AD </a></li>									 
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>								
+					</div>
+					</div>
+			</header>
+		</div>			
+		<div class="row">	
+			<div class="ezl-dashboard-container">			
+				<div class="dApp-S-Home-body">
+					<div class="home-post-block">
+						<div class="home-post-lft">
+							<div class="lft-ovelay dApp-overlay"></div>
+						<div class="dApp-new-banner-sect1">
+								<img src="images/onboard-banners.png" alt="Banner" class="img-fluid" />
+								<div class="dApp-new-banner-content-sect">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun</p>
+									<div><button class="dApp-unlockClub-btn">Unlock VIP cLUB</button></div>
+								</div>
+						</div>
+						<div class="dApp-daily-bonous-Banner-sect">
+								<img src="images/daily-bonous-banner.png" alt="Banner" class="img-fluid">
+								<div class="dApp-playNow"><button class="dApp-playnow-btn"><img src="images/PlayNow.png" class="img-fluid" alt="bet now"></button></div>
+							</div>
+							<div class="dApp-daily-bonous-Banner-sect">
+								<img src="images/daily-bonous-banner.png" alt="Banner" class="img-fluid">
+								<div class="dApp-playNow"><button class="dApp-playnow-btn"><img src="images/PlayNow.png" class="img-fluid" alt="bet now"></button></div>
+							</div>
+							
+							<div class="dApp-home-Create-Post-sect">
+								<h1>Home</h1>
+								<p>Your personal Enoch frontpage. Comehere to check in with your favorite communication.</p>
+								<div class="dApp-home-Create-Post-btn-sect">
+									<button class="Create-Post-btn">Create Post</button>
+									<button class="Create-Community-btn" data-toggle="modal" data-target="#CreateCommunity-Modal">Create Community</button>
+								</div>
+							</div>
+							<!-- The Modal -->
+							<div class="CreateCommunity-Modal-sect">
+								<div class="modal" id="CreateCommunity-Modal">
+									<div class="modal-dialog">
+										<div class="modal-content">
+
+											<!-- Modal Header -->
+											<div class="CreateCommunity-Modal-header">
+												<!--<h4 class="modal-title">Add experience</h4>-->
+												<div class="close CreateCommunity-Modal-modal-close" data-dismiss="modal"><img src="images/hCross.png" alt="icon" class="img-fluid" /></div>
+											</div>
+
+											<!-- Modal body -->
+											<div class="CreateCommunity-Modal-body">
+												<div class="input-name">
+													<h1>Name*</h1>
+													<p>Community names including capitalization cannot be changed.</p>
+													<input type="text" value="" placeholder="@defiInvestment " id="CreateCommunity-input-name-fild">
+													<p class="input-name-error-text">Community already available, Please choose some diffrent name</p>
+													<p class="pt-1">21 character remaining </p>
+												</div>
+												
+												<div class="Community-type">
+													<h1>Community type*</h1>
+													
+													<div class="Community-type-radio-sect">
+														<label class="container"><strong>Public <span>Anyone can view, post, and comment to this community</span></strong>
+															<input type="radio" name="radio">
+															<span class="checkmark"></span>
+														</label>
+														<label class="container"><strong>Restricted <span>Anyone can view this community, but only approved users can post</span></strong>
+															<input type="radio" name="radio">
+															<span class="checkmark"></span>
+														</label>
+														<label class="container"><strong>Private <span>Only approved users can view and submit to this community</span></strong>
+															<input type="radio" name="radio">
+															<span class="checkmark"></span>
+														</label>
+													</div>
+													
+													
+												</div>
+												
+												<div class="Adult-content-sect">
+													<h1>Adult content</h1>
+													<div class="Adult-content-Checkbox">
+														<input type="checkbox">
+														<label>18+ year old community</label>
+													</div>
+												</div>
+												
+												<div class="CreateCommunity-Modal-btn">
+													<button id="Create-Community-button"><a href="#">Create Community</a></button>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+								
+						</div>
+						<div class="home-post-mid">
+							<div class="dApp-status-block mb-16">
+								<div class="home-post-share-block">
+									<div class="home-post-share-lft">
+										<img src="images/comm-usr-img6.png" alt="DP" class="img-fluid">
+									</div>
+									<div class="home-post-share-right">
+										<div class="home-post-input">Post  </div>
+										<ul>
+											<li><input type="file" class="home-post-file-uplod"><span><img src="images/post-Image.png" class="img-fluid" alt="Photo"></span>Photo</li>
+											<li><input type="file" class="home-post-file-uplod"><span><img src="images/post-Video.png" class="img-fluid" alt="Video"></span>Video</li>
+											<li><input type="file" class="home-post-file-uplod"><span><img src="images/post-Event.png" class="img-fluid" alt="Event"></span>Event</li>
+											<li><input type="file" class="home-post-file-uplod"><span><img src="images/post-Article.png" class="img-fluid" alt="Write Article"></span>Write Article</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="dApp-status-block mb-16 status-section save-this-status copy-link-this-status unfllow-user-stutas mute-user-stutas">
+								<div class="dApp-status-heading">
+									<div class="dApp-status-heading-profile-pic">
+										<img src="images/userAvatar1.png" alt="DP" class="img-fluid">
+									</div>
+									<div class="dApp-status-heading-text">
+										<h1>@Hulk66</h1>
+										<h2>5000 inspired generative NFTs Monkey  Enoch : http://enoch.app/hulk66 </h2>
+										<h3><span><img src="images/Clock.png" alt="icon" class="img-fluid"></span>July 15 </h3>
+									</div>
+									<div class="dApp-post-3dots dropdown">
+										<a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/dApp-ThreeDots.png" alt="3dots" class="img-fluid post-threedots"><img src="images/dApp-ThreeDots.png" alt="3dots" class="img-fluid post-threedots-active"></a>
+										<div class="dropdown-menu home-drop-postStatus">
+											<ul>
+												<li class="">
+													<a class="" href="#">
+														<div class="drop-postStatus-block save-post">
+															<div class="drop-postStatus-block-lft"><img src="images/post-save.png" alt="save" class="img-fluid"></div>
+															<div class="drop-postStatus-block-right">
+																<h3>Save</h3>
+																<p>Save for later</p></div>
+														</div>
+													</a>
+												</li>
+												<li class="">
+													<a class="" href="#">
+														<div class="drop-postStatus-block copy-post-link">
+															<div class="drop-postStatus-block-lft"><img src="images/copy.png" alt="copy" class="img-fluid"></div>
+															<div class="drop-postStatus-block-right">
+																<h4>Copy link to post</h4>
+															</div>
+														</div>
+													</a>
+												</li>
+												<li class="">
+													<a class="" href="#">
+														<div class="drop-postStatus-block" data-toggle="modal" data-target="#Embed_post_Modal">
+															<div class="drop-postStatus-block-lft"><img src="images/embed-post.png" alt="embed post" class="img-fluid"></div>
+															<div class="drop-postStatus-block-right">
+																<h3>Embed this post</h3>
+																<p>This post is offensive or the account is hacked</p>
+															</div>
+														</div>
+													</a>
+												</li>
+												<li class="">
+													<a class="" href="#">
+														<div class="drop-postStatus-block unfllow-user">
+															<div class="drop-postStatus-block-lft"><img src="images/unfollow.png" alt="embed post" class="img-fluid"></div>
+															<div class="drop-postStatus-block-right">
+																<h3>Unfllow @name</h3>
+																<p>This post is offensive or the account is hacked</p>
+															</div>
+														</div>
+													</a>
+												</li>
+												<li class="">
+													<a class="" href="#">
+														<div class="drop-postStatus-block mute-user">
+															<div class="drop-postStatus-block-lft"><img src="images/mute.png" alt="embed post" class="img-fluid"></div>
+															<div class="drop-postStatus-block-right">
+																<h3>Mute @name</h3>
+																<p>This post is offensive or the account is hacked</p>
+															</div>
+														</div>
+													</a>
+												</li>
+												<li class="">
+													<a class="" href="#">
+														<div class="drop-postStatus-block" data-toggle="modal" data-target="#dont_Want_See_post_Modal">
+															<div class="drop-postStatus-block-lft"><img src="images/dont-see.png" alt="embed post" class="img-fluid"></div>
+															<div class="drop-postStatus-block-right">
+																<h3>I don't want to see this</h3>
+																<p>This post is offensive or the account is hacked</p>
+															</div>
+														</div>
+													</a>
+												</li>
+												<li class="">
+													<a class="" href="#">
+														<div class="drop-postStatus-block Report-this-post" data-toggle="modal" data-target="#report_this_post_Modal">
+															<div class="drop-postStatus-block-lft"><img src="images/report.png" alt="embed post" class="img-fluid"></div>
+															<div class="drop-postStatus-block-right">
+																<h3>Report this post</h3>
+																<p>This post is offensive or the account is hacked</p>
+															</div>
+														</div>
+													</a>
+												</li>
+												<li class="">
+													<a class="" href="#">
+														<div class="drop-postStatus-block whoCanSeeThisPost">
+															<div class="drop-postStatus-block-lft"><img src="images/see.png" alt="embed post" class="img-fluid"></div>
+															<div class="drop-postStatus-block-right">
+																<h3>Who can see this post?</h3>
+																<p>This post is offensive or the account is hacked</p>
+															</div>
+														</div>
+													</a>
+												</li>
+											</ul>
+									</div>
+									</div>
+								</div>
+								
+								
+								<div class="dApp-status-hastag-txt">
+									<p>🌏 <span>#NFTs</span> will be the linchpin of the emerging <span>#NFTcryptopunk</span>  economy. What impact will they have on markets? </p>
+								</div>
+								<div class="dApp-status-content-sect">
+									<img src="images/hashTag.png" alt="image" class="img-fluid">
+								</div>
+								<div class="dApp-status-like-comment-share-sect">
+								    <ul>
+								        <li>
+								            <div class="home-post-usr-reaction-wrap">
+								                <div class="home-post-usr-reaction">
+								                    <span><img src="images/reaction1.png" alt="icon" class="img-fluid"></span>
+								                    <span><img src="images/reaction2.png" alt="icon" class="img-fluid"></span>
+								                    <span><img src="images/reaction3.png" alt="icon" class="img-fluid"></span>
+								                    <span><img src="images/reaction4.png" alt="icon" class="img-fluid"></span>
+								                    <span><img src="images/reaction5.png" alt="icon" class="img-fluid"></span>
+								                    <span><img src="images/reaction6.png" alt="icon" class="img-fluid"></span>
+								                </div>
+								            </div>
+								            <span><img src="images/like-icon.png" alt="icon" class="img-fluid post-like"><img src="images/like-icon.png" alt="icon" class="img-fluid post-like-hov"></span><a href="#">Like</a>
+								        </li>
+
+								        <li><span><img src="images/dislike.png" alt="icon" class="img-fluid"></span><a href="#">Dislike</a></li>
+
+								        <li><span><img src="images/gift.png" alt="icon" class="img-fluid"></span> <a href="#">Gift</a></li>
+
+								        <li><span><img src="images/comment-icon.png" alt="icon" class="img-fluid"></span><a href="#">Comment</a></li>
+
+								        <li data-toggle="modal" data-target="#share_post_Modal"><span><img src="images/dApp-Share.png" alt="icon" class="img-fluid"></span><a href="#">Share</a></li>
+
+								        <li class="post-send-by-Masage"><span><img src="images/Paper-Plane.png" alt="icon" class="img-fluid"></span><a href="#">Send</a></li>
+
+								    </ul>
+								</div>
+							</div>
+							
+							<div class="Post-removed-alart-action-box">
+								<div class="Post-removed-alart-action-content">
+									<div class="Post-removed-alart-text">
+										<h3>Post removed</h3>
+										<p>You'll no longer see posts from @username in your feed</p>
+									</div>
+									<button class="Post-removed-undo-btn">Undo</button>
+								</div>
+							</div>
+							
+							<div class="dApp-status-block mb-16 status-section save-this-status copy-link-this-status unfllow-user-stutas mute-user-stutas status-section">
+								<div class="dApp-status-heading">
+									<div class="dApp-status-heading-profile-pic">
+										<img src="images/userAvatar1.png" alt="DP" class="img-fluid">
+									</div>
+									<div class="dApp-status-heading-text">
+										<h1>@Hulk66</h1>
+										<h2>5000 inspired generative NFTs Monkey  Enoch : http://enoch.app/hulk66 </h2>
+										<h3><span><img src="images/Clock.png" alt="icon" class="img-fluid"></span>July 15</h3>
+									</div>
+									<div class="dApp-post-3dots dropdown">
+						            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/dApp-ThreeDots.png" alt="3dots" class="img-fluid post-threedots"><img src="images/dApp-ThreeDots.png" alt="3dots" class="img-fluid post-threedots-active"></a>
+						            <div class="dropdown-menu home-drop-postStatus">
+						                <ul>
+						                    <li class="">
+						                        <a class="" href="#">
+						                            <div class="drop-postStatus-block save-post">
+						                                <div class="drop-postStatus-block-lft"><img src="images/post-save.png" alt="save" class="img-fluid"></div>
+						                                <div class="drop-postStatus-block-right">
+						                                    <h3>Save</h3>
+						                                    <p>Save for later</p>
+						                                </div>
+						                            </div>
+						                        </a>
+						                    </li>
+						                    <li class="">
+						                        <a class="" href="#">
+						                            <div class="drop-postStatus-block copy-post-link">
+						                                <div class="drop-postStatus-block-lft"><img src="images/copy.png" alt="copy" class="img-fluid"></div>
+						                                <div class="drop-postStatus-block-right">
+						                                    <h4>Copy link to post</h4>
+						                                </div>
+						                            </div>
+						                        </a>
+						                    </li>
+						                    <li class="">
+						                        <a class="" href="#">
+						                            <div class="drop-postStatus-block" data-toggle="modal" data-target="#Embed_post_Modal">
+						                                <div class="drop-postStatus-block-lft"><img src="images/embed-post.png" alt="embed post" class="img-fluid"></div>
+						                                <div class="drop-postStatus-block-right">
+						                                    <h3>Embed this post</h3>
+						                                    <p>This post is offensive or the account is hacked</p>
+						                                </div>
+						                            </div>
+						                        </a>
+						                    </li>
+						                    <li class="">
+						                        <a class="" href="#">
+						                            <div class="drop-postStatus-block unfllow-user">
+						                                <div class="drop-postStatus-block-lft"><img src="images/unfollow.png" alt="embed post" class="img-fluid"></div>
+						                                <div class="drop-postStatus-block-right">
+						                                    <h3>Unfllow @name</h3>
+						                                    <p>This post is offensive or the account is hacked</p>
+						                                </div>
+						                            </div>
+						                        </a>
+						                    </li>
+						                    <li class="">
+						                        <a class="" href="#">
+						                            <div class="drop-postStatus-block mute-user">
+						                                <div class="drop-postStatus-block-lft"><img src="images/mute.png" alt="embed post" class="img-fluid"></div>
+						                                <div class="drop-postStatus-block-right">
+						                                    <h3>Mute @name</h3>
+						                                    <p>This post is offensive or the account is hacked</p>
+						                                </div>
+						                            </div>
+						                        </a>
+						                    </li>
+						                    <li class="">
+						                        <a class="" href="#">
+						                            <div class="drop-postStatus-block" data-toggle="modal" data-target="#dont_Want_See_post_Modal">
+						                                <div class="drop-postStatus-block-lft"><img src="images/dont-see.png" alt="embed post" class="img-fluid"></div>
+						                                <div class="drop-postStatus-block-right">
+						                                    <h3>I don't want to see this</h3>
+						                                    <p>This post is offensive or the account is hacked</p>
+						                                </div>
+						                            </div>
+						                        </a>
+						                    </li>
+						                    <li class="">
+						                        <a class="" href="#">
+						                            <div class="drop-postStatus-block Report-this-post" data-toggle="modal" data-target="#report_this_post_Modal">
+						                                <div class="drop-postStatus-block-lft"><img src="images/report.png" alt="embed post" class="img-fluid"></div>
+						                                <div class="drop-postStatus-block-right">
+						                                    <h3>Report this post</h3>
+						                                    <p>This post is offensive or the account is hacked</p>
+						                                </div>
+						                            </div>
+						                        </a>
+						                    </li>
+						                    <li class="">
+						                        <a class="" href="#">
+						                            <div class="drop-postStatus-block whoCanSeeThisPost">
+						                                <div class="drop-postStatus-block-lft"><img src="images/see.png" alt="embed post" class="img-fluid"></div>
+						                                <div class="drop-postStatus-block-right">
+						                                    <h3>Who can see this post?</h3>
+						                                    <p>This post is offensive or the account is hacked</p>
+						                                </div>
+						                            </div>
+						                        </a>
+						                    </li>
+						                </ul>
+						            </div>
+						        </div>
+								</div>
+								
+								<div class="dApp-status-caption-sect">
+									<p>CryptoPunk: This NFT just got sold for nearly ₹50 crore. <span>#NFTcryptopunk  </span>
+										NFTs are currently taking the digital art and collectibles world by storm. They are a way to represent ownership of a digital good, such as an image, video, or piece of text, and most NFTs are part of the ethereum blockchain.</p>
+								</div>
+								
+								<div class="dApp-status-react-sect">
+									<ul class="daap-homepost-users-view">
+										<li class="dApp-status-react-icon">
+											<img src="images/like.png" alt="icon" class="img-fluid">
+											<img src="images/love.png" alt="icon" class="img-fluid">
+											<img src="images/heart.png" alt="icon" class="img-fluid">
+											<img src="images/clap.png" alt="icon" class="img-fluid">
+											<img src="images/light.png" alt="icon" class="img-fluid">
+											<img src="images/wow.png" alt="icon" class="img-fluid">
+											<span data-toggle="modal" data-target="#reaction-modal">15,422</span>
+										</li>
+										<li><span><img src="images/user-view-icon1.png" alt="icon" class="img-fluid"></span> 475 comments</li>
+										<li><span> <img src="images/user-view-icon2.png" alt="icon" class="img-fluid"> </span>676,614 Views</li>
+										<li><span><img src="images/user-view-icon4.png" alt="icon" class="img-fluid"> </span>$22</li>
+										<li class="mr-0"><span><img src="images/user-view-icon3.png" alt="icon" class="img-fluid"> </span>$3</li>
+										
+									</ul>
+								</div>
+								<div class="user-reaction-modal-block">
+									<div id="reaction-modal" class="modal reaction-modal-popup" style="display: none;">
+										<div class="modal-dialog">
+
+											<!-- Modal content-->
+											<div class="modal-content user-reaction-modal-content">
+												<span class="close"><img src="images/hCross.png" alt="close" class="img-fluid" data-dismiss="modal"></span>
+												<h3>Reactions </h3>
+												<div class="user-reaction-hd-img"><img src="images/reaction-head.png" class="img-fluid" alt="reaction"></div>
+												<div class="modal-body user-reaction-modal-body">
+													<div class="user-reaction-modal-block-list">
+														<ul>
+															<li>15,422</li>
+															<li class="reaction_tablinks active" onclick="reactionFunc(event,'rlike')"><span><img src="images/reaction1.png" alt="icon" class="img-fluid"></span>10k</li>
+															<li class="reaction_tablinks" onclick="reactionFunc(event,'rlove')"><span><img src="images/reaction2.png" alt="icon" class="img-fluid"></span>2k</li>
+															<li class="reaction_tablinks" onclick="reactionFunc(event,'rsupport')"><span><img src="images/reaction3.png" alt="icon" class="img-fluid"></span>1k</li>
+															<li><span><img src="images/reaction4.png" alt="icon" class="img-fluid"></span>800</li>
+															<li><span><img src="images/reaction5.png" alt="icon" class="img-fluid"></span>1.2k</li>
+															<li><span><img src="images/reaction6.png" alt="icon" class="img-fluid"></span>422</li>
+														</ul>
+													</div>
+													<div id="rlike" class="user-reaction-content-list reaction-content">
+														<ul>
+															<li>
+																<span>
+																	<img src="images/Touchstone.png" alt="Touchstone" class="img-fluid">
+																	<div class="reaction-icon"><img src="images/rLike.png" class="img-fluid" alt="icon"></div>
+																</span>
+																<div class="reaction-content-list-right">
+																	<h4>@Touchstone . 1</h4>
+																	<p>UX Director &amp; Designer • Producer, Bollywood • Ex Design Head AthenaHealth, Apple Mobility Partners, Althea Americas</p>
+																</div>
+															</li>
+															<li>
+																<span><img src="images/Zappos.png" alt="Zappos" class="img-fluid">
+																	<div class="reaction-icon"><img src="images/rLike.png" class="img-fluid" alt="icon"></div>
+																</span>
+																<div class="reaction-content-list-right">
+																	<h4>@Zappos . 1</h4>
+																	<p>UX Director &amp; Designer • Producer, Bollywood • Ex Design Head AthenaHealth, Apple Mobility Partners, Althea Americas</p>
+																</div>
+															</li>
+															<li>
+																<span><img src="images/Zivasa.png" alt="Zivasa" class="img-fluid">
+																	<div class="reaction-icon"><img src="images/rLike.png" class="img-fluid" alt="icon"></div>
+																</span>
+																<div class="reaction-content-list-right">
+																	<h4>@Zivasa . 1</h4>
+																	<p>UX Director &amp; Designer • Producer, Bollywood • Ex Design Head AthenaHealth, Apple Mobility Partners, Althea Americas</p>
+																</div>
+															</li>
+															<li>
+																<span><img src="images/comm-usr-img5.png" alt="Savasana" class="img-fluid">
+																	<div class="reaction-icon"><img src="images/rLike.png" class="img-fluid" alt="icon"></div>
+																</span>
+																<div class="reaction-content-list-right"> 
+																	<h4>@Savasana . 1</h4>
+																	<p>UX Director &amp; Designer • Producer, Bollywood • Ex Design Head AthenaHealth, Apple Mobility Partners, Althea Americas</p>
+																</div>
+															</li>
+															<li>
+																<span><img src="images/Vivocoo.png" alt="Vivocoo" class="img-fluid">
+																	<div class="reaction-icon"><img src="images/rLike.png" class="img-fluid" alt="icon"></div>
+																</span>
+																<div class="reaction-content-list-right">
+																	<h4>@Vivocoo . 1</h4>
+																	<p>UX Director &amp; Designer • Producer, Bollywood • Ex Design Head AthenaHealth, Apple Mobility Partners, Althea Americas</p>
+																</div>
+															</li>
+														</ul>
+													</div>
+													<div id="rlove" class="user-reaction-content-list">
+														<ul>
+															<li>
+																<span>
+																	<img src="images/Touchstone.png" alt="Touchstone" class="img-fluid">
+																	<div class="reaction-icon"><img src="images/rLove.png" class="img-fluid" alt="icon"></div>
+																</span>
+																<div class="reaction-content-list-right">
+																	<h4>@Touchstone . 1</h4>
+																	<p>UX Director &amp; Designer • Producer, Bollywood • Ex Design Head AthenaHealth, Apple Mobility Partners, Althea Americas</p>
+																</div>
+															</li>
+															<li>
+																<span><img src="images/Zappos.png" alt="Zappos" class="img-fluid">
+																	<div class="reaction-icon"><img src="images/rLove.png" class="img-fluid" alt="icon"></div>
+																</span>
+																<div class="reaction-content-list-right">
+																	<h4>@Zappos . 1</h4>
+																	<p>UX Director &amp; Designer • Producer, Bollywood • Ex Design Head AthenaHealth, Apple Mobility Partners, Althea Americas</p>
+																</div>
+															</li>
+															<li>
+																<span><img src="images/Zivasa.png" alt="Zivasa" class="img-fluid">
+																	<div class="reaction-icon"><img src="images/rLove.png" class="img-fluid" alt="icon"></div>
+																</span>
+																<div class="reaction-content-list-right">
+																	<h4>@Zivasa . 1</h4>
+																	<p>UX Director &amp; Designer • Producer, Bollywood • Ex Design Head AthenaHealth, Apple Mobility Partners, Althea Americas</p>
+																</div>
+															</li>
+															<li>
+																<span><img src="images/comm-usr-img5.png" alt="Savasana" class="img-fluid">
+																	<div class="reaction-icon"><img src="images/rLove.png" class="img-fluid" alt="icon"></div>
+																</span>
+																<div class="reaction-content-list-right"> 
+																	<h4>@Savasana . 1</h4>
+																	<p>UX Director &amp; Designer • Producer, Bollywood • Ex Design Head AthenaHealth, Apple Mobility Partners, Althea Americas</p>
+																</div>
+															</li>
+															<li>
+																<span><img src="images/Vivocoo.png" alt="Vivocoo" class="img-fluid">
+																	<div class="reaction-icon"><img src="images/rLove.png" class="img-fluid" alt="icon"></div>
+																</span>
+																<div class="reaction-content-list-right">
+																	<h4>@Vivocoo . 1</h4>
+																	<p>UX Director &amp; Designer • Producer, Bollywood • Ex Design Head AthenaHealth, Apple Mobility Partners, Althea Americas</p>
+																</div>
+															</li>
+														</ul>
+													</div>
+													<div id="rsupport" class="user-reaction-content-list">
+														<ul>
+															<li>
+																<span>
+																	<img src="images/Touchstone.png" alt="Touchstone" class="img-fluid">
+																	<div class="reaction-icon"><img src="images/rSupport.png" class="img-fluid" alt="icon"></div>
+																</span>
+																<div class="reaction-content-list-right">
+																	<h4>@Touchstone . 1</h4>
+																	<p>UX Director &amp; Designer • Producer, Bollywood • Ex Design Head AthenaHealth, Apple Mobility Partners, Althea Americas</p>
+																</div>
+															</li>
+															<li>
+																<span><img src="images/Zappos.png" alt="Zappos" class="img-fluid">
+																	<div class="reaction-icon"><img src="images/rSupport.png" class="img-fluid" alt="icon"></div>
+																</span>
+																<div class="reaction-content-list-right">
+																	<h4>@Zappos . 1</h4>
+																	<p>UX Director &amp; Designer • Producer, Bollywood • Ex Design Head AthenaHealth, Apple Mobility Partners, Althea Americas</p>
+																</div>
+															</li>
+															<li>
+																<span><img src="images/Zivasa.png" alt="Zivasa" class="img-fluid">
+																	<div class="reaction-icon"><img src="images/rSupport.png" class="img-fluid" alt="icon"></div>
+																</span>
+																<div class="reaction-content-list-right">
+																	<h4>@Zivasa . 1</h4>
+																	<p>UX Director &amp; Designer • Producer, Bollywood • Ex Design Head AthenaHealth, Apple Mobility Partners, Althea Americas</p>
+																</div>
+															</li>
+															<li>
+																<span><img src="images/comm-usr-img5.png" alt="Savasana" class="img-fluid">
+																	<div class="reaction-icon"><img src="images/rSupport.png" class="img-fluid" alt="icon"></div>
+																</span>
+																<div class="reaction-content-list-right"> 
+																	<h4>@Savasana . 1</h4>
+																	<p>UX Director &amp; Designer • Producer, Bollywood • Ex Design Head AthenaHealth, Apple Mobility Partners, Althea Americas</p>
+																</div>
+															</li>
+															<li>
+																<span><img src="images/Vivocoo.png" alt="Vivocoo" class="img-fluid">
+																	<div class="reaction-icon"><img src="images/rSupport.png" class="img-fluid" alt="icon"></div>
+																</span>
+																<div class="reaction-content-list-right">
+																	<h4>@Vivocoo . 1</h4>
+																	<p>UX Director &amp; Designer • Producer, Bollywood • Ex Design Head AthenaHealth, Apple Mobility Partners, Althea Americas</p>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</div>
+												
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="dApp-status-like-comment-share-sect">
+						        <ul>
+						            <li>
+						                <div class="home-post-usr-reaction-wrap">
+						                    <div class="home-post-usr-reaction">
+						                        <span><img src="images/reaction1.png" alt="icon" class="img-fluid"></span>
+						                        <span><img src="images/reaction2.png" alt="icon" class="img-fluid"></span>
+						                        <span><img src="images/reaction3.png" alt="icon" class="img-fluid"></span>
+						                        <span><img src="images/reaction4.png" alt="icon" class="img-fluid"></span>
+						                        <span><img src="images/reaction5.png" alt="icon" class="img-fluid"></span>
+						                        <span><img src="images/reaction6.png" alt="icon" class="img-fluid"></span>
+						                    </div>
+						                </div>
+						                <span><img src="images/like-icon.png" alt="icon" class="img-fluid post-like"><img src="images/like-icon.png" alt="icon" class="img-fluid post-like-hov"></span><a href="#">Like</a>
+						            </li>
+
+						            <li><span><img src="images/dislike.png" alt="icon" class="img-fluid"></span><a href="#">Dislike</a></li>
+
+						            <li><span><img src="images/gift.png" alt="icon" class="img-fluid"></span> <a href="#">Gift</a></li>
+
+						            <li><span><img src="images/comment-icon.png" alt="icon" class="img-fluid"></span><a href="#">Comment</a></li>
+
+						            <li data-toggle="modal" data-target="#share_post_Modal"><span><img src="images/dApp-Share.png" alt="icon" class="img-fluid"></span><a href="#">Share</a></li>
+
+						            <li class="post-send-by-Masage"><span><img src="images/Paper-Plane.png" alt="icon" class="img-fluid"></span><a href="#">Send</a></li>
+
+						        </ul>
+						    </div>
+							
+							</div>
+							
+							<div class="dApp-status-block mb-16 status-section save-this-status copy-link-this-status unfllow-user-stutas mute-user-stutas pt-0">
+						    <div class="dApp-status-topBar">
+						        <div class="dApp-status-topBar-dp">
+						            <img src="images/post-topbar-dp.svg" alt="img" class="img-fluid" />
+						        </div>
+						        <h4>@Holp09<span>like this </span></h4>
+						        <div class="dApp-post-3dots dropdown">
+						            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/dApp-ThreeDots.png" alt="3dots" class="img-fluid post-threedots"><img src="images/dApp-ThreeDots.png" alt="3dots" class="img-fluid post-threedots-active"></a>
+						            <div class="dropdown-menu home-drop-postStatus">
+						                <ul>
+						                    <li class="">
+						                        <a class="" href="#">
+						                            <div class="drop-postStatus-block save-post">
+						                                <div class="drop-postStatus-block-lft"><img src="images/post-save.png" alt="save" class="img-fluid"></div>
+						                                <div class="drop-postStatus-block-right">
+						                                    <h3>Save</h3>
+						                                    <p>Save for later</p>
+						                                </div>
+						                            </div>
+						                        </a>
+						                    </li>
+						                    <li class="">
+						                        <a class="" href="#">
+						                            <div class="drop-postStatus-block copy-post-link">
+						                                <div class="drop-postStatus-block-lft"><img src="images/copy.png" alt="copy" class="img-fluid"></div>
+						                                <div class="drop-postStatus-block-right">
+						                                    <h4>Copy link to post</h4>
+						                                </div>
+						                            </div>
+						                        </a>
+						                    </li>
+						                    <li class="">
+						                        <a class="" href="#">
+						                            <div class="drop-postStatus-block" data-toggle="modal" data-target="#Embed_post_Modal">
+						                                <div class="drop-postStatus-block-lft"><img src="images/embed-post.png" alt="embed post" class="img-fluid"></div>
+						                                <div class="drop-postStatus-block-right">
+						                                    <h3>Embed this post</h3>
+						                                    <p>This post is offensive or the account is hacked</p>
+						                                </div>
+						                            </div>
+						                        </a>
+						                    </li>
+						                    <li class="">
+						                        <a class="" href="#">
+						                            <div class="drop-postStatus-block unfllow-user">
+						                                <div class="drop-postStatus-block-lft"><img src="images/unfollow.png" alt="embed post" class="img-fluid"></div>
+						                                <div class="drop-postStatus-block-right">
+						                                    <h3>Unfllow @name</h3>
+						                                    <p>This post is offensive or the account is hacked</p>
+						                                </div>
+						                            </div>
+						                        </a>
+						                    </li>
+						                    <li class="">
+						                        <a class="" href="#">
+						                            <div class="drop-postStatus-block mute-user">
+						                                <div class="drop-postStatus-block-lft"><img src="images/mute.png" alt="embed post" class="img-fluid"></div>
+						                                <div class="drop-postStatus-block-right">
+						                                    <h3>Mute @name</h3>
+						                                    <p>This post is offensive or the account is hacked</p>
+						                                </div>
+						                            </div>
+						                        </a>
+						                    </li>
+						                    <li class="">
+						                        <a class="" href="#">
+						                            <div class="drop-postStatus-block" data-toggle="modal" data-target="#dont_Want_See_post_Modal">
+						                                <div class="drop-postStatus-block-lft"><img src="images/dont-see.png" alt="embed post" class="img-fluid"></div>
+						                                <div class="drop-postStatus-block-right">
+						                                    <h3>I don't want to see this</h3>
+						                                    <p>This post is offensive or the account is hacked</p>
+						                                </div>
+						                            </div>
+						                        </a>
+						                    </li>
+						                    <li class="">
+						                        <a class="" href="#">
+						                            <div class="drop-postStatus-block Report-this-post" data-toggle="modal" data-target="#report_this_post_Modal">
+						                                <div class="drop-postStatus-block-lft"><img src="images/report.png" alt="embed post" class="img-fluid"></div>
+						                                <div class="drop-postStatus-block-right">
+						                                    <h3>Report this post</h3>
+						                                    <p>This post is offensive or the account is hacked</p>
+						                                </div>
+						                            </div>
+						                        </a>
+						                    </li>
+						                    <li class="">
+						                        <a class="" href="#">
+						                            <div class="drop-postStatus-block whoCanSeeThisPost">
+						                                <div class="drop-postStatus-block-lft"><img src="images/see.png" alt="embed post" class="img-fluid"></div>
+						                                <div class="drop-postStatus-block-right">
+						                                    <h3>Who can see this post?</h3>
+						                                    <p>This post is offensive or the account is hacked</p>
+						                                </div>
+						                            </div>
+						                        </a>
+						                    </li>
+						                </ul>
+						            </div>
+						        </div>
+						    </div>
+						    <div class="dApp-status-heading">
+						        <div class="dApp-status-heading-profile-pic share-post-dApp-status-heading-profile-pic">
+						            <img src="images/post-author-dp.svg" alt="DP" class="img-fluid" />
+						            <span><img src="images/share-post-peview-follow-icon.svg" alt="icon" class="img-fluid" /></span>
+						        </div>
+						        <div class="dApp-status-heading-text">
+						            <h1>@MisterTea5</h1>
+						            <h2>NFT Community and Metaverse. Follow and please share your amazing NFT ...</h2>
+						            <h3><span><img src="images/Clock.png" alt="icon" class="img-fluid"></span>July 15 </h3>
+						        </div>
+						        <div class="user-follow-btn">
+						            <button><span><img src="images/follow-add.svg" alt="icon" class="img-fluid" /></span>Follow</button>
+						        </div>
+						    </div>
+
+
+						    <div class="dApp-status-hastag-txt">
+						        <p>🌏 <span>#NFTs</span> will be the linchpin of the emerging <span>#NFTcryptopunk</span> economy. What impact will they have on markets? </p>
+						    </div>
+						    <div class="dApp-status-content-sect">
+						        <img src="images/status-img-share-post.png" alt="image" class="img-fluid">
+						    </div>
+						    <div class="dApp-status-like-comment-share-sect">
+						        <ul>
+						            <li>
+						                <div class="home-post-usr-reaction-wrap">
+						                    <div class="home-post-usr-reaction">
+						                        <span><img src="images/reaction1.png" alt="icon" class="img-fluid"></span>
+						                        <span><img src="images/reaction2.png" alt="icon" class="img-fluid"></span>
+						                        <span><img src="images/reaction3.png" alt="icon" class="img-fluid"></span>
+						                        <span><img src="images/reaction4.png" alt="icon" class="img-fluid"></span>
+						                        <span><img src="images/reaction5.png" alt="icon" class="img-fluid"></span>
+						                        <span><img src="images/reaction6.png" alt="icon" class="img-fluid"></span>
+						                    </div>
+						                </div>
+						                <span><img src="images/like-icon.png" alt="icon" class="img-fluid post-like"><img src="images/like-icon.png" alt="icon" class="img-fluid post-like-hov"></span><a href="#">Like</a>
+						            </li>
+
+						            <li><span><img src="images/dislike.png" alt="icon" class="img-fluid"></span><a href="#">Dislike</a></li>
+
+						            <li><span><img src="images/gift.png" alt="icon" class="img-fluid"></span> <a href="#">Gift</a></li>
+
+						            <li><span><img src="images/comment-icon.png" alt="icon" class="img-fluid"></span><a href="#">Comment</a></li>
+
+						            <li data-toggle="modal" data-target="#share_post_Modal"><span><img src="images/dApp-Share.png" alt="icon" class="img-fluid"></span><a href="#">Share</a></li>
+
+						            <li class="post-send-by-Masage"><span><img src="images/Paper-Plane.png" alt="icon" class="img-fluid"></span><a href="#">Send</a></li>
+
+						        </ul>
+						    </div>
+						</div>
+							
+							<div class="back-to-feed-btn-sect">
+								<button id="back-to-feed-btn">
+									<span><img src="images/back-to-feed-arrow-right.png" alt="icon" class="img-fluid" /></span>
+									Back to Feed
+								</button>
+							</div>
+						</div>
+						<div class="home-post-right">
+							<div class="right-ovelay dApp-overlay"></div>
+							<div class="dApp-What-happening-sect">
+							<div class="dApp-What-happeningheadings">
+								<h1>What’s happening</h1>
+							</div>
+							<div class="dApp-What-happening-news-sect">
+								<div class="dApp-What-happening-news">
+									<div class="dApp-What-happening-news-text">
+										<h2>News . <span>2 minutes ago</span></h2>
+										<p>Looking at the claim that discourse around ‘White Previlege’ can hamper white working class students.</p>
+									</div>
+									<div class="dApp-What-happening-news-photo">
+										<img src="images/dApp-news-pic-1.png" alt="photo" class="img-fluid">
+									</div>
+								</div>
+								<h6>Treanding with <a href="#">#WhitePrevilege</a></h6>
+							</div>
+							
+							<div class="dApp-Trending-United-Kingdom-sect">
+								<h1>Trending in United Kingdom</h1>
+								<a href="#">#CryptoCash</a>
+								<p>17.1K Pinned</p>
+								<div class="dApp-Trending-United-Kingdom-3dots">
+									<img src="images/dApp-ThreeDots.png" alt="3Dots" class="img-fluid">
+								</div>
+							</div>
+							<div class="dApp-Trending-United-Kingdom-sect">
+								<h1>Trending in United Kingdom</h1>
+								<a href="#">#CryptoCash</a>
+								<p>17.1K Pinned</p>
+								<div class="dApp-Trending-United-Kingdom-3dots">
+									<img src="images/dApp-ThreeDots.png" alt="3Dots" class="img-fluid">
+								</div>
+							</div>
+							
+							<div class="dApp-Who-seemore"><a href="#">Show more</a></div>
+						</div>
+							
+							<div class="dApp-Who-to-follow-sect">
+								<div class="dApp-Who-to-follow-headings">
+									<h1>You might like</h1>
+								</div>
+								<div class="dApp-Who-to-follow">
+									<div class="dApp-Who-to-follow-content">
+										<div class="dApp-Who-to-follow-dp">
+											<img src="images/userAvatar4.png" alt="photo" class="img-fluid">
+											
+										</div>
+										<ul>
+											<li class="profile-name">@djirridiant </li>			                            
+											<li class="Promoted"><span><img src="images/External-Link.png" alt="icon" class="img-fluid"></span>Promoted</li>
+										</ul>
+									</div>
+									<div class="dApp-Who-to-follow-btn">
+										<button>Follow</button>
+									</div>
+								</div>
+								
+								<div class="dApp-Who-to-follow">
+									<div class="dApp-Who-to-follow-content">
+										<div class="dApp-Who-to-follow-dp">
+											<img src="images/userAvatar2.png" alt="photo" class="img-fluid">
+											<span class="dApp-follow-dp-icon"><img src="images/follow-icon.png" alt="photo" class="img-fluid"></span>
+										</div>
+										<ul>
+											<li class="profile-name">@CurtisDaws</li>
+											
+										</ul>
+									</div>
+									<div class="dApp-Who-to-follow-btn">
+										<button>Follow</button>
+									</div>
+								</div>
+								
+								<div class="dApp-Who-to-follow mb-4">
+									<div class="dApp-Who-to-follow-content">
+										<div class="dApp-Who-to-follow-dp">
+											<img src="images/userAvatar5.png" alt="photo" class="img-fluid">
+										</div>
+										<ul>
+											<li class="profile-name">@JaniceHum</li>
+											
+										</ul>
+									</div>
+									<div class="dApp-Who-to-follow-btn">
+										<button>Follow</button>
+									</div>
+								</div>
+								
+								<div class="dApp-Who-seemore"><a href="#">Show more</a></div>
+							</div>
+							
+							<div class="dApp-Topics-to-follow-sect">
+								<div class="dApp-Topics-to-follow-headings">
+									<h1>Topics to follow</h1>
+								</div>
+								<div class="dApp-Topics-to-follow">
+									<div class="dApp-Topics-to-follow-content">
+										<h2>Cricket </h2>
+										<h3>Sport</h3>
+									</div>
+									<div class="dApp-Who-to-follow-btn">
+										<button>Follow</button>
+									</div>
+								</div>
+								
+								<div class="dApp-Topics-to-follow">
+									<div class="dApp-Topics-to-follow-content">
+										<h2>Female Top Fashion  </h2>
+										<h3>All about fashion world</h3>
+									</div>
+									<div class="dApp-Who-to-follow-btn">
+										<button>Follow</button>
+									</div>
+								</div>
+								
+								<div class="dApp-Topics-to-follow">
+									<div class="dApp-Topics-to-follow-content">
+										<h2>Technology </h2>
+										<h3>Latest gadgets</h3>
+									</div>
+									<div class="dApp-Who-to-follow-btn">
+										<button>Follow</button>
+									</div>
+								</div>
+								
+								
+								<div class="dApp-Who-seemore"><a href="#">Show more</a></div>
+							</div>
+							<div class="dApp-follow-evnts">
+								<div class="dApp-followEvnts-headings">
+									<h2>Events</h2>
+									<span><img src="images/dAppPlus.png" class="img-fluid" alt="plus"/></span>
+								</div>
+								<ul>
+									<li>
+										<div class="dApp-follow-evnts-lft">uxdesign</div>
+										<div class="dApp-follow-evnts-right live-clr">Live</div>
+									</li>
+									<li>
+										<div class="dApp-follow-evnts-lft">hashtaguserexperience</div>
+										<div class="dApp-follow-evnts-right upcoming-clr">Upcoming</div>
+									</li>
+									<li>
+										<div class="dApp-follow-evnts-lft">hashtagdesign</div>
+										<div class="dApp-follow-evnts-right live-clr">Live</div>
+									</li>
+								</ul>
+								<div class="dApp-Who-seemore"><a href="#">Show more</a></div>
+							</div>
+							<div class="dApp-follow-evnts">
+								<div class="dApp-followEvnts-headings">
+									<h2>Community</h2>
+									<span><img src="images/dAppPlus.png" class="img-fluid" alt="plus"/></span>
+								</div>
+								<ul>
+									<li>
+										<div class="dApp-follow-evnts-lft">DeFi Signal </div>
+										<div class="dApp-follow-evnts-right community-clr">400 members</div>
+									</li>
+									<li>
+										<div class="dApp-follow-evnts-lft">Crypto Process</div>
+										<div class="dApp-follow-evnts-right community-clr">2.5k members</div>
+									</li>
+									<li>
+										<div class="dApp-follow-evnts-lft">Fashion Era</div>
+										<div class="dApp-follow-evnts-right community-clr">2.5k members</div>
+									</li>
+								</ul>
+								<div class="dApp-Who-seemore"><a href="#">Show more</a></div>
+							</div>
+							<div class="dApp-follow-evnts">
+								<div class="dApp-followEvnts-headings">
+									<h2>Recent Post</h2>
+									<span><img src="images/dAppPlus.png" class="img-fluid" alt="plus"/></span>
+								</div>
+								<div class="dApp-follow-recentPost-block">
+									<div class="dApp-follow-recentPost-item">
+										<div class="dApp-follow-recentPost-lft">
+											<img src="images/recentpost-icon.png" class="img-fluid" alt="post"/>
+										</div>
+										<div class="dApp-follow-recentPost-right">
+											<h2>Title here</h2>
+											<p>1 point  0 comments  16 Nov</p>
+										</div>
+									</div>
+									<div class="dApp-follow-recentPost-item">
+										<div class="dApp-follow-recentPost-lft">
+											<img src="images/recentpost-icon.png" class="img-fluid" alt="post"/>
+										</div>
+										<div class="dApp-follow-recentPost-right">
+											<h2>Title here</h2>
+											<p>1 point  0 comments  16 Nov</p>
+										</div>
+									</div>
+								</div>
+								<div class="dApp-recentPost-btn"><button class="dApp-recentPost-clear-btn">Clear</button></div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="VisibilityofShared-Posts-sect">
+						<div class="VisibilityofShared-Posts-headings">
+							<h2>Visibility of Shared Posts</h2>
+						</div>
+						<div class="VisibilityofShared-Posts-content">
+						    <div class="who-can-see-fream">
+						        <img src="images/who-can-see-header-img.png" alt="img" class="img-fluid" />
+						    </div>
+						    <h3>Visibility of Shared Posts</h3>
+						    <span><img src="images/who-can-see-header-icon.png" alt="img" class="img-fluid" /></span>
+						</div>
+						<div class="VisibilityofShared-Posts-body">
+							<p>The visibility of posts and engagement activity that appear in the main feed and profile may vary depending on the visibility option that the author has selected for the post. You can't change the visibility option after you've shared your post.</p>
+							<p>The visibility options are:</p>
+							<div class="The-visibility-options-list">
+								<form>
+									<ul>
+										<li>
+											<label class="container">
+												<h3>Anyone <span> – visible to anyone on or off LinkedIn, including your extended network.</span></h3>
+												<input type="radio" name="radio">
+												<span class="checkmark"></span>
+											</label>
+										</li>
+										<li>
+											<label class="container">
+												<h3>Anyone + Twitter <span> – visible to anyone on both LinkedIn and Twitter. </span></h3>
+												<input type="radio" name="radio">
+												<span class="checkmark"></span>
+											</label>
+										</li>
+										<li>
+											<label class="container">
+												<h3>Connections only <span> – visible to only 1st-degree connections of the post author. </span></h3>
+												<input type="radio" name="radio">
+												<span class="checkmark"></span>
+											</label>
+										</li>
+										<li>
+											<label class="container">
+												<h3>Group members <span> – only visible to members of the group where the post was shared.</span></h3>
+												<input type="radio" name="radio">
+												<span class="checkmark"></span>
+											</label>
+										</li>
+										<li>
+											<label class="container">
+												<h3>Event attendees <span> – visible to any attendee of the event.</span></h3>
+												<input type="radio" name="radio">
+												<span class="checkmark"></span>
+											</label>
+										</li>
+									</ul>
+								</form>
+							</div>
+							<p>Once you select a visibility option, it is saved as your default visibility option. But you can change this before posting content the next time.</p>
+							<div class="The-visibility-options-collaps">
+								<button class="visibility-options-collapsible">Where can my post be seen if I set it to Anyone?</button>
+								<div class="visibility-options-collaps-content">
+									<h5>If your post visibility is set to Anyone, the post may appear on:</h5>
+									<ul>
+										<li><span><img src="images/list-type-orange.png" alt="dot" class="img-fluid" /></span>The homepage of your 1st-degree connections.</li>
+										<li><span><img src="images/list-type-orange.png" alt="dot" class="img-fluid" /></span>The homepage of your 2nd or 3rd-degree connections if re-shared, commented on, or liked by your 1st-degree connections.</li>
+										<li><span><img src="images/list-type-orange.png" alt="dot" class="img-fluid" /></span>Content search results for topics you've posted.</li>
+										<li><span><img src="images/list-type-orange.png" alt="dot" class="img-fluid" /></span>Search results for hashtags you've used in posts.</li>
+										<li><span><img src="images/list-type-orange.png" alt="dot" class="img-fluid" /></span>Your Recent Activity page.</li>
+										<li><span><img src="images/list-type-orange.png" alt="dot" class="img-fluid" /></span>Your public profile, which is also visible to people who aren't signed in to LinkedIn. This may not show if you've turned off public profile visibility or Articles & Activity section from public profile settings.</li>
+										<li><span><img src="images/list-type-orange.png" alt="dot" class="img-fluid" /></span>Other sites off LinkedIn. This means that even people who aren't signed in to LinkedIn can see your post.</li>
+										<li class="mb-0"><span><img src="images/list-type-orange.png" alt="dot" class="img-fluid" /></span>Your followers’ feeds, who may not be connected to you.</li>
+									</ul>
+								</div>
+							</div>
+							<div class="learn-about-list">
+								<h4>Learn more about:</h4>
+								<ul>
+									<li>Post and share content</li>
+									<li>Your network and degrees of connection</li>
+									<li>Share posts on and off LinkedIn</li>
+									<li>Your recent activity on LinkedIn</li>
+									<li>LinkedIn public profile visibility</li>
+									<li>View list of your followers</li>
+								</ul>
+							</div>
+							<div class="Last-updated-text">
+								<h6>Last updated: 2 months ago</h6>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		
+        </div>		
+		<div class="user-homePost-modal-section">
+			<!--Embed this post Modal-->
+			<div class="Embed-this-post-Modal">
+				<div class="modal fade" id="Embed_post_Modal" role="dialog">
+					<div class="modal-dialog">
+						<!-- Modal content-->
+						<div class="modal-content Embed-this-post-Modal-content">
+							<div class="Embed-this-post-Modal-headings">
+								<h2>Embed this post</h2>
+								<button class="close" data-dismiss="modal"><img src="images/create-post-modal-Cross.png" alt="icon" class="img-fluid" /></button>
+							</div>
+							<div class="Embed-this-post-Modal-body">
+								<h3>Copy and paste embed code on your site</h3>
+								<div class="Embed-iframe-tag-post-link">
+									<p>&lt;iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6873888231994245121" height="597" width="504" frameborder="0" allowfullscreen="" title="Embedded post"&gt;&lt;/iframe&gt;<p>
+								</div>
+								<div class="copy-Embed-post-btn-sect">
+									<div class="copy-Embed-post-btn-left-checkbox">
+										<label class="container"><p>Include full post</p>
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+									<button>Copy Code</button>
+								</div>
+								<div class="Enoch-mbed-Terms-text">
+									<p>By copying the link above, you agree to the <a href="#">Enoch Embed Terms of Use.</a></p>
+								</div>
+								<div class="Embed-this-post-preview-sect">
+									<h5>Preview</h5>
+									<div class="Embed-this-post-preview-status">
+										<div class="Embed-this-post-preview-status-content">
+										<div class="Embed-this-post-preview-status-headings">
+											<div class="Embed-this-post-preview-status-dp">
+												<img src="images/preview-RobertRosePic.png" alt="img" class="img-fluid" />
+											</div>
+											<div class="Embed-post-preview-status-user-name">
+												<h4>@Hulk66</h4>
+												<h5>5000 inspired generative NFTs Monkey  Enoch : http://enoch.app/hulk66 </h5>
+												<h6><span><img src="images/Clock.png" alt="icon" class="img-fluid"></span>July 15 </h6>
+											</div>
+											<div class="Embed-preview-status-3dot">
+												<img src="images/preview-ThreeDots.png" alt="icon" class="img-fluid" />
+											</div>
+											<div class="dApp-post-3dots Embed-preview-status-3dot dropdown">
+											    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/preview-ThreeDots.png" alt="3dots" class="img-fluid post-threedots"><img src="images/preview-ThreeDots.png" alt="3dots" class="img-fluid post-threedots-active"></a>
+											    <div class="dropdown-menu home-drop-postStatus">
+											        <ul>
+											            <li>-</li>
+											            <li>-</li>
+											            <li>-</li>
+											            <li>-</li>
+											            <li>-</li>
+											        </ul>
+											    </div>
+											</div>
+										</div>
+										<div class="Embed-this-post-preview-status-body">
+											<div class="Embed-preview-status-caption">
+												<p>🌏 <a href="#">#NFTs</a> will be the linchpin of the emerging <a href="#">#NFTcryptopunk</a>  economy. What impact will they have on markets? </p>
+											</div>
+											<div class="Embed-preview-status-img">
+												<img src="images/hashTag.png" alt="img" class="img-fluid" />
+											</div>
+											<div class="dApp-status-like-comment-share-sect">
+												<ul>
+													<li>
+														<div class="home-post-usr-reaction-wrap">
+															<div class="home-post-usr-reaction">
+																<span><img src="images/reaction1.png" alt="icon" class="img-fluid"></span>
+																<span><img src="images/reaction2.png" alt="icon" class="img-fluid"></span>
+																<span><img src="images/reaction3.png" alt="icon" class="img-fluid"></span>
+																<span><img src="images/reaction4.png" alt="icon" class="img-fluid"></span>
+																<span><img src="images/reaction5.png" alt="icon" class="img-fluid"></span>
+																<span><img src="images/reaction6.png" alt="icon" class="img-fluid"></span>
+															</div>
+														</div>
+														<span><img src="images/like-icon.png" alt="icon" class="img-fluid post-like"><img src="images/like-icon.png" alt="icon" class="img-fluid post-like-hov"></span><a href="#">Like</a>
+													</li>
+
+													<li><span><img src="images/dislike.png" alt="icon" class="img-fluid"></span><a href="#">Dislike</a></li>
+
+													<li><span><img src="images/gift.png" alt="icon" class="img-fluid"></span> <a href="#">Gift</a></li>
+
+													<li><span><img src="images/comment-icon.png" alt="icon" class="img-fluid"></span><a href="#">Comment</a></li>
+
+													<li><span><img src="images/dApp-Share.png" alt="icon" class="img-fluid"></span><a href="#">Share</a></li>
+
+													<li><span><img src="images/Paper-Plane.png" alt="icon" class="img-fluid"></span><a href="#">Send</a></li>
+
+												</ul>
+											</div>
+										</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>	
+				<!--Embed this post Modal-->
+			<div class="dont-Want-to-See-post-Modal">
+				<div class="modal fade" id="dont_Want_See_post_Modal" role="dialog">
+					<div class="modal-dialog">
+						<!-- Modal content-->
+						<div class="modal-content dont_Want_See-post-Modal-content">
+							<div class="dont_Want_See-Modal-headings">
+								<h2>Dont’t want to see this</h2>
+								<button class="close" data-dismiss="modal"><img src="images/create-post-modal-Cross.png" alt="icon" class="img-fluid" /></button>
+							</div>
+							<div class="dont_Want_See-post-Modal-body">
+								<h3>Tell us why you don’t want to see this</h3>
+								<h4>Your feedback will help us improve your experience</h4>
+								<div class="reason-list">
+									<form>
+										<ul>
+											<li>
+												<label class="container"><h5>I’m not intrested in the author</h5>
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+											<li>
+												<label class="container"><h5>I’m not intrested in the topic</h5>
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+											<li>
+												<label class="container"><h5>I’ve seen too many post on this topic</h5>
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+											<li>
+												<label class="container"><h5>I’ve seen this post before</h5>
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+											<li>
+												<label class="container"><h5>This post is old</h5>
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+											<li>
+												<label class="container"><h5>It’s something else</h5>
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+										</ul>
+									</form>
+								</div>
+								<h6>If you think this goes our Professional Community Poicies, please let us know.</h6>
+								<a href="#">Report this post</a>
+							</div>
+							<div class="dont_Want_See-post-Modal-footer">
+								<button class="disable" id="dont_Want_See_post_reason_submit_btn">Submit</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>	
+			<!--Report this post Modal-->
+			<div class="Report-this-post-Modal">
+				<div class="modal fade" id="report_this_post_Modal" role="dialog">
+					<div class="modal-dialog">
+						<!-- Modal content-->
+						<div class="modal-content Report-this-post-Modal-content">
+							<div class="Report-post-Modal-headings">
+								<h2>Report</h2>
+								<button class="close" data-dismiss="modal"><img src="images/create-post-modal-Cross.png" alt="icon" class="img-fluid" /></button>
+							</div>
+							<div class="Report-post-Modal-body">
+								<h3>Why are you reporting this?</h3>
+								<div class="why-reporting-list">
+									<ul>
+										<li data-dismiss="modal" data-toggle="modal" data-target="#report_post_reason_One_Modal">Suspicious, spam, or fake <span><img src="images/report-post-arrow-right.svg" alt="icon" class="img-fluid" /></span></li>
+										<li data-dismiss="modal" data-toggle="modal" data-target="#report_post_reason_Two_Modal">Harassment or hateful speech <span><img src="images/report-post-arrow-right.svg" alt="icon" class="img-fluid" /></span></li>
+										<li data-dismiss="modal" data-toggle="modal" data-target="#report_post_reason_Three_Modal">Violence or physical harm <span><img src="images/report-post-arrow-right.svg" alt="icon" class="img-fluid" /></span></li>
+										<li data-dismiss="modal" data-toggle="modal" data-target="#report_post_reason_Four_Modal">Adult content <span><img src="images/report-post-arrow-right.svg" alt="icon" class="img-fluid" /></span></li>
+										<li data-dismiss="modal" data-toggle="modal" data-target="#report_post_reason_Five_Modal">Intellectual property infrigement or defamation <span><img src="images/report-post-arrow-right.svg" alt="icon" class="img-fluid" /></span></li>
+									</ul>
+								</div>
+								<h3 class="pb-0 reporting-reason-none">None of the reporting reason apply.</h3>
+								<div class="why-reporting-list pb-2">
+									<ul>
+										<li data-dismiss="modal" data-toggle="modal" data-target="#report_post_reason_Six_Modal">I still don’t want to see this <span><img src="images/report-post-arrow-right.svg" alt="icon" class="img-fluid" /></span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="Report-this-post-Modal-1">
+			<div class="modal fade" id="report_post_reason_One_Modal" role="dialog">
+					<div class="modal-dialog">
+						<!-- Modal content-->
+						<div class="modal-content Report-this-post-Modal-content-1">
+							<div class="Report-post-Modal-headings">
+								<h2>Report</h2>
+								<button class="close" data-dismiss="modal"><img src="images/create-post-modal-Cross.png" alt="icon" class="img-fluid" /></button>
+							</div>
+							<div class="Report-post-Modal-body">
+								<h3>How is this suspicious, spam, or fake?</h3>
+								<div class="Report-post-Modal-form">
+									<form>
+										<ul>
+											<li>
+												<label class="container">
+													<div class="Report-post-Modal-form-label">
+														<h4>Misinformation</h4> 
+														<h5>Spreading false or misleading information as if it were factual</h5>
+													</div>
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+											<li>
+												<label class="container">
+													<div class="Report-post-Modal-form-label">
+														<h4>Fraud or scam</h4> 
+														<h5>Deceiving others to obtain money or access private information</h5>
+													</div>
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+											<li>
+												<label class="container">
+													<div class="Report-post-Modal-form-label">
+														<h4>Spam</h4> 
+														<h5>Sharing irrelevant or repeated content to boost visibility or for monetary gain</h5>
+													</div>
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+											<li class="mb-0">
+												<label class="container">
+													<div class="Report-post-Modal-form-label">
+														<h4>Fake account</h4> 
+														<h5>Inaccurate or misleading representation</h5>
+													</div>
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+										</ul>
+									</form>
+								</div>
+							</div>
+							<div class="Report-post-Modal-footer">
+								<button class="back-btn" data-dismiss="modal" data-toggle="modal" data-target="#report_this_post_Modal">Back</button>
+								<button class="submit-btn disable">Submit</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="Report-this-post-Modal-2">
+			<div class="modal fade" id="report_post_reason_Two_Modal" role="dialog">
+					<div class="modal-dialog">
+						<!-- Modal content-->
+						<div class="modal-content Report-this-post-Modal-content-2">
+							<div class="Report-post-Modal-headings">
+								<h2>Report</h2>
+								<button class="close" data-dismiss="modal"><img src="images/create-post-modal-Cross.png" alt="icon" class="img-fluid" /></button>
+							</div>
+							<div class="Report-post-Modal-body">
+								<h3>How is this harassment or hateful speech?</h3>
+								<div class="Report-post-Modal-form">
+									<form>
+										<ul>
+											<li>
+												<label class="container">
+													<div class="Report-post-Modal-form-label">
+														<h4>Bullying or trolling</h4> 
+														<h5>Attacking or intimidating others, or deliberately and repeatedly disrupting conversations</h5>
+													</div>
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+											<li>
+												<label class="container">
+													<div class="Report-post-Modal-form-label">
+														<h4>Sexual harassment</h4> 
+														<h5>Unwanted romantic advances, requests for sexual favors, or unwelcome sexual remarks</h5>
+													</div>
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+											<li>
+												<label class="container">
+													<div class="Report-post-Modal-form-label">
+														<h4>Hateful or abusive speech</h4> 
+														<h5>Hateful, degrading, or inflammatory speech</h5>
+													</div>
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+											<li class="mb-0">
+												<label class="container">
+													<div class="Report-post-Modal-form-label">
+														<h4>Spam</h4> 
+														<h5>Sharing irrelevant or repeated content to boost visibility or for monetary gain</h5>
+													</div>
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+										</ul>
+									</form>
+								</div>
+							</div>
+							<div class="Report-post-Modal-footer">
+								<button class="back-btn" data-dismiss="modal" data-toggle="modal" data-target="#report_this_post_Modal">Back</button>
+								<button class="submit-btn disable">Submit</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="Report-this-post-Modal-3">
+			<div class="modal fade" id="report_post_reason_Three_Modal" role="dialog">
+					<div class="modal-dialog">
+						<!-- Modal content-->
+						<div class="modal-content Report-this-post-Modal-content-3">
+							<div class="Report-post-Modal-headings">
+								<h2>Report</h2>
+								<button class="close" data-dismiss="modal"><img src="images/create-post-modal-Cross.png" alt="icon" class="img-fluid" /></button>
+							</div>
+							<div class="Report-post-Modal-body">
+								<h3>How is this harassment or hateful speech?</h3>
+								<div class="Report-post-Modal-form">
+									<form>
+										<ul>
+											<li>
+												<label class="container">
+													<div class="Report-post-Modal-form-label">
+														<h4>Inciting violence or is a threat</h4> 
+														<h5>Encouraging violent acts or threatening physical harm</h5>
+													</div>
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+											<li>
+												<label class="container">
+													<div class="Report-post-Modal-form-label">
+														<h4>Self-harm</h4> 
+														<h5>Suicidal remarks or threatening to harm oneself</h5>
+													</div>
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+											<li>
+												<label class="container">
+													<div class="Report-post-Modal-form-label">
+														<h4>Shocking or gory</h4> 
+														<h5>Shocking or graphic content</h5>
+													</div>
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+											<li class="mb-0">
+												<label class="container">
+													<div class="Report-post-Modal-form-label">
+														<h4>Terrorism or act of extreme violence</h4> 
+														<h5>Depicting or encouraging terrorist acts or severe harm</h5>
+													</div>
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+										</ul>
+									</form>
+								</div>
+							</div>
+							<div class="Report-post-Modal-footer">
+								<button class="back-btn" data-dismiss="modal" data-toggle="modal" data-target="#report_this_post_Modal">Back</button>
+								<button class="submit-btn disable">Submit</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="Report-this-post-Modal-4">
+			<div class="modal fade" id="report_post_reason_Four_Modal" role="dialog">
+					<div class="modal-dialog">
+						<!-- Modal content-->
+						<div class="modal-content Report-this-post-Modal-content-4">
+							<div class="Report-post-Modal-headings">
+								<h2>Report</h2>
+								<button class="close" data-dismiss="modal"><img src="images/create-post-modal-Cross.png" alt="icon" class="img-fluid" /></button>
+							</div>
+							<div class="Report-post-Modal-body">
+								<h3>How is this adult content?</h3>
+								<div class="Report-post-Modal-form">
+									<form>
+										<ul>
+											<li>
+												<label class="container">
+													<div class="Report-post-Modal-form-label">
+														<h4>Nudity or sexual content</h4> 
+														<h5>Nudity, sexual scenes or language, or sex trafficking</h5>
+													</div>
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+											<li>
+												<label class="container">
+													<div class="Report-post-Modal-form-label">
+														<h4>Shocking or gory</h4> 
+														<h5>Shocking or graphic content</h5>
+													</div>
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+											<li class="mb-0">
+												<label class="container">
+													<div class="Report-post-Modal-form-label">
+														<h4>Sexual harassment</h4> 
+														<h5>Unwanted romantic advances, requests for sexual favors, or unwelcome sexual remarks</h5>
+													</div>
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+										</ul>
+									</form>
+								</div>
+							</div>
+							<div class="Report-post-Modal-footer">
+								<button class="back-btn" data-dismiss="modal" data-toggle="modal" data-target="#report_this_post_Modal">Back</button>
+								<button class="submit-btn disable">Submit</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="Report-this-post-Modal-5">
+			<div class="modal fade" id="report_post_reason_Five_Modal" role="dialog">
+					<div class="modal-dialog">
+						<!-- Modal content-->
+						<div class="modal-content Report-this-post-Modal-content-5">
+							<div class="Report-post-Modal-headings">
+								<h2>Report</h2>
+								<button class="close" data-dismiss="modal"><img src="images/create-post-modal-Cross.png" alt="icon" class="img-fluid" /></button>
+							</div>
+							<div class="Report-post-Modal-body">
+								<h3>How is this intellectual property infringement or defamation?</h3>
+								<div class="Report-post-Modal-form">
+									<ul>
+										<li>
+											<div class="Report-post-Modal-form-label">
+												<h4>Copyright infringement</h4>
+												<h5>Using your copyrighted work without your permission</h5>
+												<span><img src="images/arrow-top-right-r.svg" alt="icon" class="img-fluid" /></span>
+											</div>
+										</li>
+										<li>
+											<div class="Report-post-Modal-form-label">
+												<h4>Trademark infringement</h4>
+												<h5>Using your trademark without your permission</h5>
+												<span><img src="images/arrow-top-right-r.svg" alt="icon" class="img-fluid" /></span>
+											</div>
+										</li>
+										<li class="mb-0">
+											<div class="Report-post-Modal-form-label">
+												<h4>Defamation</h4>
+												<h5>Sharing falsehoods about you that could harm your reputation</h5>
+												<span><img src="images/arrow-top-right-r.svg" alt="icon" class="img-fluid" /></span>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="Report-post-Modal-footer">
+								<button class="back-btn mr-0" data-dismiss="modal" data-toggle="modal" data-target="#report_this_post_Modal">Back</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="Report-this-post-Modal-6">
+			<div class="modal fade" id="report_post_reason_Six_Modal" role="dialog">
+					<div class="modal-dialog">
+						<!-- Modal content-->
+						<div class="modal-content Report-this-post-Modal-content-6">
+							<div class="Report-post-Modal-headings">
+								<h2>Don’t want to see this</h2>
+								<button class="close" data-dismiss="modal"><img src="images/create-post-modal-Cross.png" alt="icon" class="img-fluid" /></button>
+							</div>
+							<div class="Report-post-Modal-body">
+								<h3 class="pb-0">Tell us why you don't want to see this</h3>
+								<p>Your feedback will help us improve your experience</p>
+								<div class="Report-post-Modal-form None-of-Report-post-Modal-form-last">
+									<form>
+										<ul>
+											<li>
+												<label class="container">
+													<div class="Report-post-Modal-form-label">
+														<h4>I'm not interested in the author</h4> 
+													</div>
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+											<li>
+												<label class="container">
+													<div class="Report-post-Modal-form-label">
+														<h4>I'm not interested in this topic</h4> 
+													</div>
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+											<li>
+												<label class="container">
+													<div class="Report-post-Modal-form-label">
+														<h4>I've seen too many posts on this topic</h4> 
+													</div>
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+											<li>
+												<label class="container">
+													<div class="Report-post-Modal-form-label">
+														<h4>I've seen this post before</h4> 
+													</div>
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+											<li>
+												<label class="container">
+													<div class="Report-post-Modal-form-label">
+														<h4>This post is old</h4> 
+													</div>
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+											<li class="mb-0">
+												<label class="container">
+													<div class="Report-post-Modal-form-label">
+														<h4>It's something else</h4> 
+													</div>
+													<input type="radio" name="radio">
+													<span class="checkmark"></span>
+												</label>
+											</li>
+										</ul>
+									</form>
+								</div>
+							</div>
+							<div class="Report-post-Modal-footer">
+								<button class="submit-btn disable">Submit</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="SharePost-Modal-sect">
+			    <div class="modal fade" id="share_post_Modal" role="dialog">
+			        <div class="modal-dialog">
+			            <!-- Modal content-->
+			            <div class="modal-content Celebrate-modal-content Celebrate-nxt-modal-content">
+			                <div class="Celebrate-Modal-header">
+			                    <h2>Share</h2>
+			                    <span class="close" data-dismiss="modal" data-toggle="modal" data-target="#SharePostDiscardDraftModal"><img src="images/create-post-modal-Cross.png" alt="icon" class="img-fluid" /></span>
+			                </div>
+			                <div class="Celebrate-modal-body pt-4 share-post-modal-body-content">
+			                    <div class="Celebrate-Modal-share-content">
+			                        <div class="Celebrate-Modal-share-post-headings">
+			                            <div class="Celebrate-Modal-share-post-dp">
+			                                <img src="images/share-post-user-dp.png" alt="img" class="img-fluid" />
+			                            </div>
+			                            <div class="Celebrate-Modal-share-post-user-name">
+			                                <h2>Hulk 88</h2>
+			                                <div class="Celebrate-Modal-share-post-dropdown">
+			                                    <ul>
+			                                        <li><span><img src="images/share-post-icon-Globe.png" alt="icon" class="img-fluid"></span>Anyone</li>
+			                                    </ul>
+			                                </div>
+			                            </div>
+			                        </div>
+			                        <div class="Celebrate-Modal-share-post-body">
+			                            <textarea>Start writing or use @ to mention people, companies</textarea>
+			                            <div class="share-post-preview-status">
+			                                <div class="dApp-status-topBar">
+			                                    <div class="dApp-status-topBar-dp">
+			                                        <img src="images/post-topbar-dp.svg" alt="img" class="img-fluid" />
+			                                    </div>
+			                                    <h4>@Holp09<span>like this </span></h4>
+			                                </div>
+			                                <div class="share-this-post-preview-status-headings">
+			                                    <div class="share-this-post-preview-status-dp">
+			                                        <img src="images/preview-RobertRosePic.png" alt="img" class="img-fluid" />
+			                                        <span><img src="images/share-post-peview-follow-icon.svg" alt="icon" class="img-fluid" /></span>
+			                                    </div>
+			                                    <div class="share-post-preview-status-user-name">
+			                                        <h4>@MisterTea5</h4>
+			                                        <h5>NFT Community and Metaverse. Follow and please share your amazing NFT ...</h5>
+			                                        <h6><span><img src="images/Clock.png" alt="icon" class="img-fluid"></span>July 15 </h6>
+			                                    </div>
+			                                    <div class="share-preview-status-3dot">
+			                                        <img src="images/preview-ThreeDots.png" alt="icon" class="img-fluid" />
+			                                    </div>
+			                                    <div class="dApp-post-3dots share-preview-status-3dot dropdown">
+			                                        <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/preview-ThreeDots.png" alt="3dots" class="img-fluid post-threedots"><img src="images/preview-ThreeDots.png" alt="3dots" class="img-fluid post-threedots-active"></a>
+			                                        <div class="dropdown-menu home-drop-postStatus">
+			                                            <ul>
+			                                                <li>-</li>
+			                                                <li>-</li>
+			                                                <li>-</li>
+			                                                <li>-</li>
+			                                                <li>-</li>
+			                                            </ul>
+			                                        </div>
+			                                    </div>
+			                                    <div class="user-follow-btn">
+			                                        <button><span><img src="images/follow-add.svg" alt="icon" class="img-fluid" /></span>Follow</button>
+			                                    </div>
+			                                </div>
+			                                <div class="share-this-post-preview-status-body">
+			                                    <div class="share-this-post-preview-status-caption">
+			                                        <p>🌏<a href="#">#NFTs</a>will be the linchpin of the emerging <a href="#">#NFTcryptopunk</a> economy. What impact will they have on markets? </p>
+			                                    </div>
+			                                    <div class="share-this-post-preview-status-content">
+			                                        <img src="images/share-post-preview-img.png" alt="img" class="img-fluid" />
+			                                    </div>
+			                                </div>
+			                                <!--
+                                    <div class="Embed-this-post-preview-status">
+                                        <div class="Embed-this-post-preview-status-content">
+                                            <div class="Embed-this-post-preview-status-body">
+                                                <div class="Embed-preview-status-caption">
+                                                    <p>🌏 <a href="#">#NFTs</a> will be the linchpin of the emerging <a href="#">#NFTcryptopunk</a> economy. What impact will they have on markets? </p>
+                                                </div>
+                                                <div class="Embed-preview-status-img">
+                                                    <img src="images/hashTag.png" alt="img" class="img-fluid" />
+                                                </div>
+                                                <div class="dApp-status-like-comment-share-sect">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="home-post-usr-reaction-wrap">
+                                                                <div class="home-post-usr-reaction">
+                                                                    <span><img src="images/reaction1.png" alt="icon" class="img-fluid"></span>
+                                                                    <span><img src="images/reaction2.png" alt="icon" class="img-fluid"></span>
+                                                                    <span><img src="images/reaction3.png" alt="icon" class="img-fluid"></span>
+                                                                    <span><img src="images/reaction4.png" alt="icon" class="img-fluid"></span>
+                                                                    <span><img src="images/reaction5.png" alt="icon" class="img-fluid"></span>
+                                                                    <span><img src="images/reaction6.png" alt="icon" class="img-fluid"></span>
+                                                                </div>
+                                                            </div>
+                                                            <span><img src="images/like-icon.png" alt="icon" class="img-fluid post-like"><img src="images/like-icon.png" alt="icon" class="img-fluid post-like-hov"></span><a href="#">Like</a>
+                                                        </li>
+
+                                                        <li><span><img src="images/dislike.png" alt="icon" class="img-fluid"></span><a href="#">Dislike</a></li>
+
+                                                        <li><span><img src="images/gift.png" alt="icon" class="img-fluid"></span> <a href="#">Gift</a></li>
+
+                                                        <li><span><img src="images/comment-icon.png" alt="icon" class="img-fluid"></span><a href="#">Comment</a></li>
+
+                                                        <li><span><img src="images/dApp-Share.png" alt="icon" class="img-fluid"></span><a href="#">Share</a></li>
+
+                                                        <li><span><img src="images/Paper-Plane.png" alt="icon" class="img-fluid"></span><a href="#">Send</a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    -->
+			                            </div>
+			                        </div>
+			                    </div>
+			                </div>
+			                <div class="share-this-post-modal-footer">
+			                    <h3>Add hashtag</h3>
+			                    <div class="Celebrate-Modal-share-post-icon-list">
+			                        <ul>
+			                            <li><img src="images/post-icon1-hov.png" alt="icon" class="img-fluid" /></li>
+			                            <li><img src="images/post-icon2-hov.png" alt="icon" class="img-fluid" /></li>
+			                            <li><img src="images/post-icon3-hov.png" alt="icon" class="img-fluid" /></li>
+			                            <li><img src="images/post-icon4-hov.png" alt="icon" class="img-fluid" /></li>
+			                            <li><img src="images/post-icon5-hov.png" alt="icon" class="img-fluid" /></li>
+			                            <li class="info mr-0"><img src="images/post-icon6.png" alt="icon" class="img-fluid" /></li>
+			                        </ul>
+			                        <button data-dismiss="modal">Post</button>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+			<div class="SharePostDiscard-draft-Modal-sect">
+			    <div id="SharePostDiscardDraftModal" class="modal fade" role="dialog">
+			        <div class="modal-dialog">
+
+			            <!-- Modal content-->
+			            <div class="modal-content SharePostDiscard-draft-Modal-content">
+			                <div class="SharePostDiscard-draft-Modal-header">
+			                    <h2>Discard draft</h2>
+			                    <span class="close" data-dismiss="modal"><img src="images/create-post-modal-Cross.png" alt="icon" class="img-fluid" /></span>
+			                </div>
+			                <div class="SharePostDiscard-draft-Modal-body">
+			                    <p>You haven’t finished your post yet. Are you sure you want to leave and discard your draft?</p>
+			                </div>
+			                <div class="SharePostDiscard-draft-Modal-footer">
+			                    <button class="goBack-btn">Go back</button>
+			                    <button class="discard-btn">Discard</button>
+			                </div>
+			            </div>
+
+			        </div>
+			    </div>
+			</div>
+			<div class="post-notification-sect">
+				<div class="post-notification-box save-post-notification-box">
+					<div class="post-notification-box-left">
+						<div class="post-notification-success-icon">
+						<img src="images/success-Checked-box.png" alt="icon" class="img-fluid" />
+					</div>
+					<div class="post-notification-success-text">
+						<h4>Item saved. <a href="#" class="view-all-save-post">View all</a></h4>
+						<p>1m</p>
+					</div>
+					</div>
+					<div class="post-notification-box-close-sect">
+						<button class="save-post-notification-box-close-btn"><img src="images/notification-close-Cross.png" alt="icon" class="img-fluid" /></button>
+						<p>1 of 2</p>
+					</div>
+				</div>
+				<div class="post-notification-box copy-link-post-notification-box">
+					<div class="post-notification-box-left">
+						<div class="post-notification-success-icon">
+						<img src="images/success-Checked-box.png" alt="icon" class="img-fluid" />
+					</div>
+					<div class="post-notification-success-text">
+						<h4>Link copied to clipboard. <a href="#" class="view-all-copy-link-post">View post</a></h4>
+						<p>1m</p>
+					</div>
+					</div>
+					<div class="post-notification-box-close-sect">
+						<button class="copy-link-post-notification-box-close-btn"><img src="images/notification-close-Cross.png" alt="icon" class="img-fluid" /></button>
+						<p>1 of 2</p>
+					</div>
+				</div>
+				<div class="post-notification-box unfllow-user-notification-box">
+					<div class="post-notification-box-left">
+						<div class="post-notification-success-icon">
+						<img src="images/success-Checked-box.png" alt="icon" class="img-fluid" />
+					</div>
+					<div class="post-notification-success-text">
+						<h4>Link copied to clipboard. <a href="#" class="view-unfllowUser-post">View post</a></h4>
+						<p>1m</p>
+					</div>
+					</div>
+					<div class="post-notification-box-close-sect">
+						<button class="unfllow-user-notification-box-close-btn"><img src="images/notification-close-Cross.png" alt="icon" class="img-fluid" /></button>
+						<p>1 of 2</p>
+					</div>
+				</div>
+				<div class="post-notification-box mute-user-notification-box">
+					<div class="post-notification-box-left">
+						<div class="post-notification-success-icon">
+						<img src="images/success-Checked-box.png" alt="icon" class="img-fluid" />
+					</div>
+					<div class="post-notification-success-text">
+						<h4>Link copied to clipboard. <a href="#" class="view-muteUser-post">View post</a></h4>
+						<p>1m</p>
+					</div>
+					</div>
+					<div class="post-notification-box-close-sect">
+						<button class="mute-user-notification-box-close-btn"><img src="images/notification-close-Cross.png" alt="icon" class="img-fluid" /></button>
+						<p>1 of 2</p>
+					</div>
+				</div>
+			</div>
+			<div class="send-post-masage-sect">
+			    <div class="send-post-masage-cards-sect">
+			        <div class="send-post-Message-open-card">
+			            <div class="send-post-Message-open-card-header">
+			                <h2>New message</h2>
+			                <span class="send-post-Message-open-card-close"><img src="images/open-masage-close-Cross.svg" alt="icon" class="img-fluid" /></span>
+			            </div>
+			            <div class="send-post-Message-reciver-input">
+			                <input type="text" placeholder="Type a name or multiple names">
+			            </div>
+			            <div class="send-post-Message-body">
+			                <div class="send-post-Message-caption">
+			                    <textarea>write a message</textarea>
+			                </div>
+			                <div class="send-post-Message-preview">
+			                    <div class="send-post-Message-preview-headings">
+			                        <div class="send-post-Message-preview-headings-dp">
+			                            <img src="images/userAvatar1.png" alt="DP" class="img-fluid">
+			                        </div>
+			                        <div class="send-post-Message-preview-headings-userName">
+			                            <h3>@Hulk66</h3>
+			                            <h4>5000 inspired generative NFTs Monkey Enoch : <a href="#">http://enoch.app/hulk66</a> </h4>
+			                        </div>
+			                    </div>
+			                    <div class="send-post-Message-preview-post-caption">
+			                        <p>🌏 <a href="#">#NFTs</a> will be the linchpin of the emerging <a href="#">#NFTcryptopunk</a> economy.</p>
+			                        <span class="See-more">...see more</span>
+			                    </div>
+			                    <div class="send-post-Message-preview-post-img">
+			                        <img src="images/post-share-img.png" alt="img" class="img-fluid" />
+			                    </div>
+			                </div>
+			            </div>
+			            <div class="send-post-Message-open-card-footer">
+			                <span><img src="images/emoje-icon.svg" alt="icon" class="img-fluid"></span>
+			                <button>Send</button>
+			            </div>
+			        </div>
+			        <div class="send-post-Messaging-card">
+                        <div class="send-messaging-collaps">
+                            <div class="send-messaging-collapsible">
+                                <div class="send-post-Messaging-card-headings">
+                                    <div class="send-post-Messaging-card-headings-left">
+                                        <div class="send-post-Messaging-card-headings-dp-sect">
+                                            <div class="send-post-Messaging-card-headings-dp">
+                                                <img src="images/RobertRosePic-event.png" alt="img" class="img-fluid " />
+                                            </div>
+                                            <span><img src="images/active-icon-green.svg" alt="icon" class="img-fluid" /></span>
+                                        </div>
+                                        <h2>Messaging</h2>
+                                    </div>
+                                    <div class="send-post-Messaging-card-headings-right">
+                                        <ul>
+                                            <li class="Messaging-3dots-btn">
+                                                <span><img src="images/ThreeDots.svg" alt="icon" class="img-fluid" /></span>
+                                                <div class="Messaging-3dots-dropdown">
+                                                    <ul>
+                                                        <li class="active">All Messages</li>
+                                                        <li>Archived</li>
+                                                        <li>My Connections</li>
+                                                        <li>Unread</li>
+                                                        <li>InMail</li>
+                                                        <li>Spam</li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li><img src="images/Messaging-Icon.svg" alt="icon" class="img-fluid" /></li>
+                                            <li class="send-messaging-collapsible-btn"><img src="images/chevron-up-o.svg" alt="icon" class="img-fluid" /></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="send-post-Messaging-card-content">
+                                    <div class="Messaging-card-search-box">
+                                        <span><img src="images/message-search.svg" alt="icon" class="img-fluid" /></span>
+                                        <input type="text" placeholder="Search messages">
+                                        <span><img src="images/message-settings.svg" alt="icon" class="img-fluid" /></span>
+                                    </div>
+                                    <div class="Messaging-card-chatlist">
+                                        <ul>
+                                            <li>
+                                                <div class="Messaging-card-chatlist-left">
+                                                    <div class="Messaging-card-chatlist-dp">
+                                                        <img src="images/chat-1.png" alt="img" class="img-fluid" />
+                                                        <span class="act-green">&nbsp;</span>
+                                                    </div>
+                                                    <div class="Messaging-card-chatlist-text">
+                                                        <h2>@Miguel Castro Diseño</h2>
+                                                        <h3>Hello friend</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="Messaging-card-chatlist-date">
+                                                    <h3>Dec 12</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="Messaging-card-chatlist-left">
+                                                    <div class="Messaging-card-chatlist-dp">
+                                                        <img src="images/chat-2.png" alt="img" class="img-fluid" />
+                                                        <span class="act-red">&nbsp;</span>
+                                                    </div>
+                                                    <div class="Messaging-card-chatlist-text">
+                                                        <h2>@Sato77</h2>
+                                                        <h3>You: you’re welcome</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="Messaging-card-chatlist-date">
+                                                    <h3>Dec 10</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="Messaging-card-chatlist-left">
+                                                    <div class="Messaging-card-chatlist-dp">
+                                                        <img src="images/chat-1.png" alt="img" class="img-fluid" />
+                                                        <span class="act-oldlace">&nbsp;</span>
+                                                    </div>
+                                                    <div class="Messaging-card-chatlist-text">
+                                                        <h2>@Monsterra</h2>
+                                                        <h3>You: Congrats on your new role!</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="Messaging-card-chatlist-date">
+                                                    <h3>Dec 10</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="Messaging-card-chatlist-left">
+                                                    <div class="Messaging-card-chatlist-dp">
+                                                        <img src="images/chat-4.png" alt="img" class="img-fluid" />
+                                                        <span class="act-green">&nbsp;</span>
+                                                    </div>
+                                                    <div class="Messaging-card-chatlist-text">
+                                                        <h2>@Flor</h2>
+                                                        <h3>Any confusion?</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="Messaging-card-chatlist-date">
+                                                    <h3>Oct 28</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="Messaging-card-chatlist-left">
+                                                    <div class="Messaging-card-chatlist-dp">
+                                                        <img src="images/chat-5.png" alt="img" class="img-fluid" />
+                                                        <span class="act">&nbsp;</span>
+                                                    </div>
+                                                    <div class="Messaging-card-chatlist-text">
+                                                        <h2>@Aliceloo</h2>
+                                                        <h3>You: Happy birthday mate! </h3>
+                                                    </div>
+                                                </div>
+                                                <div class="Messaging-card-chatlist-date">
+                                                    <h3>Oct 27</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="Messaging-card-chatlist-left">
+                                                    <div class="Messaging-card-chatlist-dp">
+                                                        <img src="images/chat-6.png" alt="img" class="img-fluid" />
+                                                        <span class="act">&nbsp;</span>
+                                                    </div>
+                                                    <div class="Messaging-card-chatlist-text">
+                                                        <h2>@Chase</h2>
+                                                        <h3>I am not available in this week</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="Messaging-card-chatlist-date">
+                                                    <h3>Oct 22</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="Messaging-card-chatlist-left">
+                                                    <div class="Messaging-card-chatlist-dp">
+                                                        <img src="images/chat-7.png" alt="img" class="img-fluid" />
+                                                        <span class="act">&nbsp;</span>
+                                                    </div>
+                                                    <div class="Messaging-card-chatlist-text">
+                                                        <h2>@Rogvarok</h2>
+                                                        <h3>In case you have not reecived m...</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="Messaging-card-chatlist-date">
+                                                    <h3>Dec 10</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="Messaging-card-chatlist-left">
+                                                    <div class="Messaging-card-chatlist-dp">
+                                                        <img src="images/chat-8.png" alt="img" class="img-fluid" />
+                                                        <span class="act-green">&nbsp;</span>
+                                                    </div>
+                                                    <div class="Messaging-card-chatlist-text">
+                                                        <h2>@Airdrop King</h2>
+                                                        <h3>Anyway</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="Messaging-card-chatlist-date">
+                                                    <h3>Oct 09</h3>
+                                                </div>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+			        </div>
+			    </div>
+			</div>
+
+		</div>
+	</div>
+	
+	
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	  <script>
+		$(function(){
+		   $('.menu-mid-sect ul li.submenubar-item a').click(function(){
+			 $('.menu-mid-sect ul li.submenubar-item a').each(function(a){
+			   $( this ).removeClass('selectedclass')
+			 });
+			 $( this ).addClass('selectedclass');
+		   });
+		  
+		 });
+		</script>
+		<script type="text/javascript">
+	// When the user clicks, open the popup
+	function popupFunction() {
+	  var popup = document.getElementById("myPopup");
+	  popup.classList.toggle("show");
+	
+	}
+	
+	// When the user clicks, open trade mennu
+	function tradeFunction() {
+	  var trade = document.getElementById("trademenu-drpdown");
+	  trade.classList.toggle("show");
+	}
+	</script>
+	<script>
+		/*for toggle sub menu*/
+			function subtogglediv(id, icon) {
+				var id = document.getElementById(id);
+				id.classList.toggle('submenu-active');
+				var cross = document.getElementById(icon);
+				cross.classList.toggle('fa-times');
+				cross.classList.toggle('fa-bars');
+			}
+			</script>
+	
+			<script type="text/javascript">
+			/* for modal dropdown menu*/
+			var dropdownpopup = document.querySelectorAll('[data-toggle=dropdownpopup]');
+			for (var k = 0; k < dropdownpopup.length; k++) {
+				dropdownpopup[k].addEventListener('click', function (e) {
+					if (this.hasAttribute('data-link')) {
+						var m_ID1 = this.getAttribute('data-link');
+						//for closing other popup
+						var activedropdown = document.querySelector('.dropdown-menu.drop-active');
+						if(activedropdown && activedropdown.getAttribute('id') != m_ID1)
+						{
+							activedropdown.classList.remove('drop-active');
+						}
+						//activting popup
+						document.getElementById(m_ID1).classList.toggle('drop-active');
+					}
+				});
+			}
+		 
+		
+	
+			//For modal
+			document.addEventListener('click', function (e) {
+				e = e || window.event;
+				var target = e.target || e.srcElement;
+	
+				if (target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') 
+				{
+					if (target.hasAttribute('data-target')) 
+					{
+						var m_ID = target.getAttribute('data-target');
+						document.getElementById(m_ID).classList.add('open');
+					}
+				}
+	
+				// Close modal window with 'data-dismiss' attribute or when the backdrop is clicked
+				if ((target.hasAttribute('data-dismiss') && target.getAttribute('data-dismiss') == 'modal') ||target.classList.contains('modal')) {
+					var modal = document.querySelector('.modal.open');
+					modal.classList.remove('open');
+				}
+			}, false);
+	
+		   
+		
+		 </script>
+	
+	<script>
+		$(document).ready(function() {
+			$('#Create-Community-button').click(function() {
+				$('.input-name-error-text').show();
+			});
+		});
+	</script>
+	<script> 
+	$('#Create-Community-button').bind('click', function() {
+		if(allFilledpassauthd()) $('#CreateCommunity-input-name-fild').addClass('error');
+	});
+	
+	function allFilledpassauthd() {
+		var filled = true;
+		$('.CreateCommunity-Modal-body input').each(function() {
+			if($(this).val() == '') filled = false;
+		});
+		return filled;
+	}
+	</script>
+	<script>
+		//for reaction tab
+	function reactionFunc(evt, reactioninput) {
+		var i, reaction_tabcontent, reaction_tablinks;
+		reaction_tabcontent = document.getElementsByClassName("user-reaction-content-list");
+		for (i = 0; i < reaction_tabcontent.length; i++) {
+			reaction_tabcontent[i].style.display = "none";
+		}
+		reaction_tablinks = document.getElementsByClassName("reaction_tablinks");
+		for (i = 0; i < reaction_tablinks.length; i++) {
+			reaction_tablinks[i].className = reaction_tablinks[i].className.replace(" active", "");
+		}
+		document.getElementById(reactioninput).style.display = "block";
+		evt.currentTarget.className += " active";
+	}
+	</script>
+	
+	<script>
+		$(document).ready(function() {
+			$('.save-post').click(function() {
+                $('.unfllow-user-notification-box').hide();
+                $('.copy-link-post-notification-box').hide();
+                $('.mute-user-notification-box').hide();
+				$('.save-post-notification-box').show();
+			});
+		});
+        $(document).ready(function() {
+			$('.save-post-notification-box-close-btn').click(function() {
+				$('.save-post-notification-box').hide();
+			});
+		});
+        $(document).ready(function() {
+			$('.view-all-save-post').click(function() {
+				$('.save-post-notification-box').hide();
+				$('.status-section').hide();
+                $('.save-this-status').show();
+                $('#back-to-feed-btn').show();
+			});
+		});
+        $(document).ready(function() {
+			$('#back-to-feed-btn').click(function() {
+				$('.save-post-notification-box').hide();
+                $('.save-this-status').hide();
+                $('.status-section').show();
+                $('#back-to-feed-btn').hide();
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function() {
+			$('.copy-post-link').click(function() {
+                $('.unfllow-user-notification-box').hide();
+                $('.save-post-notification-box').hide();
+                $('.mute-user-notification-box').hide();
+				$('.copy-link-post-notification-box').show();
+			});
+		});
+        $(document).ready(function() {
+			$('.copy-link-post-notification-box-close-btn').click(function() {
+				$('.copy-link-post-notification-box').hide();
+			});
+		});
+        $(document).ready(function() {
+			$('.view-all-copy-link-post').click(function() {
+				$('.copy-link-post-notification-box').hide();
+				$('.status-section').hide();
+                $('.copy-link-this-status').show();
+                $('#back-to-feed-btn').show();
+			});
+		});
+        $(document).ready(function() {
+			$('#back-to-feed-btn').click(function() {
+				$('.copy-link-post-notification-box').hide();
+                $('.copy-link-this-status').hide();
+                $('.status-section').show();
+                $('#back-to-feed-btn').hide();
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function() {
+			$('.unfllow-user').click(function() {
+				$('.unfllow-user-notification-box').show();
+                $('.unfllow-user-stutas').hide();
+                $('.save-post-notification-box').hide();
+                $('.copy-link-post-notification-box').hide();
+                $('.mute-user-notification-box').hide();
+				$('.Post-removed-alart-action-box').show();
+			});
+		});
+        $(document).ready(function() {
+			$('.unfllow-user-notification-box-close-btn').click(function() {
+				$('.unfllow-user-notification-box').hide();
+			});
+		});
+        $(document).ready(function() {
+			$('.Post-removed-undo-btn').click(function() {
+				$('.Post-removed-alart-action-box').hide();
+                $('.unfllow-user-notification-box').hide();
+                $('.status-section').show();
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function() {
+			$('.mute-user').click(function() {
+				$('.mute-user-notification-box').show();
+                $('.unfllow-user-notification-box').hide();
+                $('.copy-link-post-notification-box').hide();
+				$('.save-post-notification-box').hide();
+                $('.mute-user-stutas').hide();
+				$('.Post-removed-alart-action-box').show();
+			});
+		});
+        $(document).ready(function() {
+			$('.mute-user-notification-box-close-btn').click(function() {
+				$('.mute-user-notification-box').hide();
+			});
+		});
+        $(document).ready(function() {
+			$('.Post-removed-undo-btn').click(function() {
+				$('.Post-removed-alart-action-box').hide();
+                $('.mute-user-notification-box').hide();
+                $('.status-section').show();
+                
+			});
+		});
+	</script>	
+	<script>
+	    $(function() {
+	        $('.reason-list form ul li').click(function() {
+	            $('.dont_Want_See-post-Modal-footer button').each(function(a) {
+	                $(this).removeClass('disable')
+	            });
+	        });
+
+	    });
+	</script>
+	
+	<script>
+        $(document).ready(function() {
+			$('.whoCanSeeThisPost').click(function() {
+				$('.home-post-block').hide();
+				$('.VisibilityofShared-Posts-sect').show();
+			});
+		});
+    </script>
+    <script>
+        var coll = document.getElementsByClassName("visibility-options-collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+    
+    <script>
+        $(function() {
+            $('.Report-post-Modal-form ul li').click(function() {
+                $('.Report-post-Modal-footer button.submit-btn').each(function(a) {
+                    $(this).removeClass('disable')
+                });
+            });
+
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+			$('.post-send-by-Masage').click(function() {
+				$('.send-post-masage-sect').show();
+			});
+		});
+        $(document).ready(function() {
+			$('.send-post-Message-open-card-close').click(function() {
+				$('.send-post-masage-sect').hide();
+			});
+		});
+    </script>
+    
+    <script>
+        $(function() {
+            $('.send-messaging-collapsible-btn').click(function() {
+                $('.send-messaging-collapsible-btn').each(function(a) {
+                    $(this).toggleClass('active')
+                });
+            });
+        });
+        $(function() {
+            $('.send-messaging-collapsible-btn').click(function() {
+                $('.Messaging-3dots-btn').each(function(a) {
+                    $(this).toggleClass('active')
+                });
+            });
+        });
+        $(document).ready(function() {
+			$('.send-messaging-collapsible-btn').click(function() {
+				$('.send-messaging-collaps .content').toggle();
+			});
+		});
+    </script>
+    <script>
+        $(document).ready(function() {
+			$('.Messaging-3dots-btn').click(function() {
+				$('.Messaging-3dots-dropdown').toggle();
+			});
+		});
+    </script>
+	
+</body>
+
+</html>
